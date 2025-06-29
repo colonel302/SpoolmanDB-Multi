@@ -54,7 +54,8 @@
 
             // Links aktualisieren (Dateien liegen direkt in /public)
             document.getElementById('materials-link').href = `materials.json`;
-            document.getElementById('filaments-link').href = `filaments_${lang}.json`;
+            document.getElementById('filaments-link').href = lang === 'en' ? 'filaments.json' : `filaments_${lang}.json`;
+
 
             // Beispiel: Lade die Filamentdaten dynamisch (optional)
             // fetchFilamentData(lang);
