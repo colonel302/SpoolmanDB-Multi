@@ -11,21 +11,27 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-          
+
+      # FEHLENDER SCHRITT: Installiere check-jsonschema
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install check-jsonschema
+
       - name: Validate German Filaments
         run: |
           for file in filaments_de/*.json; do
             check-jsonschema --schemafile filaments.schema.json "$file"
           done
-          
+
       - name: Compile German Database
-        run: python scripts/compile_de.py  # Eigenes Kompilierungsskript
-        
+        run: python scripts/compile_de.py
+
       - name: Deploy German Site
         uses: peaceiris/actions-gh-pages@v4
         with:
