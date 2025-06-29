@@ -146,7 +146,7 @@ def compile_filaments_de():
 
     output_dir = Path("public")
     output_dir.mkdir(exist_ok=True)
-    output_path = Path(f"filaments_{lang}.json")  # z.B. filaments_de.json
+    output_path = Path(f"filaments_{LANG}.json")  # z.B. filaments_de.json
 
     print(f"Writing all filaments to '{output_path}'")
     with output_path.open("w", encoding="utf-8") as f:
