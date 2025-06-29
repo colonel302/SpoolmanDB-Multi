@@ -229,7 +229,7 @@ def compile_filaments():
     all_filaments.sort(key=lambda x: (x["manufacturer"], x["material"], x["name"]))
 
     print("Writing all filaments to 'filaments.json'")
-    with Path("filaments.json").open("w") as f:
+    with Path("filaments_en.json").open("w") as f:
         json.dump(all_filaments, f, indent=2)
 
 
