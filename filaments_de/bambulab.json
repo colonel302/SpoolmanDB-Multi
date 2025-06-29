@@ -86,7 +86,7 @@
           "hex": "F4EE2A"
         },
         {
-          "name": "Hellgrün",
+          "name": "(Hell) Hölle grün",
           "hex": "BECF00"
         },
         {
@@ -126,7 +126,7 @@
           "hex": "5B6579"
         },
         {
-          "name": "Hellgrau",
+          "name": "(Hell) Hölle grau",
           "hex": "D1D3D5"
         },
         {
@@ -939,7 +939,7 @@
           "hex": "8E8E8E"
         },
         {
-          "name": "Durchscheinend hellblau",
+          "name": "Durchscheinend (hell) höllblau",
           "hex": "61B0FF"
         },
         {
@@ -1500,7 +1500,7 @@
           "hex": "F68B1B"
         },
         {
-          "name": "Licht Cyan",
+          "name": "(Hell) Hölle Cyan",
           "hex": "C3E2D6"
         }
       ]
