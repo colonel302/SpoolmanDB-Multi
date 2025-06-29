@@ -54,58 +54,50 @@ def translate_name(name, dictionary):
 
 def process_files():
     source_dir = 'filaments'
-    target_dir = 'public'
+    target_dir = 'filaments_de'
     os.makedirs(target_dir, exist_ok=True)
-
+    
     trans_dict = load_dictionary()
     changed_files = []
-
+    
     for filename in os.listdir(source_dir):
         if not filename.endswith('.json'):
             continue
-
+            
         source_path = os.path.join(source_dir, filename)
-        # Zielname mit _de-Suffix
-        if filename.startswith("materials"):
-            target_filename = filename.replace('.json', '_de.json')
-        else:
-            target_filename = filename.replace('.json', '_de.json')
-        target_path = os.path.join(target_dir, target_filename)
-
+        target_path = os.path.join(target_dir, filename)
+        
+        # Prüfe auf Änderungen
         source_hash = get_file_hash(source_path)
         if os.path.exists(target_path):
             target_hash = get_file_hash(target_path)
             if source_hash == target_hash:
                 continue
-
+                
+        # Datei übersetzen
         with open(source_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
-
-        # Übersetze alle Namen in Filamenten und Farben
-        if "filaments" in data:
-            for filament in data.get('filaments', []):
-                if "name" in filament:
-                    filament["name"] = translate_name(filament["name"], trans_dict)
-                for color in filament.get('colors', []):
-                    if "name" in color:
-                        original = color['name']
-                        translated = translate_name(original, trans_dict)
-                        color['name'] = translated
-                        if original not in trans_dict:
-                            trans_dict[original] = translated
-                            changed_files.append(filename)
-        # Optional: Auch Materialien übersetzen
-        if "materials" in data:
-            for material in data.get('materials', []):
-                if "material" in material:
-                    material["material"] = translate_name(material["material"], trans_dict)
-
+            
+        for filament in data.get('filaments', []):
+            for color in filament.get('colors', []):
+                original = color['name']
+                translated = translate_name(original, trans_dict)
+                color['name'] = translated
+                
+                # Füge neue Übersetzungen ins Wörterbuch
+                if original not in trans_dict:
+                    trans_dict[original] = translated
+                    changed_files.append(filename)
+        
+        # SPEICHERE DIE ÜBERSETZTE DATEI EXPLIZIT
+        print(f"Schreibe übersetzte Datei: {target_path}")
         with open(target_path, 'w', encoding='utf-8') as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
-
+    
+    # Aktualisiere Wörterbuch bei Änderungen
     if changed_files:
         save_dictionary(trans_dict)
-
+    
     return changed_files
 
 if __name__ == "__main__":
