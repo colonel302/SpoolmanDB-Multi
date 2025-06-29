@@ -18,44 +18,37 @@
     const urlParams = new URLSearchParams(window.location.search);
     let lang = urlParams.get('lang') || navigator.language.split('-')[0].toLowerCase() || 'en';
 
-    // Unterstützte Sprachen (ggf. aus Wörterbuch oder statisch)
-    const supportedLangs = ['de', 'fr', 'es', 'it']; // Passe bei Bedarf an
-
-    // Standard-Dateinamen
+    // Für Englisch (oder unbekannte Sprache): Standarddateien laden
     let filamentFile = 'filaments.json';
     let materialsFile = 'materials.json';
 
-    // Für unterstützte Sprachen != Englisch die Sprachdateien wählen
-    if (lang !== 'en' && supportedLangs.includes(lang)) {
+    // Für andere Sprachen: Sprachdateien laden, falls vorhanden
+    if (lang !== 'en') {
         filamentFile = `filaments_${lang}.json`;
         materialsFile = `materials_${lang}.json`;
     }
 
-    // Funktion zum Laden einer JSON-Datei mit Fallback auf Englisch
-    function fetchWithFallback(file, fallbackFile) {
-        return fetch(file)
-            .then(resp => {
-                if (!resp.ok) throw new Error('not found');
-                return resp.json();
-            })
-            .catch(() => {
-                if (file !== fallbackFile) {
-                    return fetch(fallbackFile).then(r => r.json());
-                }
-            });
-    }
-
     // Lade Filamentdaten
-    fetchWithFallback(filamentFile, 'filaments.json').then(data => {
-        console.log("Geladene Filamentdaten:", data);
-        // Hier deine Verarbeitung
-    });
+    fetch(filamentFile)
+        .then(response => response.json())
+        .then(data => {
+            // Hier deine Verarbeitung
+            console.log("Geladene Filamentdaten:", data);
+        })
+        .catch(err => {
+            console.error(`Fehler beim Laden von ${filamentFile}:`, err);
+        });
 
     // Lade Materialdaten
-    fetchWithFallback(materialsFile, 'materials.json').then(data => {
-        console.log("Geladene Materialdaten:", data);
-        // Hier deine Verarbeitung
-    });
+    fetch(materialsFile)
+        .then(response => response.json())
+        .then(data => {
+            // Hier deine Verarbeitung
+            console.log("Geladene Materialdaten:", data);
+        })
+        .catch(err => {
+            console.error(`Fehler beim Laden von ${materialsFile}:`, err);
+        });
     </script>
 </body>
 </html>
