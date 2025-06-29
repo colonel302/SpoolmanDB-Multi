@@ -8,7 +8,6 @@ LANG = "de"
 DICT_DIR = "dict"
 DICT_PATH = os.path.join(DICT_DIR, f"translation_dict_{LANG}.json")
 
-# --- auto_translate (UNVERÄNDERT) ---
 def auto_translate(name):
     print(f"Starte Übersetzung für: {name}")
     try:
@@ -20,7 +19,6 @@ def auto_translate(name):
         print(f"Übersetzungsfehler bei '{name}': {str(e)}")
         return name
 
-# --- NEUE translate_name FUNKTION ---
 def translate_name(original_name, dictionary):
     # 1. Wörterbuch-Check (vereinfacht)
     if original_name in dictionary:
@@ -30,9 +28,9 @@ def translate_name(original_name, dictionary):
     # 2. Eigennamen nicht übersetzen + eintragen
     if any(term in original_name for term in ["Bambu", "Arctic", "Candy", "Titan"]):
         print(f"Eigenname erkannt: {original_name} – nicht übersetzt")
-        dictionary[original_name] = original_name  # Verhindert zukünftige Übersetzung
+        dictionary[original_name] = original_name
         return original_name
-    
+
     # 3. Spezialbegriffe ersetzen
     name = original_name
     special_terms = {
@@ -56,7 +54,6 @@ def translate_name(original_name, dictionary):
     print(f"Neuer Wörterbucheintrag: {original_name} -> {translated}")
     return translated
 
-# --- REST DES SKRIPTS (UNVERÄNDERT) ---
 def load_dictionary():
     if os.path.exists(DICT_PATH):
         with open(DICT_PATH, 'r', encoding='utf-8') as f:
@@ -68,12 +65,17 @@ def save_dictionary(dictionary):
     with open(DICT_PATH, 'w', encoding='utf-8') as f:
         json.dump(dictionary, f, ensure_ascii=False, indent=2)
 
+def get_file_hash(file_path):
+    with open(file_path, 'rb') as f:
+        return hashlib.md5(f.read()).hexdigest()
+
 def process_files():
     source_dir = 'filaments'
     target_dir = 'filaments_de'
     os.makedirs(target_dir, exist_ok=True)
     
     trans_dict = load_dictionary()
+    dict_updated = False  # Verfolgt Änderungen am Wörterbuch
     changed_files = []
     
     for filename in os.listdir(source_dir):
@@ -83,26 +85,40 @@ def process_files():
         source_path = os.path.join(source_dir, filename)
         target_path = os.path.join(target_dir, filename)
         
-        # ... (Hash-Prüfung und Dateiverarbeitung wie gehabt)
-        
+        # Prüfe auf Änderungen
+        source_hash = get_file_hash(source_path)
+        if os.path.exists(target_path):
+            target_hash = get_file_hash(target_path)
+            if source_hash == target_hash:
+                continue
+                
+        # Datei übersetzen
         with open(source_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
             
+        file_updated = False
         for filament in data.get('filaments', []):
             for color in filament.get('colors', []):
                 original = color['name']
-                translated = translate_name(original, trans_dict)  # HIER WIRD DIE NEUE LOGIC GENUTZT
+                was_in_dict = original in trans_dict  # Merken ob Eintrag existierte
+                translated = translate_name(original, trans_dict)
                 color['name'] = translated
                 
-                # Kennzeichnen, wenn neue Übersetzung (für Wörterbuch-Update)
-                if original not in trans_dict:
+                # Prüfe ob neuer Wörterbucheintrag
+                if not was_in_dict:
+                    dict_updated = True
                     changed_files.append(filename)
+                    file_updated = True
         
-        with open(target_path, 'w', encoding='utf-8') as f:
-            json.dump(data, f, ensure_ascii=False, indent=2)
+        # Speichere übersetzte Datei nur bei Änderungen
+        if file_updated:
+            with open(target_path, 'w', encoding='utf-8') as f:
+                json.dump(data, f, ensure_ascii=False, indent=2)
     
-    if changed_files:
+    # Wörterbuch IMMER speichern wenn Änderungen vorliegen
+    if dict_updated:
         save_dictionary(trans_dict)
+        print("Wörterbuch aktualisiert")
     
     return changed_files
 
