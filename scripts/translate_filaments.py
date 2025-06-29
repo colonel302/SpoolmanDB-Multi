@@ -43,6 +43,7 @@ def translate_name(original_name, dictionary):
         "Silk": "Silk",
         "Ivory": "Elfenbein",
         "Ash": "Asch",
+        "Hot Pink": "Hot Pink",
         "Sky": "Himmel",
         "Apple": "Apfel"
     }
