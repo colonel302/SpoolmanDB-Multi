@@ -1,120 +1,61 @@
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Finden Sie die neuesten Filament- und Materialdaten für den 3D-Druck.">
-    <title>SpoolmanDB-de</title>
-    <link rel="stylesheet" href="styles.css">
-    <script>
-        // Sprachkonfiguration
-        const languageConfig = {
-            de: {
-                title: "SpoolmanDB-de",
-                headline: "Ein Repository mit den neuesten Filament- und Materialdaten für den 3D-Druck.",
-                description: "Dieses Projekt ist Open-Source, Sie können gerne einen Pull-Request erstellen",
-                materials: "MATERIALIEN",
-                filaments: "FILAMENTE",
-                footer: "SpoolmanDB-de - 2025"
-            },
-            en: {
-                title: "SpoolmanDB-en",
-                headline: "A repository with the latest filament and material data for 3D printing.",
-                description: "This project is open-source, feel free to create a pull request",
-                materials: "MATERIALS",
-                filaments: "FILAMENTS",
-                footer: "SpoolmanDB-en - 2025"
-            }
-        };
-
-        // Sprache initialisieren und setzen
-        function initLanguage() {
-            const savedLang = localStorage.getItem('lang') || 'de';
-            setLanguage(savedLang);
-
-            // Event-Listener für Sprachumschaltung
-            document.getElementById('lang-switcher').addEventListener('change', (e) => {
-                setLanguage(e.target.value);
-            });
-        }
-
-        // Sprache setzen und Seite aktualisieren
-        function setLanguage(lang) {
-            localStorage.setItem('lang', lang);
-            const config = languageConfig[lang];
-
-            // Texte aktualisieren
-            document.title = config.title;
-            document.querySelector('h2').textContent = config.headline;
-            document.querySelector('p').innerHTML = `${config.description} <a href="https://github.com/colonel302/SpoolmanDB-de">auf Github</a>`;
-            document.querySelector('[data-translate="materials"]').textContent = config.materials;
-            document.querySelector('[data-translate="filaments"]').textContent = config.filaments;
-            document.querySelector('footer p').textContent = config.footer;
-
-            // Links aktualisieren (Dateien liegen direkt in /public)
-            document.getElementById('materials-link').href = `materials_${lang}.json`;
-            document.getElementById('filaments-link').href = `filaments_${lang}.json`;
-
-            // Beispiel: Lade die Filamentdaten dynamisch (optional)
-            // fetchFilamentData(lang);
-        }
-
-        // Beispiel-Funktion zum dynamischen Laden der Filamentdaten (optional)
-        function fetchFilamentData(lang) {
-            fetch(`filaments_${lang}.json`)
-                .then(response => response.json())
-                .then(data => {
-                    // Hier kannst du die Daten weiterverarbeiten oder anzeigen
-                    console.log("Geladene Filamentdaten:", data);
-                })
-                .catch(err => {
-                    console.error("Fehler beim Laden der Filamentdaten:", err);
-                });
-        }
-    </script>
+    <title>Filament-Datenbank</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ein Repository mit den neuesten Filament- und Materialdaten für den 3D-Druck.">
+    <link rel="stylesheet" href="style.css">
 </head>
+<body>
+    <h1>Filament- und Materialdaten für den 3D-Druck</h1>
+    <p>
+        Dieses Projekt ist Open-Source, Sie können gerne einen Pull-Request erstellen auf Github wenn Sie Daten hinzufügen oder ändern möchten.
+    </p>
 
-<body onload="initLanguage()">
-    <header>
-        <div class="header-content">
-            <picture>
-                <img alt="Spoolman Logo"
-                    src="https://github.com/Donkie/Spoolman/assets/2332094/4e6e80ac-c7be-4ad2-9a33-dedc1b5ba30e"
-                    class="logo">
-            </picture>
-            <div class="language-switcher">
-                <label for="lang-switcher">Sprache:</label>
-                <select id="lang-switcher">
-                    <option value="de">Deutsch</option>
-                    <option value="en">English</option>
-                </select>
-            </div>
-        </div>
-    </header>
+    <script>
+    // Sprache aus URL-Parameter oder Browser ermitteln
+    const urlParams = new URLSearchParams(window.location.search);
+    let lang = urlParams.get('lang') || navigator.language.split('-')[0].toLowerCase() || 'en';
 
-    <main>
-        <h2>Ein Repository mit den neuesten Filament- und Materialdaten für den 3D-Druck.</h2>
-        <p>Dieses Projekt ist Open-Source, Sie können gerne einen Pull-Request erstellen <a
-                href="https://github.com/colonel302/SpoolmanDB-de"> auf Github</a> wenn Sie Daten hinzufügen oder ändern möchten.</p>
-        <h2>Dateien</h2>
-        <div class="data-files">
-            <div class="column">
-                <ul>
-                    <li><a id="materials-link" href="materials_de.json" data-translate="materials">MATERIALIEN</a></li>
-                </ul>
-            </div>
-            <div class="column">
-                <ul>
-                    <li><a id="filaments-link" href="filaments_de.json" data-translate="filaments">FILAMENTE</a></li>
-                </ul>
-            </div>
-        </div>
-    </main>
+    // Unterstützte Sprachen (ggf. aus Wörterbuch oder statisch)
+    const supportedLangs = ['de', 'fr', 'es', 'it']; // Passe bei Bedarf an
 
-    <footer>
-        <p>SpoolmanDB-de - 2025</p>
-    </footer>
+    // Standard-Dateinamen
+    let filamentFile = 'filaments.json';
+    let materialsFile = 'materials.json';
+
+    // Für unterstützte Sprachen != Englisch die Sprachdateien wählen
+    if (lang !== 'en' && supportedLangs.includes(lang)) {
+        filamentFile = `filaments_${lang}.json`;
+        materialsFile = `materials_${lang}.json`;
+    }
+
+    // Funktion zum Laden einer JSON-Datei mit Fallback auf Englisch
+    function fetchWithFallback(file, fallbackFile) {
+        return fetch(file)
+            .then(resp => {
+                if (!resp.ok) throw new Error('not found');
+                return resp.json();
+            })
+            .catch(() => {
+                if (file !== fallbackFile) {
+                    return fetch(fallbackFile).then(r => r.json());
+                }
+            });
+    }
+
+    // Lade Filamentdaten
+    fetchWithFallback(filamentFile, 'filaments.json').then(data => {
+        console.log("Geladene Filamentdaten:", data);
+        // Hier deine Verarbeitung
+    });
+
+    // Lade Materialdaten
+    fetchWithFallback(materialsFile, 'materials.json').then(data => {
+        console.log("Geladene Materialdaten:", data);
+        // Hier deine Verarbeitung
+    });
+    </script>
 </body>
-
 </html>
