@@ -1,6 +1,7 @@
 import os
 import json
 import hashlib
+from deep_translator import GoogleTranslator  # Wichtig: Import hinzugefügt
 
 # Wörterbuchpfad im Zielordner
 DICT_PATH = os.path.join('filaments', 'de', 'translation_dict.json')
@@ -23,6 +24,20 @@ def get_file_hash(file_path):
     with open(file_path, 'rb') as f:
         return hashlib.md5(f.read()).hexdigest()
 
+def auto_translate(name):
+    """Automatische Übersetzung von Englisch nach Deutsch"""
+    try:
+        # Eigennamen nicht übersetzen
+        if any(term in name for term in ["Bambu", "Arctic", "Candy", "Titan"]):
+            return name
+            
+        # Übersetzung durchführen
+        translated = GoogleTranslator(source='en', target='de').translate(name)
+        return translated
+    except Exception as e:
+        print(f"Übersetzungsfehler bei '{name}': {str(e)}")
+        return name  # Bei Fehlern Original zurückgeben
+
 def translate_name(name, dictionary):
     """Übersetzt einen Farbnamen unter Verwendung des Wörterbuchs"""
     # Eigennamen nicht übersetzen
@@ -41,8 +56,14 @@ def translate_name(name, dictionary):
     for en, de in special_terms.items():
         name = name.replace(en, de)
     
-    # Wörterbuchabfrage
-    return dictionary.get(name, name)
+    # Wörterbuchabfrage und Prüfung auf identische Übersetzung
+    if name in dictionary and dictionary[name] != name:
+        return dictionary[name]
+    
+    # Wenn Eintrag fehlt oder identisch ist, automatische Übersetzung
+    translated = auto_translate(name)
+    dictionary[name] = translated  # Aktualisiere das Wörterbuch
+    return translated
 
 def process_files():
     """Hauptfunktion: Verarbeitet neue/geänderte Dateien"""
@@ -78,6 +99,7 @@ def process_files():
                 color['name'] = translated
                 
                 # Füge neue Übersetzungen ins Wörterbuch
+                # Wichtig: Originalname speichern, nicht den modifizierten!
                 if original not in trans_dict:
                     trans_dict[original] = translated
                     changed_files.append(filename)
