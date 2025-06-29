@@ -19,13 +19,14 @@
                 footer: "SpoolmanDB-Multi - 2025"
             },
             en: {
-                title: "SpoolmanDB-en",
+                title: "SpoolmanDB-Multi",
                 headline: "A repository with the latest filament and material data for 3D printing.",
                 description: "This project is open-source, feel free to create a pull request",
                 materials: "MATERIALS",
                 filaments: "FILAMENTS",
-                footer: "SpoolmanDB-en - 2025"
+                footer: "SpoolmanDB-Multi - 2025"
             }
+            // Weitere Sprachen können hier ergänzt werden
         };
 
         // Sprache initialisieren und setzen
@@ -52,10 +53,9 @@
             document.querySelector('[data-translate="filaments"]').textContent = config.filaments;
             document.querySelector('footer p').textContent = config.footer;
 
-            // Links aktualisieren (Dateien liegen direkt in /public)
-            document.getElementById('materials-link').href = `materials.json`;
-            document.getElementById('filaments-link').href = lang === 'en' ? 'filaments.json' : `filaments_${lang}.json`;
-
+            // Links aktualisieren: Immer auf /<lang>/filaments.json und /<lang>/materials.json
+            document.getElementById('materials-link').href = `/${lang}/materials.json`;
+            document.getElementById('filaments-link').href = `/${lang}/filaments.json`;
 
             // Beispiel: Lade die Filamentdaten dynamisch (optional)
             // fetchFilamentData(lang);
@@ -63,7 +63,7 @@
 
         // Beispiel-Funktion zum dynamischen Laden der Filamentdaten (optional)
         function fetchFilamentData(lang) {
-            fetch(`filaments_${lang}.json`)
+            fetch(`/${lang}/filaments.json`)
                 .then(response => response.json())
                 .then(data => {
                     // Hier kannst du die Daten weiterverarbeiten oder anzeigen
@@ -97,24 +97,24 @@
     <main>
         <h2>Ein Repository mit den neuesten Filament- und Materialdaten für den 3D-Druck.</h2>
         <p>Dieses Projekt ist Open-Source, Sie können gerne einen Pull-Request erstellen <a
-                href="https://github.com/colonel302/SpoolmanDB"> auf Github</a> wenn Sie Daten hinzufügen oder ändern möchten.</p>
+                href="https://github.com/colonel302/SpoolmanDB-Multi"> auf Github</a> wenn Sie Daten hinzufügen oder ändern möchten.</p>
         <h2>Dateien</h2>
         <div class="data-files">
             <div class="column">
                 <ul>
-                    <li><a id="materials-link" href="materials.json" data-translate="materials">MATERIALIEN</a></li>
+                    <li><a id="materials-link" href="/de/materials.json" data-translate="materials">MATERIALIEN</a></li>
                 </ul>
             </div>
             <div class="column">
                 <ul>
-                    <li><a id="filaments-link" href="filaments.json" data-translate="filaments">FILAMENTE</a></li>
+                    <li><a id="filaments-link" href="/de/filaments.json" data-translate="filaments">FILAMENTE</a></li>
                 </ul>
             </div>
         </div>
     </main>
 
     <footer>
-        <p>SpoolmanDB-en - 2025</p>
+        <p>SpoolmanDB-Multi - 2025</p>
     </footer>
 </body>
 

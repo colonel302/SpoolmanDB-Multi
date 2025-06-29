@@ -4,6 +4,7 @@ from pathlib import Path
 from typing import Iterator, TypedDict, NotRequired
 import os
 import sys
+import shutil
 
 class SpoolType(StrEnum):
     PLASTIC = "plastic"
@@ -127,7 +128,6 @@ def load_json(file: Path) -> dict:
 def compile_for_language(lang: str):
     """Kompiliert Filamentdaten für eine bestimmte Sprache"""
     source_dir = Path(f"filaments_{lang}")
-    output_path = Path("public") / f"filaments_{lang}.json"
     
     # Prüfe ob Verzeichnis existiert
     if not source_dir.exists():
@@ -175,12 +175,31 @@ def compile_for_language(lang: str):
     # Sortiere Filamente
     all_filaments.sort(key=lambda x: (x["manufacturer"], x["material"], x["name"]))
     
+    # Erstelle Sprachverzeichnis in public/
+    output_dir = Path("public") / lang
+    output_dir.mkdir(parents=True, exist_ok=True)
+    output_path = output_dir / "filaments.json"
+    
     # Schreibe Ausgabedatei
     print(f"✏️  Schreibe {len(all_filaments)} Filamente nach: {output_path}")
     with output_path.open("w", encoding="utf-8") as f:
         json.dump(all_filaments, f, indent=2, ensure_ascii=False)
     
     print(f"✅ Sprache {lang} erfolgreich verarbeitet!")
+
+def copy_materials_files():
+    """Kopiert materials.json in jedes Sprachverzeichnis"""
+    materials_src = Path("materials.json")
+    if not materials_src.exists():
+        print("⚠️  materials.json nicht gefunden. Überspringe Kopiervorgang.")
+        return
+    
+    # Finde alle Sprachverzeichnisse in public/
+    for lang_dir in Path("public").iterdir():
+        if lang_dir.is_dir():
+            dest_path = lang_dir / "materials.json"
+            shutil.copy(materials_src, dest_path)
+            print(f"📋 Kopierte materials.json nach: {dest_path}")
 
 def main():
     # Automatische Spracherkennung
@@ -198,6 +217,12 @@ def main():
     
     print(f"🔄 Gefundene Sprachen: {', '.join(languages)}")
     
+    # Lösche altes public-Verzeichnis
+    public_dir = Path("public")
+    if public_dir.exists():
+        shutil.rmtree(public_dir)
+    public_dir.mkdir(exist_ok=True)
+    
     # Verarbeite jede Sprache
     for lang in sorted(languages):
         try:
@@ -205,6 +230,9 @@ def main():
         except Exception as e:
             print(f"❌ Kritischer Fehler in Sprache '{lang}': {str(e)}")
             sys.exit(1)
+    
+    # Kopiere materials.json in jedes Sprachverzeichnis
+    copy_materials_files()
     
     print("\n🎉 Alle Sprachen erfolgreich kompiliert!")
 
