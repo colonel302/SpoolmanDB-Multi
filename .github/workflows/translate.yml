@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - 'filaments/*.json'
+      - 'dict/translation_dict_*.json'
   schedule:
     - cron: '0 3 * * 1'
 
@@ -25,20 +26,20 @@ jobs:
           python -m pip install --upgrade pip
           pip install deep-translator pyyaml
 
-      - name: Ensure filaments_de exists
-        run: mkdir -p filaments_de
+      - name: Ensure filaments_de and dict exist
+        run: |
+          mkdir -p filaments_de
+          mkdir -p dict
 
       - name: Run translation script
         run: python scripts/translate_filaments.py
 
       - name: Commit and push translations
         run: |
-          if ls filaments_de/*.json 1> /dev/null 2>&1 || [ -f filaments_de/translation_dict.json ]; then
-            git config --global user.name "github-actions[bot]"
-            git config --global user.email "github-actions[bot]@users.noreply.github.com"
-            git add filaments_de/*.json dict/translation_dict_*.json
-            git commit -m "Automatische Übersetzung der Filamentnamen (de)" || echo "No changes to commit"
-            git push || echo "Nothing to push"
-          else
-            echo "Keine neuen Dateien zum Committen."
-          fi
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add filaments_de/*.json || true
+          git add dict/translation_dict_*.json || true
+          git add last_dict_hash.txt || true
+          git commit -m "Automatische Übersetzung der Filamentnamen (de)" || echo "No changes to commit"
+          git push || echo "Nothing to push"
