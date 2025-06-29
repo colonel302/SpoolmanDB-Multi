@@ -935,7 +935,7 @@
       "translucent": true,
       "colors": [
         {
-          "name": "Durchscheinend grau",
+          "name": "Transluzent Grau",
           "hex": "8E8E8E"
         },
         {
@@ -943,27 +943,27 @@
           "hex": "61B0FF"
         },
         {
-          "name": "Durchscheinende Olive",
+          "name": "Transluzent Olive",
           "hex": "748C45"
         },
         {
-          "name": "Durchscheinend braun",
+          "name": "Transluzent Braun",
           "hex": "C9A381"
         },
         {
-          "name": "Durchscheinend blaugrün",
+          "name": "Transluzent Blaugrün",
           "hex": "77EDD7"
         },
         {
-          "name": "Durchscheinende Orange",
+          "name": "Transluzent Orange",
           "hex": "FF911A"
         },
         {
-          "name": "Durchscheinend lila",
+          "name": "Transluzent Lila",
           "hex": "D6ABFF"
         },
         {
-          "name": "Durchscheinend rosa",
+          "name": "Transluzent Pink",
           "hex": "F9C1BD"
         },
         {
@@ -1076,7 +1076,7 @@
           "hex": "789D4A"
         },
         {
-          "name": "Mandarine gelb",
+          "name": "Mandarine Gelb",
           "hex": "FFC72C"
         },
         {
@@ -1238,7 +1238,7 @@
       "bed_temp": 90,
       "colors": [
         {
-          "name": "Weißer Aero",
+          "name": "Weiß Aero",
           "hex": "F5F1DD"
         }
       ]
