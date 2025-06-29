@@ -95,7 +95,7 @@
           "hex": "E6B535"
         },
         {
-          "name": "Gelb hervorheben",
+          "name": "Highlight Gelb",
           "hex": "E4FF33"
         },
         {
@@ -317,7 +317,7 @@
           "hex": "F2B87B"
         },
         {
-          "name": "Hellgrün",
+          "name": "Pale Grün",
           "hex": "BECBA8"
         },
         {
@@ -381,7 +381,7 @@
           "hex": "99FFFA"
         },
         {
-          "name": "(Hell) höllisch blau-gelb",
+          "name": "(Light) Hell blau-gelb",
           "multi_color_direction": "longitudinal",
           "hexes": [
             "B8FFFF",

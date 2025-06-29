@@ -673,11 +673,11 @@
           "hex": "D2A273"
         },
         {
-          "name": "(Light) Hell Orange",
+          "name": "(Bright) Hell Orange",
           "hex": "FA8423"
         },
         {
-          "name": "(Light) Hell gelb",
+          "name": "(Bright) Hell gelb",
           "hex": "FAD61B"
         },
         {
@@ -685,7 +685,7 @@
           "hex": "D0ED03"
         },
         {
-          "name": "(Light) Hell rot",
+          "name": "(Bright) Hell rot",
           "hex": "E81313"
         }
       ]
@@ -1020,7 +1020,7 @@
       ],
       "colors": [
         {
-          "name": "Chamäleon (blaugrün-gelb)",
+          "name": "Chamäleon (Teal-Gelb)",
           "hexes": [
             "5AABB1",
             "F0BE02"
@@ -1990,7 +1990,7 @@
           "hex": "005aa2"
         },
         {
-          "name": "Savannah gelb",
+          "name": "Savannah Gelb",
           "hex": "f0be02"
         },
         {
