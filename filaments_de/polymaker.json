@@ -376,7 +376,7 @@
           "hex": "F6162E"
         },
         {
-          "name": "Rosa",
+          "name": "Pink",
           "hex": "FFA7C4"
         },
         {
@@ -420,7 +420,7 @@
           "hex": "003276"
         },
         {
-          "name": "(Hell) Hölle blau",
+          "name": "(Light) Hell blau",
           "hex": "8EDBEB"
         },
         {
@@ -673,19 +673,19 @@
           "hex": "D2A273"
         },
         {
-          "name": "(Hell) Hölle Orange",
+          "name": "(Light) Hell Orange",
           "hex": "FA8423"
         },
         {
-          "name": "(Hell) Hölle gelb",
+          "name": "(Light) Hell gelb",
           "hex": "FAD61B"
         },
         {
-          "name": "(Hell) Hölle grün",
+          "name": "(Light) Hell grün",
           "hex": "D0ED03"
         },
         {
-          "name": "(Hell) Hölle rot",
+          "name": "(Light) Hell rot",
           "hex": "E81313"
         }
       ]
@@ -820,7 +820,7 @@
           "hex": "C6007E"
         },
         {
-          "name": "Rosa",
+          "name": "Pink",
           "hex": "F59BBB"
         },
         {
@@ -935,7 +935,7 @@
           "hex": "F2306E"
         },
         {
-          "name": "Rosa",
+          "name": "Pink",
           "hex": "EE9BB5"
         },
         {
@@ -1089,7 +1089,7 @@
           "hex": "F7B300"
         },
         {
-          "name": "(Hell) Hölle gelb",
+          "name": "(Light) Hell gelb",
           "hex": "F3D561"
         },
         {
@@ -1097,7 +1097,7 @@
           "hex": "665A28"
         },
         {
-          "name": "(Hell) Hölle grün",
+          "name": "(Light) Hell Grün",
           "hex": "BBD39B"
         },
         {
@@ -1113,7 +1113,7 @@
           "hex": "00272F"
         },
         {
-          "name": "(Hell) Hölle blau",
+          "name": "(Light) Hell blau",
           "hex": "72AECB"
         },
         {
@@ -1137,11 +1137,11 @@
           "hex": "E42363"
         },
         {
-          "name": "Rosa",
+          "name": "Pink",
           "hex": "ED92B0"
         },
         {
-          "name": "(Hell) Hölle rot",
+          "name": "(Light) Hell rot",
           "hex": "CC4C4B"
         },
         {
@@ -1218,7 +1218,7 @@
           "hex": "F2306E"
         },
         {
-          "name": "Rosa",
+          "name": "Pink",
           "hex": "F2306E"
         },
         {
@@ -1563,7 +1563,7 @@
           "hex": "8E7B63"
         },
         {
-          "name": "Rosa",
+          "name": "Pink",
           "hex": "FD4BAB"
         }
       ]
@@ -1659,7 +1659,7 @@
           "hex": "3CCBDA"
         },
         {
-          "name": "Rosa",
+          "name": "Pink",
           "hex": "FFB1BB"
         },
         {
@@ -1874,7 +1874,7 @@
           "hex": "515234"
         },
         {
-          "name": "Armee (hell) Hölle grün",
+          "name": "Armee (Light) Hell grün",
           "hex": "a78403"
         },
         {

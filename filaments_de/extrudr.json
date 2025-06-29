@@ -873,7 +873,7 @@
           "finish": "matte"
         },
         {
-          "name": "(Hell) Hölle blau",
+          "name": "(Light) Hell blau",
           "hex": "3B83BD",
           "finish": "matte"
         },
@@ -992,7 +992,7 @@
           "hex": "424632"
         },
         {
-          "name": "Transparent grün",
+          "name": "Transparent Grün",
           "hex": "57A639",
           "translucent": true
         },
@@ -1017,7 +1017,7 @@
           "hex": "3F888F"
         },
         {
-          "name": "Transparent blau",
+          "name": "Transparent Blau",
           "hex": "2A6478",
           "translucent": true
         },
@@ -1026,7 +1026,7 @@
           "hex": "1D1E33"
         },
         {
-          "name": "(Hell) Hölle blau",
+          "name": "(Light) Hell blau",
           "hex": "3B83BD"
         },
         {
@@ -1038,7 +1038,7 @@
           "hex": "CF3476"
         },
         {
-          "name": "Transparent rot",
+          "name": "Transparent Rot",
           "hex": "9B111E",
           "translucent": true
         },
@@ -1076,7 +1076,7 @@
           "hex": "F54021"
         },
         {
-          "name": "Transparent gelb",
+          "name": "Transparent Gelb",
           "hex": "E5BE01",
           "translucent": true
         },

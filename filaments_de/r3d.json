@@ -70,7 +70,7 @@
           "hex": "0F52BA"
         },
         {
-          "name": "(Hell) Hölle blau",
+          "name": "(Light) Hell blau",
           "hex": "ADD8E6"
         },
         {
@@ -102,7 +102,7 @@
           "hex": "FF0000"
         },
         {
-          "name": "Rosa",
+          "name": "Pink",
           "hex": "FFC0CB"
         },
         {
@@ -176,12 +176,12 @@
           "translucent": true
         },
         {
-          "name": "Rosa",
+          "name": "Pink",
           "hex": "FFC0CB",
           "translucent": true
         },
         {
-          "name": "(Hell) Hölle blau",
+          "name": "(Light) Hell blau",
           "hex": "ADD8E6",
           "translucent": true
         }

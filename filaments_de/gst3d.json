@@ -59,11 +59,11 @@
           "hex": "D4CF7E"
         },
         {
-          "name": "(Hell) Hölle Pink",
+          "name": "(Light) Hell Pink",
           "hex": "CFA27A"
         },
         {
-          "name": "(Hell) Hölle blau",
+          "name": "(Light) Hell blau",
           "hex": "7998C4"
         },
         {
@@ -75,7 +75,7 @@
           "hex": "9F8547"
         },
         {
-          "name": "Fuchsie",
+          "name": "Fuchsia",
           "hex": "A74355"
         },
         {
@@ -132,32 +132,32 @@
           "hex": "AA0900"
         },
         {
-          "name": "(Hell) Hölle Silber",
+          "name": "(Light) Hell Silber",
           "hex": "7C7974",
           "pattern": "sparkle"
         },
         {
-          "name": "(Hell) Hölle rot",
+          "name": "(Light) Hell rot",
           "hex": "9F2A08",
           "pattern": "sparkle"
         },
         {
-          "name": "(Hell) Hölle grün",
+          "name": "(Light) Hell grün",
           "hex": "3F5D49",
           "pattern": "sparkle"
         },
         {
-          "name": "(Hell) Hölle Gold",
+          "name": "(Light) Hell Gold",
           "hex": "B09457",
           "pattern": "sparkle"
         },
         {
-          "name": "(Hell) Hölle blau",
+          "name": "(Light) Hell blau",
           "hex": "2F3F74",
           "pattern": "sparkle"
         },
         {
-          "name": "(Hell) Hölle schwarz",
+          "name": "(Light) Hell schwarz",
           "hex": "000000",
           "pattern": "sparkle"
         }
@@ -305,7 +305,7 @@
           "hex": "999999"
         },
         {
-          "name": "Fuchsie",
+          "name": "Fuchsia",
           "hex": "F336D9"
         },
         {

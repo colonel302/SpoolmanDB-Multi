@@ -39,7 +39,7 @@
           "hex": "BBBBBB"
         },
         {
-          "name": "Rosa",
+          "name": "Pink",
           "hex": "f0c4e3"
         }
       ]
@@ -62,7 +62,7 @@
       "bed_temp": 80,
       "colors": [
         {
-          "name": "Dunkelgrün leuchten",
+          "name": "Leuchtendes Dunkelgrün",
           "hex": "68FD9A",
           "glow": true
         },

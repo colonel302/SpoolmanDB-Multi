@@ -38,7 +38,7 @@
           "hex": "8072A1"
         },
         {
-          "name": "(Hell) Hölle blau",
+          "name": "(Light) Hell blau",
           "hex": "0083B4"
         },
         {
@@ -46,7 +46,7 @@
           "hex": "2F4D86"
         },
         {
-          "name": "(Hell) Hölle grün",
+          "name": "(Light) Hell Grün",
           "hex": "699E4B"
         },
         {
@@ -54,7 +54,7 @@
           "hex": "187359"
         },
         {
-          "name": "(Hell) Hölle grau",
+          "name": "(Light) Hell grau",
           "hex": "C8CBC8"
         },
         {
@@ -116,7 +116,7 @@
           "hex": "017cff"
         },
         {
-          "name": "(Hell) Hölle grün",
+          "name": "(Light) Hell Grün",
           "hex": "65c525"
         },
         {
@@ -198,11 +198,11 @@
           "hex": "002351"
         },
         {
-          "name": "(Hell) Hölle blau",
+          "name": "(Light) Hell blau",
           "hex": "017cff"
         },
         {
-          "name": "(Hell) Hölle grün",
+          "name": "(Light) Hell Grün",
           "hex": "65c525"
         },
         {
@@ -219,22 +219,22 @@
           "translucent": true
         },
         {
-          "name": "Transparent rot",
+          "name": "Transparent Rot",
           "hex": "c50000",
           "translucent": true
         },
         {
-          "name": "Transparent grün",
+          "name": "Transparent Grün",
           "hex": "00b01d",
           "translucent": true
         },
         {
-          "name": "Transparent blau",
+          "name": "Transparent Blau",
           "hex": "0039bf",
           "translucent": true
         },
         {
-          "name": "Transparent gelb",
+          "name": "Transparent Gelb",
           "hex": "deae00",
           "translucent": true
         }
@@ -270,7 +270,7 @@
           "hex": "FFFFFF"
         },
         {
-          "name": "(Hell) Hölle grau",
+          "name": "(Light) Hell Grau",
           "hex": "D7D7D7"
         },
         {
@@ -278,7 +278,7 @@
           "hex": "FFFF00"
         },
         {
-          "name": "Cmyk gelb",
+          "name": "Cmyk Gelb",
           "hex": "FFFF00"
         },
         {
@@ -294,7 +294,7 @@
           "hex": "ff6600"
         },
         {
-          "name": "Pastellrosa",
+          "name": "Pastellpink",
           "hex": "EA899A"
         },
         {
@@ -302,7 +302,7 @@
           "hex": "CC0605"
         },
         {
-          "name": "Rosa",
+          "name": "Pink",
           "hex": "FE5CAC"
         },
         {
@@ -318,7 +318,7 @@
           "hex": "5D9B9B"
         },
         {
-          "name": "(Hell) Hölle blau",
+          "name": "(Light) Hell blau",
           "hex": "2271B3"
         },
         {
@@ -330,7 +330,7 @@
           "hex": "C2ECE2"
         },
         {
-          "name": "(Hell) Hölle grün",
+          "name": "(Light) Hell Grün",
           "hex": "57A639"
         },
         {

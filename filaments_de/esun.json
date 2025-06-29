@@ -64,7 +64,7 @@
           "hex": "1932b3"
         },
         {
-          "name": "Knochen weiß",
+          "name": "Knochen Weiß",
           "hex": "e0d7b6"
         },
         {
@@ -80,7 +80,7 @@
           "hex": "232845"
         },
         {
-          "name": "Feuerwehrauto rot",
+          "name": "Feuerwehrauto Rot",
           "hex": "952426"
         },
         {
@@ -96,11 +96,11 @@
           "hex": "606783"
         },
         {
-          "name": "(Hell) Hölle blau",
+          "name": "(Light) Hell blau",
           "hex": "169bea"
         },
         {
-          "name": "(Hell) Hölle braun",
+          "name": "(Light) Hell braun",
           "hex": "9e744a"
         },
         {
@@ -124,7 +124,7 @@
           "hex": "063c22"
         },
         {
-          "name": "Rosa",
+          "name": "Pink",
           "hex": "ef7aa4"
         },
         {
@@ -176,7 +176,7 @@
           "hex": "bdb7a1"
         },
         {
-          "name": "LILA",
+          "name": "LILAC",
           "hex": "c78dbf"
         },
         {
@@ -259,7 +259,7 @@
           "hex": "12296f"
         },
         {
-          "name": "Knochen weiß",
+          "name": "Knochen Weiß",
           "hex": "a88567"
         },
         {
@@ -275,7 +275,7 @@
           "hex": "1d2333"
         },
         {
-          "name": "Feuerwehrauto rot",
+          "name": "Feuerwehrauto Rot",
           "hex": "a40f15"
         },
         {
@@ -291,11 +291,11 @@
           "hex": "a6a9ae"
         },
         {
-          "name": "(Hell) Hölle blau",
+          "name": "(Light) Hell blau",
           "hex": "29b9de"
         },
         {
-          "name": "(Hell) Hölle braun",
+          "name": "(Light) Hell braun",
           "hex": "b47f5f"
         },
         {
@@ -319,7 +319,7 @@
           "hex": "43634e"
         },
         {
-          "name": "Rosa",
+          "name": "Pink",
           "hex": "ff7083"
         },
         {
@@ -433,7 +433,7 @@
           "hex": "6d22a3"
         },
         {
-          "name": "Rosa",
+          "name": "Pink",
           "hex": "ff8fca"
         }
       ]
@@ -617,7 +617,7 @@
           "hex": "90ba66"
         },
         {
-          "name": "LILA",
+          "name": "LILAC",
           "hex": "e1bae6"
         },
         {
@@ -766,15 +766,15 @@
       "bed_temp": 80,
       "colors": [
         {
-          "name": "Solide schwarz",
+          "name": "Solid schwarz",
           "hex": "070707"
         },
         {
-          "name": "Feste weiß",
+          "name": "Solid weiß",
           "hex": "d4cad2"
         },
         {
-          "name": "Fest grau",
+          "name": "Solid grau",
           "hex": "878696"
         },
         {
@@ -802,23 +802,23 @@
           "hex": "dc4518"
         },
         {
-          "name": "Solide rot",
+          "name": "Solid rot",
           "hex": "d82a33"
         },
         {
-          "name": "Festes Silber",
+          "name": "Solid Silber",
           "hex": "878286"
         },
         {
-          "name": "Solide blau",
+          "name": "Solid blau",
           "hex": "0f1d5c"
         },
         {
-          "name": "Festes Gold",
+          "name": "Solid Gold",
           "hex": "e0a000"
         },
         {
-          "name": "Solide gelb",
+          "name": "Solid gelb",
           "hex": "e0a000"
         },
         {
@@ -826,15 +826,15 @@
           "hex": "015a44"
         },
         {
-          "name": "Feste lila",
+          "name": "Solid lila",
           "hex": "865d97"
         },
         {
-          "name": "Solide Orange",
+          "name": "Solid Orange",
           "hex": "ff6924"
         },
         {
-          "name": "Feuerwehrauto rot",
+          "name": "Feuerwehrauto Rot",
           "hex": "bd363a"
         },
         {
@@ -872,7 +872,7 @@
           "hex": "dbdbdd"
         },
         {
-          "name": "Fest grau",
+          "name": "Solid grau",
           "hex": "435a83"
         },
         {
@@ -908,7 +908,7 @@
           "hex": "797876"
         },
         {
-          "name": "(Hell) Hölle blau",
+          "name": "(Light) Hell blau",
           "hex": "0097b7"
         },
         {
@@ -920,11 +920,11 @@
           "hex": "244435"
         },
         {
-          "name": "Rosa",
+          "name": "Pink",
           "hex": "eb586a"
         },
         {
-          "name": "Feuerwehrauto rot",
+          "name": "Feuerwehrauto Rot",
           "hex": "952428"
         }
       ]
@@ -998,23 +998,23 @@
           "hex": "cdc1b1"
         },
         {
-          "name": "Transparent rot",
+          "name": "Transparent Rot",
           "hex": "982a2b"
         },
         {
-          "name": "Transparent gelb",
+          "name": "Transparent Gelb",
           "hex": "e5e002"
         },
         {
-          "name": "Transparent grün",
+          "name": "Transparent Grün",
           "hex": "02b31a"
         },
         {
-          "name": "Tansparentblau",
+          "name": "Tansparent Blau",
           "hex": "108edb"
         },
         {
-          "name": "Transparentes Rosa",
+          "name": "Transparent Pink",
           "hex": "d53857"
         },
         {
@@ -1022,7 +1022,7 @@
           "hex": "ff8126"
         },
         {
-          "name": "Transparent lila",
+          "name": "Transparent Lila",
           "hex": "851d4e"
         },
         {

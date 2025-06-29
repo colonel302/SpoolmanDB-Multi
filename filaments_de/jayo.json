@@ -93,15 +93,15 @@
           "hex": "6A845B"
         },
         {
-          "name": "Mattrosa",
+          "name": "Matt Pink",
           "hex": "F9C9D1"
         },
         {
-          "name": "Matte lila",
+          "name": "Matt Lila",
           "hex": "B272C9"
         },
         {
-          "name": "Matt schwarz",
+          "name": "Matt Schwarz",
           "hex": "000000"
         }
       ]
@@ -143,7 +143,7 @@
           "hex": "F55C3D"
         },
         {
-          "name": "Minzgrün",
+          "name": "Mint Grün",
           "hex": "7FFFD4"
         }
       ]
@@ -167,7 +167,7 @@
       "finish": "glossy",
       "colors": [
         {
-          "name": "Creme weiß",
+          "name": "Creme Weiß",
           "hex": "F7F1D1"
         },
         {
@@ -175,7 +175,7 @@
           "hex": "000000"
         },
         {
-          "name": "(Hell) Hölle blau",
+          "name": "(Light) Hell blau",
           "hex": "92CECC"
         },
         {
@@ -183,7 +183,7 @@
           "hex": "1D2353"
         },
         {
-          "name": "Burgund",
+          "name": "Burgundy",
           "hex": "3F2028"
         }
       ]
@@ -207,19 +207,19 @@
       "glow": true,
       "colors": [
         {
-          "name": "Weiß (glühend grün)",
+          "name": "Weiß (leuchtendes grün)",
           "hex": "000000"
         },
         {
-          "name": "Weiß (glühend blau)",
+          "name": "Weiß (leuchtendes blau)",
           "hex": "000000"
         },
         {
-          "name": "Gelb (leuchten gelb)",
+          "name": "Gelb (leuchtendes gelb)",
           "hex": "FFFF00"
         },
         {
-          "name": "Rot (leuchtend orange)",
+          "name": "Rot (leuchtendes orange)",
           "hex": "FF0000"
         }
       ]

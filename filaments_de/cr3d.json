@@ -38,7 +38,7 @@
           "hex": "e0e0e0"
         },
         {
-          "name": "Neu anorieren",
+          "name": "Reinorange",
           "hex": "ea5b2e"
         },
         {
@@ -54,7 +54,7 @@
           "hex": "2c2827"
         },
         {
-          "name": "Verrotten",
+          "name": "Rot",
           "hex": "cf0b21"
         },
         {
@@ -74,7 +74,7 @@
           "hex": "f3d635"
         },
         {
-          "name": "Seidenweilß",
+          "name": "Seidenweiß",
           "hex": "efefef"
         },
         {
@@ -86,7 +86,7 @@
           "hex": "4e382b"
         },
         {
-          "name": "Rosa",
+          "name": "Pink",
           "hex": "b9485a"
         },
         {
@@ -132,7 +132,7 @@
       "bed_temp": 110,
       "colors": [
         {
-          "name": "Perlwei",
+          "name": "Perlweiß",
           "hex": "e1ddd1"
         },
         {

@@ -19,7 +19,7 @@
       "bed_temp": 60,
       "colors": [
         {
-          "name": "Transparent grün",
+          "name": "Transparent Grün",
           "translucent": true,
           "hex": "16BA36"
         },
@@ -68,7 +68,7 @@
           "hex": "808080"
         },
         {
-          "name": "Minzgrün",
+          "name": "Mint Grün",
           "hex": "0CCEB4"
         },
         {
@@ -96,7 +96,7 @@
           "hex": "715E3E"
         },
         {
-          "name": "Fuchsie",
+          "name": "Fuchsia",
           "hex": "B63ED4"
         },
         {
@@ -112,11 +112,11 @@
           "hex": "E6E55F"
         },
         {
-          "name": "(Hell) Hölle Gold",
+          "name": "(Light) Hell Gold",
           "hex": "FADD47"
         },
         {
-          "name": "Rosa",
+          "name": "Pink",
           "hex": "FFABD3"
         },
         {
@@ -124,7 +124,7 @@
           "hex": "9299A9"
         },
         {
-          "name": "Sonniger Orange",
+          "name": "Sonnige Orange",
           "hex": "FC743A"
         }
       ]
@@ -190,7 +190,7 @@
       "finish": "glossy",
       "colors": [
         {
-          "name": "Creme weiß",
+          "name": "Creme Weiß",
           "hex": "F7F1D1"
         },
         {
@@ -198,7 +198,7 @@
           "hex": "000000"
         },
         {
-          "name": "(Hell) Hölle blau",
+          "name": "(Light) Hell blau",
           "hex": "92CECC"
         },
         {
@@ -206,7 +206,7 @@
           "hex": "1D2353"
         },
         {
-          "name": "Burgund",
+          "name": "Burgundy",
           "hex": "3F2028"
         }
       ]
@@ -230,19 +230,19 @@
       "glow": true,
       "colors": [
         {
-          "name": "Weiß (glühend grün)",
+          "name": "Weiß (leuchtendes grün)",
           "hex": "000000"
         },
         {
-          "name": "Weiß (glühend blau)",
+          "name": "Weiß (leuchtendes blau)",
           "hex": "000000"
         },
         {
-          "name": "Gelb (leuchten gelb)",
+          "name": "Gelb (leuchtendes gelb)",
           "hex": "FFFF00"
         },
         {
-          "name": "Rot (leuchtend orange)",
+          "name": "Rot (leuchtendes orange)",
           "hex": "FF0000"
         }
       ]
@@ -282,7 +282,7 @@
           "hex": "AC3638"
         },
         {
-          "name": "Sonniger Orange",
+          "name": "Sonnige Orange",
           "hex": "D8631E"
         }
       ]
@@ -364,7 +364,7 @@
           "hex": "E1E0DE"
         },
         {
-          "name": "Ziegelrot rot",
+          "name": "Ziegelrot Rot",
           "hex": "8F4938"
         },
         {
