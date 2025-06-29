@@ -4,7 +4,7 @@ import hashlib
 from deep_translator import GoogleTranslator  # Wichtig: Import hinzugefügt
 
 # Wörterbuchpfad im Zielordner
-DICT_PATH = os.path.join('filaments', 'de', 'translation_dict.json')
+DICT_PATH = os.path.join('filaments_de', 'translation_dict.json')
 
 def load_dictionary():
     """Lädt das Übersetzungswörterbuch aus dem Zielordner"""
@@ -70,7 +70,7 @@ def translate_name(name, dictionary):
 def process_files():
     """Hauptfunktion: Verarbeitet neue/geänderte Dateien"""
     source_dir = 'filaments'
-    target_dir = os.path.join('filaments', 'de')
+    target_dir = os.path.join 'filaments_de'
     os.makedirs(target_dir, exist_ok=True)
     
     trans_dict = load_dictionary()

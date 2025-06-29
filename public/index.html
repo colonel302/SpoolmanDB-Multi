@@ -7,9 +7,59 @@
     <meta name="description" content="Finden Sie die neuesten Filament- und Materialdaten für den 3D-Druck.">
     <title>SpoolmanDB-de</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        // Sprachkonfiguration
+        const languageConfig = {
+            de: {
+                title: "SpoolmanDB-de",
+                headline: "Ein Repository mit den neuesten Filament- und Materialdaten für den 3D-Druck.",
+                description: "Dieses Projekt ist Open-Source, Sie können gerne einen Pull-Request erstellen",
+                materials: "MATERIALIEN",
+                filaments: "FILAMENTE",
+                footer: "SpoolmanDB-de - 2025"
+            },
+            en: {
+                title: "SpoolmanDB-en",
+                headline: "A repository with the latest filament and material data for 3D printing.",
+                description: "This project is open-source, feel free to create a pull request",
+                materials: "MATERIALS",
+                filaments: "FILAMENTS",
+                footer: "SpoolmanDB-en - 2025"
+            }
+        };
+
+        // Sprache initialisieren und setzen
+        function initLanguage() {
+            const savedLang = localStorage.getItem('lang') || 'de';
+            setLanguage(savedLang);
+            
+            // Event-Listener für Sprachumschaltung
+            document.getElementById('lang-switcher').addEventListener('change', (e) => {
+                setLanguage(e.target.value);
+            });
+        }
+
+        // Sprache setzen und Seite aktualisieren
+        function setLanguage(lang) {
+            localStorage.setItem('lang', lang);
+            const config = languageConfig[lang];
+            
+            // Texte aktualisieren
+            document.title = config.title;
+            document.querySelector('h2').textContent = config.headline;
+            document.querySelector('p').innerHTML = `${config.description} <a href="https://github.com/Donkie/SpoolmanDB">auf Github</a>`;
+            document.querySelector('[data-translate="materials"]').textContent = config.materials;
+            document.querySelector('[data-translate="filaments"]').textContent = config.filaments;
+            document.querySelector('footer p').textContent = config.footer;
+            
+            // Links aktualisieren
+            document.getElementById('materials-link').href = `materials_${lang}.json`;
+            document.getElementById('filaments-link').href = `filaments_${lang}/filaments.json`;
+        }
+    </script>
 </head>
 
-<body>
+<body onload="initLanguage()">
     <header>
         <div class="header-content">
             <picture>
@@ -17,6 +67,13 @@
                     src="https://github.com/Donkie/Spoolman/assets/2332094/4e6e80ac-c7be-4ad2-9a33-dedc1b5ba30e"
                     class="logo">
             </picture>
+            <div class="language-switcher">
+                <label for="lang-switcher">Sprache:</label>
+                <select id="lang-switcher">
+                    <option value="de">Deutsch</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
         </div>
     </header>
 
@@ -28,12 +85,12 @@
         <div class="data-files">
             <div class="column">
                 <ul>
-                    <li><a href="materials.json">MATERIALIEN</a></li>
+                    <li><a id="materials-link" href="materials_de.json" data-translate="materials">MATERIALIEN</a></li>
                 </ul>
             </div>
             <div class="column">
                 <ul>
-                    <li><a href="filaments.json">FILAMENTE</a></li>
+                    <li><a id="filaments-link" href="filaments_de/filaments.json" data-translate="filaments">FILAMENTE</a></li>
                 </ul>
             </div>
         </div>

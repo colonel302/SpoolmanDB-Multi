@@ -1,0 +1,32 @@
+name: Build German Version
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'filaments_de/*.json'
+
+jobs:
+  build-de:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          
+      - name: Validate German Filaments
+        run: |
+          for file in filaments_de/*.json; do
+            check-jsonschema --schemafile filaments.schema.json "$file"
+          done
+          
+      - name: Compile German Database
+        run: python scripts/compile_de.py  # Eigenes Kompilierungsskript
+        
+      - name: Deploy German Site
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          publish_dir: ./public_de
