@@ -35,12 +35,12 @@
           "hex": "5E6872"
         },
         {
-          "name": "Durchscheinend",
+          "name": "Transluzent",
           "hex": "00FFFFFF",
           "translucent": true
         },
         {
-          "name": "Durchscheinend rot",
+          "name": "Transluzent rot",
           "hex": "3CD8100C",
           "translucent": true
         },
@@ -230,7 +230,7 @@
           "hex": "F7ED78"
         },
         {
-          "name": "Durchscheinend",
+          "name": "Transluzent",
           "hex": "FFFFFF",
           "translucent": true
         }
