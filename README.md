@@ -1,36 +1,41 @@
+<!--
+Dies ist eine Übersetzung der Original-README von [donkie](https://github.com/donkie/SpoolmanDB).
+Vielen Dank an den Originalautor für die Bereitstellung dieses Projekts!
+Übersetzt von Perplexity AI für die deutschsprachige Community.
+-->
+
 # SpoolmanDB
-A centralized place to store information about 3D printing filaments and their manufacturers.
+Ein zentraler Ort zur Speicherung von Informationen über 3D-Druck-Filamente und deren Hersteller.
 
-The database is hosted using GitHub Pages, you can browse it at: [https://donkie.github.io/SpoolmanDB/](https://donkie.github.io/SpoolmanDB/)
+Die Datenbank wird über GitHub Pages bereitgestellt und ist hier einsehbar: [https://donkie.github.io/SpoolmanDB/](https://donkie.github.io/SpoolmanDB/)
 
-You can contribute to this database by adding/editing files and submitting pull requests in this repository.
+Du kannst zu dieser Datenbank beitragen, indem du Dateien hinzufügst/bearbeitest und Pull Requests in diesem Repository einreichst.
 
-## Filaments
-The source files are in the `filaments` folder. When this database is deployed, they will be expanded/compiled into a single JSON file called `filaments.json`.
+## Filamente
+Die Quelldateien befinden sich im Ordner `filaments`. Beim Deployment der Datenbank werden diese zu einer einzigen JSON-Datei namens `filaments.json` zusammengefasst/kompiliert.
 
-To limit the amount of duplication needed in the source files, each combination of weight, color and diameter will be represented in the compiled JSON. For example, if you specify two diameters, two weights, and two colors, you will get eight combinations in the JSON. There isn't currently any way to exclude specific combinations; either you will have to live with the database having invalid
-entries or you can split up the filament object into multiple ones.
+Um die notwendige Duplizierung in den Quelldateien zu begrenzen, wird jede Kombination aus Gewicht, Farbe und Durchmesser in der kompilierten JSON dargestellt. Wenn du beispielsweise zwei Durchmesser, zwei Gewichte und zwei Farben angibst, erhältst du acht Kombinationen in der JSON. Es gibt derzeit keine Möglichkeit, bestimmte Kombinationen auszuschließen; entweder akzeptierst du, dass die Datenbank ungültige Einträge enthält, oder du teilst das Filament-Objekt in mehrere auf.
 
-#### Source file fields
- * **name** - The product name. Should probably contain the format code `{color_name}` to automatically insert the color name.
- * **material** - The material name, e.g. PLA.
- * **density** - The density of the material in g/cm3.
- * **weights** - An array of objects with `weight`, `spool_weight` and `spool_type` fields. Specify multiple here if the manufacturer sells the filament in e.g. 1 kg and 5 kg spools. `spool_weight` is optional but recommended. `spool_type` is optional and can be any of "plastic", "cardboard" or "metal".
- * **diameters** - An array of diameters in mm. Specify multiple here if the manufacturer sells the filament in both e.g. 1.75 and 2.85 mm diameters.
- * **extruder_temp** *(optional)* - Manufacturer recommended extruder temperature in °C.
- * **bed_temp** *(optional)* - Manufacturer recommended bed temperature in °C.
- * **finish** *(optional)* - The finish of the filament, e.g. "matte" or "glossy". Only set this if the filament is designed with this in mind.
- * **multi_color_direction** *(optional)* - The direction of the multi-color filament, e.g. "coaxial" for a split/dual color filament, or "longitudinal" for a filament that changes color along its length.
- * **pattern** *(optional)* - Textured pattern, either "marble" or "sparkle" is currently supported. Feel free to add additional ones in the schema if necessary.
- * **translucent** *(optional)* - Boolean true/false if this filament is at least partially see-through.
- * **glow** *(optional)* - Boolean true/false if this filament has a glow-in-the-dark effect.
- * **colors** - An array of objects with `name` and `hex` fields. Name should be what the manufacturer calls it. Hex should be the hex code of the color, can include an alpha channel if it's a transparent color. If it's a multi-color filament, specify `hexes` instead of `hex` and provide a list of hex codes. You can also set the `finish`, `multi_color_direction`, `pattern`, `translucent` and `glow` fields here if the specific color is different from the others.
+#### Felder der Quelldateien
+ * **name** – Der Produktname. Sollte vermutlich den Formatcode `{color_name}` enthalten, um den Farbnamen automatisch einzufügen.
+ * **material** – Der Materialname, z. B. PLA.
+ * **density** – Die Dichte des Materials in g/cm³.
+ * **weights** – Ein Array von Objekten mit den Feldern `weight`, `spool_weight` und `spool_type`. Gib hier mehrere an, wenn der Hersteller das Filament z. B. auf 1-kg- und 5-kg-Spulen verkauft. `spool_weight` ist optional, aber empfohlen. `spool_type` ist optional und kann "plastic", "cardboard" oder "metal" sein.
+ * **diameters** – Ein Array von Durchmessern in mm. Gib hier mehrere an, wenn der Hersteller das Filament z. B. in 1,75 mm und 2,85 mm anbietet.
+ * **extruder_temp** *(optional)* – Vom Hersteller empfohlene Extrudertemperatur in °C.
+ * **bed_temp** *(optional)* – Vom Hersteller empfohlene Betttemperatur in °C.
+ * **finish** *(optional)* – Die Oberflächenbeschaffenheit des Filaments, z. B. "matte" oder "glossy". Nur angeben, wenn das Filament speziell dafür ausgelegt ist.
+ * **multi_color_direction** *(optional)* – Die Richtung des Mehrfarben-Filaments, z. B. "coaxial" für ein geteiltes/zweifarbiges Filament oder "longitudinal" für ein Filament, das entlang seiner Länge die Farbe wechselt.
+ * **pattern** *(optional)* – Strukturmuster, aktuell werden "marble" oder "sparkle" unterstützt. Weitere können bei Bedarf im Schema ergänzt werden.
+ * **translucent** *(optional)* – Boolean true/false, ob das Filament zumindest teilweise durchsichtig ist.
+ * **glow** *(optional)* – Boolean true/false, ob das Filament einen Nachleuchteffekt hat.
+ * **colors** – Ein Array von Objekten mit den Feldern `name` und `hex`. Name sollte der vom Hersteller verwendete Farbname sein. Hex ist der Hex-Code der Farbe und kann bei transparenten Farben auch einen Alpha-Kanal enthalten. Bei Mehrfarben-Filamenten gib stattdessen `hexes` an und eine Liste von Hex-Codes. Du kannst hier auch die Felder `finish`, `multi_color_direction`, `pattern`, `translucent` und `glow` setzen, falls sich diese Eigenschaften für eine bestimmte Farbe unterscheiden.
 
-## Materials
-All materials are found in the `materials.json` file.
+## Materialien
+Alle Materialien findest du in der Datei `materials.json`.
 
-#### Source file fields
- * **material** - The material name, e.g. PLA.
- * **density** - The density of the material in g/cm3.
- * **extruder_temp** - General extruder temperature for this material.
- * **bed_temp** - General bed temperature for this material.
+#### Felder der Quelldateien
+ * **material** – Der Materialname, z. B. PLA.
+ * **density** – Die Dichte des Materials in g/cm³.
+ * **extruder_temp** – Allgemeine Extrudertemperatur für dieses Material.
+ * **bed_temp** – Allgemeine Betttemperatur für dieses Material.
