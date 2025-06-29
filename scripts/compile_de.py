@@ -127,7 +127,7 @@ def load_json(file: Path) -> dict:
 def compile_for_language(lang: str):
     """Kompiliert Filamentdaten für eine bestimmte Sprache"""
     source_dir = Path(f"filaments_{lang}")
-    output_path = Path(f"filaments_{lang}.json")
+    output_path = Path("public") / f"filaments_{lang}.json"
     
     # Prüfe ob Verzeichnis existiert
     if not source_dir.exists():
