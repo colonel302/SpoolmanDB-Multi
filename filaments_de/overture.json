@@ -237,7 +237,7 @@
           "hex": "CC0201"
         },
         {
-          "name": "Weihnachten Rot",
+          "name": "Weihnachten rot",
           "hex": "CE5D4C"
         }
       ]
@@ -317,7 +317,7 @@
           "hex": "F2B87B"
         },
         {
-          "name": "Pale Grün",
+          "name": "Hellgrün",
           "hex": "BECBA8"
         },
         {
@@ -570,7 +570,7 @@
           "hex": "e2f641"
         },
         {
-          "name": "Transluzent rot",
+          "name": "Durchscheinend rot",
           "hex": "FF0000",
           "translucent": true
         },
@@ -587,7 +587,7 @@
           "hex": "a3afa9"
         },
         {
-          "name": "Transluzent blau",
+          "name": "Durchscheinend blau",
           "hex": "0000FF",
           "translucent": true
         }

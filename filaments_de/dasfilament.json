@@ -37,12 +37,12 @@
           "finish": "glossy"
         },
         {
-          "name": "Tonweiß Matt",
+          "name": "Tonweilß Matt",
           "hex": "fff0f0",
           "finish": "matte"
         },
         {
-          "name": "Metallisches Rot",
+          "name": "Metallische Fäule",
           "hex": "b11111",
           "finish": "glossy"
         },
@@ -110,7 +110,7 @@
           "hex": "23514f"
         },
         {
-          "name": "Übertragung Grün",
+          "name": "Transluzent Grün",
           "hex": "44b49c88",
           "translucent": true
         },
@@ -173,12 +173,12 @@
           "finish": "glossy"
         },
         {
-          "name": "Tonweiß Matt",
+          "name": "Tonweilß Matt",
           "hex": "fff0f0",
           "finish": "matte"
         },
         {
-          "name": "Metallisches Rot",
+          "name": "Metallische Fäule",
           "hex": "b11111",
           "finish": "glossy"
         },
@@ -246,7 +246,7 @@
           "hex": "23514f"
         },
         {
-          "name": "Übertragung Grün",
+          "name": "Transluzent Grün",
           "hex": "44b49c88",
           "translucent": true
         },
@@ -362,12 +362,12 @@
           "translucent": true
         },
         {
-          "name": "Transluzent Wassergrün",
+          "name": "Übersetzt. Wassergrün",
           "hex": "00d4d488",
           "translucent": true
         },
         {
-          "name": "Transluzent Neonglün",
+          "name": "Übertragung Neonglün",
           "hex": "00ff3388",
           "translucent": true
         },
@@ -509,12 +509,12 @@
           "translucent": true
         },
         {
-          "name": "Transluzent Wassergrün",
+          "name": "Übersetzt. Wassergrün",
           "hex": "00d4d488",
           "translucent": true
         },
         {
-          "name": "Transluzent Neonglün",
+          "name": "Übertragung Neonglün",
           "hex": "00ff3388",
           "translucent": true
         },

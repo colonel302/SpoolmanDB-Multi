@@ -62,7 +62,7 @@
       "bed_temp": 80,
       "colors": [
         {
-          "name": "Dunkelgrün leuchten",
+          "name": "Im dunklen Grün leuchten",
           "hex": "68FD9A",
           "glow": true
         },
