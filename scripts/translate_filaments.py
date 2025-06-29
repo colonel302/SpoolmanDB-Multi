@@ -4,7 +4,7 @@ import hashlib
 from deep_translator import GoogleTranslator
 
 # Wörterbuchpfad im Zielordner
-DICT_PATH = os.path.join('public', 'translation_dict_de.json')
+DICT_PATH = os.path.join('filaments_de', 'translation_dict.json')
 
 def load_dictionary():
     if os.path.exists(DICT_PATH):
