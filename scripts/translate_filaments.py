@@ -3,8 +3,10 @@ import json
 import hashlib
 from deep_translator import GoogleTranslator
 
-# Wörterbuchpfad im Zielordner
-DICT_PATH = os.path.join('filaments_de', 'translation_dict.json')
+# Sprache für das Wörterbuch (hier: Deutsch)
+LANG = "de"
+DICT_DIR = "dict"
+DICT_PATH = os.path.join(DICT_DIR, f"translation_dict_{LANG}.json")
 
 def load_dictionary():
     if os.path.exists(DICT_PATH):
@@ -26,7 +28,7 @@ def auto_translate(name):
     try:
         if any(term in name for term in ["Bambu", "Arctic", "Candy", "Titan"]):
             return name
-        translated = GoogleTranslator(source='en', target='de').translate(name)
+        translated = GoogleTranslator(source='en', target=LANG).translate(name)
         return translated
     except Exception as e:
         print(f"Übersetzungsfehler bei '{name}': {str(e)}")
