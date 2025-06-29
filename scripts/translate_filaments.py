@@ -39,7 +39,11 @@ def translate_name(name, dictionary):
         return name
     special_terms = {
         "Matt": "Matt",
-        "Silk": "Seide",
+        "Space": "Weltraum",
+        "Silk+": "Silk+",
+        "Bright": "(Bright) Hell",
+        "Light": "(Light) Hell",
+        "Silk": "Silk",
         "Ivory": "Elfenbein",
         "Ash": "Asch",
         "Sky": "Himmel",
