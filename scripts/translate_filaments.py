@@ -70,7 +70,7 @@ def translate_name(name, dictionary):
 def process_files():
     """Hauptfunktion: Verarbeitet neue/geänderte Dateien"""
     source_dir = 'filaments'
-    target_dir = os.path.join 'filaments_de'
+    target_dir = 'filaments_de'
     os.makedirs(target_dir, exist_ok=True)
     
     trans_dict = load_dictionary()
