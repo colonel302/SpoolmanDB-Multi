@@ -22,15 +22,18 @@ def auto_translate(name):
 
 # --- NEUE translate_name FUNKTION ---
 def translate_name(original_name, dictionary):
-    # 1. Wörterbuch-Check: Sofort zurückgeben, falls vorhanden
-    if original_name in dictionary and dictionary[original_name] != original_name:
+    # 1. Wörterbuch-Check (vereinfacht)
+    if original_name in dictionary:
+        print(f"Nutze Wörterbuch für {original_name}: {dictionary[original_name]}")
         return dictionary[original_name]
     
-    # 2. Eigennamen nicht übersetzen
+    # 2. Eigennamen nicht übersetzen + eintragen
     if any(term in original_name for term in ["Bambu", "Arctic", "Candy", "Titan"]):
+        print(f"Eigenname erkannt: {original_name} – nicht übersetzt")
+        dictionary[original_name] = original_name  # Verhindert zukünftige Übersetzung
         return original_name
-
-    # 3. Spezialbegriffe ersetzen (auf Arbeitskopie)
+    
+    # 3. Spezialbegriffe ersetzen
     name = original_name
     special_terms = {
         "Matt": "Matt",
@@ -47,9 +50,9 @@ def translate_name(original_name, dictionary):
     for en, de in special_terms.items():
         name = name.replace(en, de)
     
-    # 4. Auto-Übersetzung nur für neue Begriffe
+    # 4. Auto-Übersetzung
     translated = auto_translate(name)
-    dictionary[original_name] = translated  # Nur jetzt eintragen
+    dictionary[original_name] = translated
     print(f"Neuer Wörterbucheintrag: {original_name} -> {translated}")
     return translated
 
