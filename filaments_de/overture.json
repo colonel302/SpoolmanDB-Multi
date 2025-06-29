@@ -43,7 +43,7 @@
           "hex": "63646B"
         },
         {
-          "name": "(Hell) Hölle grau",
+          "name": "(Light) Hell grau",
           "hex": "C7D4D6"
         },
         {
@@ -71,7 +71,7 @@
           "hex": "033877"
         },
         {
-          "name": "(Hell) Hölle blau",
+          "name": "(Light) Hell blau",
           "hex": "3ABBDE"
         },
         {
@@ -309,11 +309,11 @@
           "hex": "8C69B5"
         },
         {
-          "name": "(Hell) Hölle grau",
+          "name": "(Light) Hell grau",
           "hex": "BAC4C4"
         },
         {
-          "name": "(Hell) Hölle Orange",
+          "name": "(Light) Hell Orange",
           "hex": "F2B87B"
         },
         {
@@ -337,7 +337,7 @@
           "hex": "F0DDC2"
         },
         {
-          "name": "(Hell) Hölle grün",
+          "name": "(Light) Hell grün",
           "hex": "AFDEB9"
         },
         {
@@ -349,15 +349,15 @@
           ]
         },
         {
-          "name": "(Hell) Hölle Pink",
+          "name": "(Light) Hell Pink",
           "hex": "F7E6DE"
         },
         {
-          "name": "(Hell) Hölle braun",
+          "name": "(Light) Hell braun",
           "hex": "EDD5A6"
         },
         {
-          "name": "(Hell) Hölle blaugrün",
+          "name": "(Light) Hell blaugrün",
           "hex": "C7FFE3"
         },
         {
@@ -377,7 +377,7 @@
           "hex": "CAAC78"
         },
         {
-          "name": "(Hell) Hölle blau",
+          "name": "(Light) Hell blau",
           "hex": "99FFFA"
         },
         {
@@ -481,7 +481,7 @@
           "hex": "484848"
         },
         {
-          "name": "(Hell) Hölle grau",
+          "name": "(Light) Hell grau",
           "hex": "cfcfcf"
         },
         {
@@ -570,7 +570,7 @@
           "hex": "e2f641"
         },
         {
-          "name": "Durchscheinend rot",
+          "name": "Transluzent rot",
           "hex": "FF0000",
           "translucent": true
         },
@@ -587,7 +587,7 @@
           "hex": "a3afa9"
         },
         {
-          "name": "Durchscheinend blau",
+          "name": "Transluzent blau",
           "hex": "0000FF",
           "translucent": true
         }

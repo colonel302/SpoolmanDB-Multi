@@ -37,12 +37,12 @@
           "finish": "glossy"
         },
         {
-          "name": "Tonweilß Matt",
+          "name": "Tonweiß Matt",
           "hex": "fff0f0",
           "finish": "matte"
         },
         {
-          "name": "Metallische Fäule",
+          "name": "Metallische Rot",
           "hex": "b11111",
           "finish": "glossy"
         },
@@ -173,12 +173,12 @@
           "finish": "glossy"
         },
         {
-          "name": "Tonweilß Matt",
+          "name": "Tonweiß Matt",
           "hex": "fff0f0",
           "finish": "matte"
         },
         {
-          "name": "Metallische Fäule",
+          "name": "Metallische Rot",
           "hex": "b11111",
           "finish": "glossy"
         },
@@ -322,7 +322,7 @@
           "hex": "394807"
         },
         {
-          "name": "Verbrannter Kupfer",
+          "name": "Verbranntes Kupfer",
           "hex": "9d3707",
           "finish": "glossy"
         },
@@ -362,12 +362,12 @@
           "translucent": true
         },
         {
-          "name": "Übersetzt. Wassergrün",
+          "name": "Transluzent Wassergrün",
           "hex": "00d4d488",
           "translucent": true
         },
         {
-          "name": "Übertragung Neonglün",
+          "name": "Transluzent Neonglün",
           "hex": "00ff3388",
           "translucent": true
         },
@@ -469,7 +469,7 @@
           "hex": "394807"
         },
         {
-          "name": "Verbrannter Kupfer",
+          "name": "Verbranntes Kupfer",
           "hex": "9d3707",
           "finish": "glossy"
         },
@@ -509,12 +509,12 @@
           "translucent": true
         },
         {
-          "name": "Übersetzt. Wassergrün",
+          "name": "Transluzent Wassergrün",
           "hex": "00d4d488",
           "translucent": true
         },
         {
-          "name": "Übertragung Neonglün",
+          "name": "Transluzent Neonglün",
           "hex": "00ff3388",
           "translucent": true
         },
