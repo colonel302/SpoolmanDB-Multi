@@ -9,7 +9,66 @@ LANG = "de"
 DICT_DIR = "dict"
 DICT_PATH = os.path.join(DICT_DIR, f"translation_dict_{LANG}.json")
 
-# ... (auto_translate, translate_name, load_dictionary, save_dictionary, get_file_hash bleiben unverändert) ...
+def auto_translate(name):
+    print(f"Starte Übersetzung für: {name}")
+    try:
+        if any(term in name for term in ["Bambu", "Arctic", "Candy", "Titan"]):
+            return name
+        translated = GoogleTranslator(source='en', target=LANG).translate(name)
+        return translated
+    except Exception as e:
+        print(f"Übersetzungsfehler bei '{name}': {str(e)}")
+        return name
+
+def translate_name(original_name, dictionary):
+    # 1. Wörterbuch-Check (vereinfacht)
+    if original_name in dictionary:
+        print(f"Nutze Wörterbuch für {original_name}: {dictionary[original_name]}")
+        return dictionary[original_name]
+    
+    # 2. Eigennamen nicht übersetzen + eintragen
+    if any(term in original_name for term in ["Bambu", "Arctic", "Candy", "Titan"]):
+        print(f"Eigenname erkannt: {original_name} – nicht übersetzt")
+        dictionary[original_name] = original_name
+        return original_name
+
+    # 3. Spezialbegriffe ersetzen
+    name = original_name
+    special_terms = {
+        "Matt": "Matt",
+        "Space": "Weltraum",
+        "Silk+": "Silk+",
+        "Bright": "(Bright) Hell",
+        "Light": "(Light) Hell",
+        "Silk": "Silk",
+        "Ivory": "Elfenbein",
+        "Ash": "Asch",
+        "Sky": "Himmel",
+        "Apple": "Apfel"
+    }
+    for en, de in special_terms.items():
+        name = name.replace(en, de)
+    
+    # 4. Auto-Übersetzung
+    translated = auto_translate(name)
+    dictionary[original_name] = translated
+    print(f"Neuer Wörterbucheintrag: {original_name} -> {translated}")
+    return translated
+
+def load_dictionary():
+    if os.path.exists(DICT_PATH):
+        with open(DICT_PATH, 'r', encoding='utf-8') as f:
+            return json.load(f)
+    return {}
+
+def save_dictionary(dictionary):
+    os.makedirs(os.path.dirname(DICT_PATH), exist_ok=True)
+    with open(DICT_PATH, 'w', encoding='utf-8') as f:
+        json.dump(dictionary, f, ensure_ascii=False, indent=2)
+
+def get_file_hash(file_path):
+    with open(file_path, 'rb') as f:
+        return hashlib.md5(f.read()).hexdigest()
 
 def process_files():
     source_dir = 'filaments'
@@ -77,7 +136,7 @@ def process_files():
             json.dump(data, f, ensure_ascii=False, indent=2)
     
     # Aktualisiere Wörterbuch und speichere Hash
-    if dict_updated:
+    if dict_updated or all_files_updated:
         save_dictionary(trans_dict)
         # Speichere aktuellen Wörterbuch-Hash
         current_dict_hash = get_file_hash(DICT_PATH)
