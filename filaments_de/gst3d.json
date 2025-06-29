@@ -132,7 +132,7 @@
           "hex": "AA0900"
         },
         {
-          "name": "(Light) Hell Silber",
+          "name": "(Bright) Hell Silber",
           "hex": "7C7974",
           "pattern": "sparkle"
         },
@@ -142,22 +142,22 @@
           "pattern": "sparkle"
         },
         {
-          "name": "(Light) Hell grün",
+          "name": "(Bright) Hell grün",
           "hex": "3F5D49",
           "pattern": "sparkle"
         },
         {
-          "name": "(Light) Hell Gold",
+          "name": "(Bright) Hell Gold",
           "hex": "B09457",
           "pattern": "sparkle"
         },
         {
-          "name": "(Light) Hell blau",
+          "name": "(Bright) Hell blau",
           "hex": "2F3F74",
           "pattern": "sparkle"
         },
         {
-          "name": "(Light) Hell schwarz",
+          "name": "(Bright) Hell schwarz",
           "hex": "000000",
           "pattern": "sparkle"
         }
