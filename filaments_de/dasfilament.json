@@ -110,7 +110,7 @@
           "hex": "23514f"
         },
         {
-          "name": "Übertragung Grün",
+          "name": "Transluzent Grün",
           "hex": "44b49c88",
           "translucent": true
         },
@@ -246,7 +246,7 @@
           "hex": "23514f"
         },
         {
-          "name": "Übertragung Grün",
+          "name": "Transluzent Grün",
           "hex": "44b49c88",
           "translucent": true
         },
@@ -372,7 +372,7 @@
           "translucent": true
         },
         {
-          "name": "Transluzent Neangelb",
+          "name": "Transluzent Neongelb",
           "hex": "e6ff0088",
           "translucent": true
         },
@@ -519,7 +519,7 @@
           "translucent": true
         },
         {
-          "name": "Transluzent Neangelb",
+          "name": "Transluzent Neongelb",
           "hex": "e6ff0088",
           "translucent": true
         },

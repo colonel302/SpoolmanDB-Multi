@@ -94,7 +94,7 @@
           "hex": "139677"
         },
         {
-          "name": "Hellblau",
+          "name": "(Hell) Hölle blau",
           "hex": "0a15af"
         },
         {
@@ -115,7 +115,7 @@
           "hex": "af5f5f"
         },
         {
-          "name": "Raumschiff",
+          "name": "Weltraumship",
           "hex": "636363"
         },
         {
@@ -131,7 +131,7 @@
           "hex": "873232"
         },
         {
-          "name": "Tiefes Raum",
+          "name": "Tiefes Weltraum",
           "hex": "1d3154"
         },
         {
@@ -140,7 +140,7 @@
           "pattern": "sparkle"
         },
         {
-          "name": "Lila",
+          "name": "Purplex",
           "hex": "5a2d91"
         },
         {
@@ -215,7 +215,7 @@
           "hex": "F9E20C"
         },
         {
-          "name": "Lila",
+          "name": "Purplex",
           "hex": "5a2d91"
         },
         {

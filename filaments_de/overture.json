@@ -39,11 +39,11 @@
           "hex": "FFFFFF"
         },
         {
-          "name": "Raumgrau",
+          "name": "Weltraumgrau",
           "hex": "63646B"
         },
         {
-          "name": "Hellgrau",
+          "name": "(Hell) Hölle grau",
           "hex": "C7D4D6"
         },
         {
@@ -71,7 +71,7 @@
           "hex": "033877"
         },
         {
-          "name": "Hellblau",
+          "name": "(Hell) Hölle blau",
           "hex": "3ABBDE"
         },
         {
@@ -309,11 +309,11 @@
           "hex": "8C69B5"
         },
         {
-          "name": "Hellgrau",
+          "name": "(Hell) Hölle grau",
           "hex": "BAC4C4"
         },
         {
-          "name": "Leichte Orange",
+          "name": "(Hell) Hölle Orange",
           "hex": "F2B87B"
         },
         {
@@ -337,7 +337,7 @@
           "hex": "F0DDC2"
         },
         {
-          "name": "Hellgrün",
+          "name": "(Hell) Hölle grün",
           "hex": "AFDEB9"
         },
         {
@@ -349,15 +349,15 @@
           ]
         },
         {
-          "name": "Hellrosa",
+          "name": "(Hell) Hölle Pink",
           "hex": "F7E6DE"
         },
         {
-          "name": "Hellbraun",
+          "name": "(Hell) Hölle braun",
           "hex": "EDD5A6"
         },
         {
-          "name": "Licht blaugrün",
+          "name": "(Hell) Hölle blaugrün",
           "hex": "C7FFE3"
         },
         {
@@ -377,11 +377,11 @@
           "hex": "CAAC78"
         },
         {
-          "name": "Hellblau",
+          "name": "(Hell) Hölle blau",
           "hex": "99FFFA"
         },
         {
-          "name": "Hellblau-gelb",
+          "name": "(Hell) höllisch blau-gelb",
           "multi_color_direction": "longitudinal",
           "hexes": [
             "B8FFFF",
@@ -477,11 +477,11 @@
           "hex": "000000"
         },
         {
-          "name": "Raumgrau",
+          "name": "Weltraumgrau",
           "hex": "484848"
         },
         {
-          "name": "Hellgrau",
+          "name": "(Hell) Hölle grau",
           "hex": "cfcfcf"
         },
         {
