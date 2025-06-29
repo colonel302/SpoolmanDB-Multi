@@ -2,6 +2,8 @@ from enum import StrEnum
 import json
 from pathlib import Path
 from typing import Iterator, TypedDict, NotRequired
+import os
+import sys
 
 class SpoolType(StrEnum):
     PLASTIC = "plastic"
@@ -77,7 +79,6 @@ def generate_id(
     )
 
 def expand_filament_data(manufacturer: str, data: Filament) -> Iterator[dict]:
-    # Diese Funktion ist identisch zum Original! (Hier als Platzhalter, bitte ggf. die Originalfunktion einfügen)
     weights = data["weights"]
     diameters = data["diameters"]
     colors = data["colors"]
@@ -102,7 +103,6 @@ def expand_filament_data(manufacturer: str, data: Filament) -> Iterator[dict]:
                         spool_type=weight.get("spool_type"),
                     ),
                 }
-                # Optional: Weitere Felder übernehmen, falls vorhanden
                 for key in [
                     "spool_weight", "spool_type", "extruder_temp", "extruder_temp_range",
                     "bed_temp", "bed_temp_range", "finish", "multi_color_direction",
@@ -124,35 +124,89 @@ def load_json(file: Path) -> dict:
     with file.open(encoding="utf-8") as f:
         return json.load(f)
 
-def compile_filaments_de():
-    """Kompiliert alle deutschen Filamentdaten aus filaments_de/*.json zu public/filaments_de.json"""
+def compile_for_language(lang: str):
+    """Kompiliert Filamentdaten für eine bestimmte Sprache"""
+    source_dir = Path(f"filaments_{lang}")
+    output_path = Path(f"filaments_{lang}.json")
+    
+    # Prüfe ob Verzeichnis existiert
+    if not source_dir.exists():
+        print(f"⚠️  Warnung: Sprachverzeichnis '{source_dir}' existiert nicht. Überspringe...")
+        return
+    
+    # Prüfe ob Verzeichnis leer ist
+    if not any(source_dir.iterdir()):
+        print(f"⚠️  Warnung: Sprachverzeichnis '{source_dir}' ist leer. Überspringe...")
+        return
+    
+    print(f"\n=== Verarbeite Sprache: {lang} ===")
+    print(f"Quellverzeichnis: {source_dir}")
+    
     all_filaments = []
-    for file in Path("filaments_de").glob("*.json"):
-        print(f"Compiling {file}")
-        all_filaments.extend(get_filaments_from_data(load_json(file)))
+    for file in source_dir.glob("*.json"):
+        print(f"  - Verarbeite Datei: {file.name}")
+        try:
+            data = load_json(file)
+            all_filaments.extend(get_filaments_from_data(data))
+        except Exception as e:
+            print(f"    ❌ Fehler beim Verarbeiten von {file}: {str(e)}")
+            continue
 
-    # IDs prüfen
+    # Prüfe auf leere Daten
+    if not all_filaments:
+        print(f"⚠️  Warnung: Keine Filamentdaten in {source_dir} gefunden.")
+        return
+
+    # IDs auf Eindeutigkeit prüfen
     seen_ids = set()
-    duplicates = [
-        f for f in all_filaments if f["id"] in seen_ids or seen_ids.add(f["id"])
-    ]
+    duplicates = []
+    for f in all_filaments:
+        if f["id"] in seen_ids:
+            duplicates.append(f["id"])
+        else:
+            seen_ids.add(f["id"])
+    
     if duplicates:
-        print("ERROR: Non-unique filament IDs found:")
-        for f in duplicates:
-            print(f["id"])
-        raise ValueError("Found non-unique ids")
+        print("❌ Fehler: Nicht-eindeutige Filament-IDs gefunden:")
+        for dup in set(duplicates):
+            print(f"  - {dup}")
+        raise ValueError(f"Nicht-eindeutige IDs in Sprache '{lang}'")
 
+    # Sortiere Filamente
     all_filaments.sort(key=lambda x: (x["manufacturer"], x["material"], x["name"]))
-
-    output_dir = Path("public")
-    output_dir.mkdir(exist_ok=True)
-    output_path = Path(f"filaments_{LANG}.json")  # z.B. filaments_de.json
-
-    print(f"Writing all filaments to '{output_path}'")
+    
+    # Schreibe Ausgabedatei
+    print(f"✏️  Schreibe {len(all_filaments)} Filamente nach: {output_path}")
     with output_path.open("w", encoding="utf-8") as f:
         json.dump(all_filaments, f, indent=2, ensure_ascii=False)
+    
+    print(f"✅ Sprache {lang} erfolgreich verarbeitet!")
+
+def main():
+    # Automatische Spracherkennung
+    languages = set()
+    for item in os.listdir():
+        if os.path.isdir(item) and item.startswith("filaments_"):
+            lang = item.replace("filaments_", "", 1)
+            if lang:  # Stelle sicher, dass es nicht leer ist
+                languages.add(lang)
+    
+    # Falls keine Sprachen gefunden
+    if not languages:
+        print("⚠️  Keine Sprachverzeichnisse gefunden. Verwende Standardsprachen.")
+        languages = {"de", "en"}  # Fallback
+    
+    print(f"🔄 Gefundene Sprachen: {', '.join(languages)}")
+    
+    # Verarbeite jede Sprache
+    for lang in sorted(languages):
+        try:
+            compile_for_language(lang)
+        except Exception as e:
+            print(f"❌ Kritischer Fehler in Sprache '{lang}': {str(e)}")
+            sys.exit(1)
+    
+    print("\n🎉 Alle Sprachen erfolgreich kompiliert!")
 
 if __name__ == "__main__":
-    print("Compiling all german filaments...")
-    compile_filaments_de()
-    print("Done!")
+    main()
