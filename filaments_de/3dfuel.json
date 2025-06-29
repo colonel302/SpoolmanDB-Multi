@@ -1,0 +1,183 @@
+{
+  "manufacturer": "3D-Fuel",
+  "filaments": [
+    {
+      "name": "{color_name}",
+      "material": "PLA+",
+      "density": 1.22,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_weight": 225
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 220,
+      "bed_temp": 60,
+      "colors": [
+        {
+          "name": "Natürlich",
+          "hex": "FFFAEF"
+        },
+        {
+          "name": "Hellste Weiß",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Schneewittchen",
+          "hex": "D9D8DD"
+        },
+        {
+          "name": "Knochen weiß",
+          "hex": "E2DCCC"
+        },
+        {
+          "name": "Mandel",
+          "hex": "CFBCAE"
+        },
+        {
+          "name": "Wüstenbräuche",
+          "hex": "D2C6BA"
+        },
+        {
+          "name": "Flache dunkle Erde",
+          "hex": "B19179"
+        },
+        {
+          "name": "Schokoladenbraun",
+          "hex": "754F4A"
+        },
+        {
+          "name": "Warme Biskuit",
+          "hex": "EFC8BF"
+        },
+        {
+          "name": "Bubblegum Pink",
+          "hex": "FAB0B7"
+        },
+        {
+          "name": "Insel Fuschia",
+          "hex": "CA3890"
+        },
+        {
+          "name": "Traubenviolett",
+          "hex": "6642A2"
+        },
+        {
+          "name": "Kobaltblau",
+          "hex": "12218F"
+        },
+        {
+          "name": "Ozeanblau",
+          "hex": "219AE1"
+        },
+        {
+          "name": "Karibisch blau",
+          "hex": "0288C3"
+        },
+        {
+          "name": "Fjord blau",
+          "hex": "05A4FD"
+        },
+        {
+          "name": "Elektrisches Blau",
+          "hex": "65CEF6"
+        },
+        {
+          "name": "Aquamarin",
+          "hex": "97E9EB"
+        },
+        {
+          "name": "Pistaziengrün",
+          "hex": "B4ECB5"
+        },
+        {
+          "name": "Olivengrün",
+          "hex": "8A9684"
+        },
+        {
+          "name": "Waldgrün",
+          "hex": "348C75"
+        },
+        {
+          "name": "Grasgrün",
+          "hex": "50DE93"
+        },
+        {
+          "name": "Lulzbot grün",
+          "hex": "CFF319"
+        },
+        {
+          "name": "Narzissengelb",
+          "hex": "FFD21B"
+        },
+        {
+          "name": "Ernte Gold",
+          "hex": "FFC830"
+        },
+        {
+          "name": "Mandarine Orange",
+          "hex": "F48240"
+        },
+        {
+          "name": "Herbstorange",
+          "hex": "F76647"
+        },
+        {
+          "name": "Feuerwehrauto rot",
+          "hex": "CD100E"
+        },
+        {
+          "name": "Eisenrot",
+          "hex": "900C14"
+        },
+        {
+          "name": "Metallic Kupfer",
+          "hex": "B56150"
+        },
+        {
+          "name": "Metallic Gold",
+          "hex": "FFE48F"
+        },
+        {
+          "name": "Metallic Silber",
+          "hex": "858991"
+        },
+        {
+          "name": "Industrielles Grau",
+          "hex": "9EA4B4"
+        },
+        {
+          "name": "Schlossgrau",
+          "hex": "6D6D6F"
+        },
+        {
+          "name": "Holzkohlegrau",
+          "hex": "656A7F"
+        },
+        {
+          "name": "Mitternacht schwarz",
+          "hex": "000000"
+        },
+        {
+          "name": "Fluureszierend grün",
+          "hex": "57D791"
+        },
+        {
+          "name": "Fluureszierende Orange",
+          "hex": "E5743A"
+        },
+        {
+          "name": "Fluureszierend gelb",
+          "hex": "D9E66B"
+        },
+        {
+          "name": "Im Dunkeln leuchten",
+          "hex": "DBDADD"
+        }
+      ]
+    }
+  ]
+}

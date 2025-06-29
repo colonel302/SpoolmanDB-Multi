@@ -1,0 +1,273 @@
+{
+  "manufacturer": "Hatchbox",
+  "filaments": [
+    {
+      "name": "{color_name}",
+      "material": "ABS",
+      "density": 1.04,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 251
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 250,
+      "bed_temp": 105,
+      "colors": [
+        {
+          "name": "Rot",
+          "hex": "DD2721"
+        },
+        {
+          "name": "Silber",
+          "hex": "919391"
+        },
+        {
+          "name": "Neongrün",
+          "hex": "86D553"
+        },
+        {
+          "name": "Grün",
+          "hex": "0D8D43"
+        },
+        {
+          "name": "Rosa",
+          "hex": "D76294"
+        },
+        {
+          "name": "Transparentes hellblau",
+          "hex": "007992",
+          "translucent": true
+        },
+        {
+          "name": "Transparent grün",
+          "hex": "79936C",
+          "translucent": true
+        },
+        {
+          "name": "Transparent rot",
+          "hex": "9A232D",
+          "translucent": true
+        }
+      ]
+    },
+    {
+      "name": "{color_name}",
+      "material": "PLA",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 251,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 210,
+      "bed_temp": 60,
+      "colors": [
+        {
+          "name": "Coolgrau",
+          "hex": "959494"
+        },
+        {
+          "name": "Babyblau",
+          "hex": "ADD8E6"
+        },
+        {
+          "name": "Beige",
+          "hex": "F5F5DC"
+        },
+        {
+          "name": "Schwarz",
+          "hex": "000000"
+        },
+        {
+          "name": "Wahres blau",
+          "hex": "0B519E"
+        },
+        {
+          "name": "Bronze",
+          "hex": "CD7F32"
+        },
+        {
+          "name": "Braun",
+          "hex": "452923"
+        },
+        {
+          "name": "Kupfer",
+          "hex": "B87333"
+        },
+        {
+          "name": "Graublau",
+          "hex": "6F8FAF"
+        },
+        {
+          "name": "Grün",
+          "hex": "4CBB17"
+        },
+        {
+          "name": "Eisenrot",
+          "hex": "79111E"
+        },
+        {
+          "name": "Hellblau",
+          "hex": "0096FF"
+        },
+        {
+          "name": "Leichte Orange",
+          "hex": "FFBF00"
+        },
+        {
+          "name": "Hellviolett",
+          "hex": "BF40BF"
+        },
+        {
+          "name": "Kalkgrün",
+          "hex": "7CFC00"
+        },
+        {
+          "name": "Mitternacht lila",
+          "hex": "800080"
+        },
+        {
+          "name": "Minzgrün",
+          "hex": "7FFFD4"
+        },
+        {
+          "name": "Natürlich",
+          "hex": "B6BAB1"
+        },
+        {
+          "name": "Orange",
+          "hex": "D65E17"
+        },
+        {
+          "name": "Pastellgrün",
+          "hex": "98FB98"
+        },
+        {
+          "name": "Pfauenblau",
+          "hex": "6495ED"
+        },
+        {
+          "name": "Wahres Pink",
+          "hex": "DF6786"
+        },
+        {
+          "name": "Rot",
+          "hex": "AB2A2C"
+        },
+        {
+          "name": "Silber",
+          "hex": "8E8D94"
+        },
+        {
+          "name": "Weiß",
+          "hex": "E3E5E7"
+        },
+        {
+          "name": "Gelb",
+          "hex": "ECD018"
+        }
+      ]
+    },
+    {
+      "name": "Sparkle {color_name}",
+      "material": "PLA",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 251,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 210,
+      "bed_temp": 60,
+      "pattern": "sparkle",
+      "colors": [
+        {
+          "name": "Rot",
+          "hex": "79111E"
+        },
+        {
+          "name": "Gelb",
+          "hex": "ECD018"
+        },
+        {
+          "name": "Grün",
+          "hex": "3B5646"
+        },
+        {
+          "name": "Schwarz",
+          "hex": "3F3839"
+        },
+        {
+          "name": "Blau",
+          "hex": "257778"
+        },
+        {
+          "name": "Grau",
+          "hex": "383C40"
+        }
+      ]
+    },
+    {
+      "name": "Transparent {color_name}",
+      "material": "PLA",
+      "density": 1.27,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 251,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 210,
+      "bed_temp": 60,
+      "translucent": true,
+      "colors": [
+        {
+          "name": "Rot",
+          "hex": "C02716"
+        },
+        {
+          "name": "Orange",
+          "hex": "E18923"
+        },
+        {
+          "name": "Weiß",
+          "hex": "ACB3B3"
+        },
+        {
+          "name": "Blau",
+          "hex": "1E7EAF"
+        },
+        {
+          "name": "Schwarz",
+          "hex": "ABABAB"
+        },
+        {
+          "name": "Grün",
+          "hex": "86D553"
+        },
+        {
+          "name": "Gelb",
+          "hex": "ECD018"
+        }
+      ]
+    }
+  ]
+}

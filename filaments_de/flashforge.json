@@ -1,0 +1,228 @@
+{
+  "manufacturer": "FlashForge",
+  "filaments": [
+    {
+      "name": "PLA - {color_name}",
+      "material": "PLA",
+      "density": 1.25,
+      "weights": [
+        {
+          "weight": 500.0,
+          "spool_weight": 142.0
+        },
+        {
+          "weight": 1000.0,
+          "spool_weight": 170.0
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 210,
+      "bed_temp": 60,
+      "colors": [
+        {
+          "name": "Schwarz",
+          "hex": "0B0203"
+        },
+        {
+          "name": "Weiß",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Natürlich",
+          "hex": "E7E7E7"
+        },
+        {
+          "name": "Grau",
+          "hex": "515F6C"
+        },
+        {
+          "name": "Haut",
+          "hex": "D4B48F"
+        },
+        {
+          "name": "Rot",
+          "hex": "D92818"
+        },
+        {
+          "name": "Blau",
+          "hex": "172788"
+        },
+        {
+          "name": "Gelb",
+          "hex": "FED212"
+        },
+        {
+          "name": "Grün",
+          "hex": "149732"
+        },
+        {
+          "name": "Orange",
+          "hex": "F08400"
+        },
+        {
+          "name": "Silber",
+          "hex": "8C9091"
+        },
+        {
+          "name": "Hellgrün",
+          "hex": "8AC54B"
+        },
+        {
+          "name": "Rosa",
+          "hex": "F3B4CD"
+        },
+        {
+          "name": "Lila",
+          "hex": "50248B"
+        },
+        {
+          "name": "Braun",
+          "hex": "984304"
+        },
+        {
+          "name": "Gold",
+          "hex": "8D834E"
+        }
+      ]
+    },
+    {
+      "name": "Starter PLA - {color_name}",
+      "material": "PLA",
+      "density": 1.25,
+      "weights": [
+        {
+          "weight": 250.0,
+          "spool_weight": 142.0
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 210,
+      "bed_temp": 60,
+      "colors": [
+        {
+          "name": "Rot",
+          "hex": "D92818",
+          "translucent": true
+        }
+      ]
+    },
+    {
+      "name": "PLA Pro - {color_name}",
+      "material": "PLA",
+      "density": 1.25,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 120
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 210,
+      "bed_temp": 60,
+      "colors": [
+        {
+          "name": "Natürlich",
+          "hex": "E7E7E7"
+        },
+        {
+          "name": "Weiß",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Cool weiß",
+          "hex": "F6F5FA"
+        },
+        {
+          "name": "Schwarz",
+          "hex": "0B0203"
+        },
+        {
+          "name": "Grau",
+          "hex": "9EACAC"
+        },
+        {
+          "name": "Silbergrau",
+          "hex": "A2A7A7"
+        },
+        {
+          "name": "Silber",
+          "hex": "BBBDBD"
+        },
+        {
+          "name": "Haut",
+          "hex": "E7CEA2"
+        },
+        {
+          "name": "Gelb",
+          "hex": "FED212"
+        },
+        {
+          "name": "Grün",
+          "hex": "149732"
+        },
+        {
+          "name": "Hellblau",
+          "hex": "00A3E0"
+        },
+        {
+          "name": "Blau",
+          "hex": "172788"
+        },
+        {
+          "name": "Rot",
+          "hex": "D90C18"
+        },
+        {
+          "name": "Hellgelb",
+          "hex": "E4E63F"
+        },
+        {
+          "name": "Rose",
+          "hex": "BC4997"
+        },
+        {
+          "name": "Rosa",
+          "hex": "F3B4CD"
+        },
+        {
+          "name": "Lila",
+          "hex": "5C3E93"
+        },
+        {
+          "name": "Orange",
+          "hex": "EC6C01"
+        },
+        {
+          "name": "Hellgrün",
+          "hex": "91C536"
+        },
+        {
+          "name": "Gold",
+          "hex": "CFA74C"
+        },
+        {
+          "name": "Braun",
+          "hex": "984304"
+        },
+        {
+          "name": "Hellrot",
+          "hex": "DB2F2B"
+        },
+        {
+          "name": "Verkehr rot",
+          "hex": "B32124"
+        },
+        {
+          "name": "Leichte Orange",
+          "hex": "F08400"
+        }
+      ]
+    }
+  ]
+}
