@@ -33,6 +33,8 @@ def translate_name(name, dictionary):
     # 3. SPEZIELLE BEGRIFFE ERSETZEN
     special_terms = {
         "Matt": "Matt",
+        "Mint": "Mint",
+        "Pink": "Pink",
         "Space": "Weltraum",
         "Silk+": "Silk+",
         "Bright": "(Bright) Hell",
