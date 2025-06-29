@@ -32,7 +32,7 @@
         function initLanguage() {
             const savedLang = localStorage.getItem('lang') || 'de';
             setLanguage(savedLang);
-            
+
             // Event-Listener für Sprachumschaltung
             document.getElementById('lang-switcher').addEventListener('change', (e) => {
                 setLanguage(e.target.value);
@@ -43,18 +43,34 @@
         function setLanguage(lang) {
             localStorage.setItem('lang', lang);
             const config = languageConfig[lang];
-            
+
             // Texte aktualisieren
             document.title = config.title;
             document.querySelector('h2').textContent = config.headline;
-            document.querySelector('p').innerHTML = `${config.description} <a href="https://github.com/Donkie/SpoolmanDB">auf Github</a>`;
+            document.querySelector('p').innerHTML = `${config.description} <a href="https://github.com/colonel302/SpoolmanDB-de">auf Github</a>`;
             document.querySelector('[data-translate="materials"]').textContent = config.materials;
             document.querySelector('[data-translate="filaments"]').textContent = config.filaments;
             document.querySelector('footer p').textContent = config.footer;
-            
-            // Links aktualisieren
+
+            // Links aktualisieren (Dateien liegen direkt in /public)
             document.getElementById('materials-link').href = `materials_${lang}.json`;
-            document.getElementById('filaments-link').href = `filaments_${lang}/filaments.json`;
+            document.getElementById('filaments-link').href = `filaments_${lang}.json`;
+
+            // Beispiel: Lade die Filamentdaten dynamisch (optional)
+            // fetchFilamentData(lang);
+        }
+
+        // Beispiel-Funktion zum dynamischen Laden der Filamentdaten (optional)
+        function fetchFilamentData(lang) {
+            fetch(`filaments_${lang}.json`)
+                .then(response => response.json())
+                .then(data => {
+                    // Hier kannst du die Daten weiterverarbeiten oder anzeigen
+                    console.log("Geladene Filamentdaten:", data);
+                })
+                .catch(err => {
+                    console.error("Fehler beim Laden der Filamentdaten:", err);
+                });
         }
     </script>
 </head>
@@ -80,7 +96,7 @@
     <main>
         <h2>Ein Repository mit den neuesten Filament- und Materialdaten für den 3D-Druck.</h2>
         <p>Dieses Projekt ist Open-Source, Sie können gerne einen Pull-Request erstellen <a
-                href="https://github.com/Donkie/SpoolmanDB"> auf Github</a> wenn Sie Daten hinzufügen oder ändern möchten.</p>
+                href="https://github.com/colonel302/SpoolmanDB-de"> auf Github</a> wenn Sie Daten hinzufügen oder ändern möchten.</p>
         <h2>Dateien</h2>
         <div class="data-files">
             <div class="column">
@@ -90,7 +106,7 @@
             </div>
             <div class="column">
                 <ul>
-                    <li><a id="filaments-link" href="filaments_de/filaments.json" data-translate="filaments">FILAMENTE</a></li>
+                    <li><a id="filaments-link" href="filaments_de.json" data-translate="filaments">FILAMENTE</a></li>
                 </ul>
             </div>
         </div>
