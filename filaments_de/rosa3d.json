@@ -1,0 +1,138 @@
+{
+  "manufacturer": "Rosa3D",
+  "filaments": [
+    {
+      "name": "{color_name}",
+      "material": "ASA",
+      "density": 1.07,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 250,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 245,
+      "bed_temp": 90,
+      "colors": [
+        {
+          "name": "Schwarz",
+          "hex": "050503"
+        },
+        {
+          "name": "Weiß",
+          "hex": "f6fcfc"
+        },
+        {
+          "name": "Grau",
+          "hex": "8d989d"
+        },
+        {
+          "name": "Saftig orange",
+          "hex": "fc5e2e"
+        },
+        {
+          "name": "Rot",
+          "hex": "d6181b"
+        },
+        {
+          "name": "Gelb",
+          "hex": "fdf849"
+        },
+        {
+          "name": "Grün",
+          "hex": "63bf59"
+        },
+        {
+          "name": "Blau",
+          "hex": "33405c"
+        },
+        {
+          "name": "Silber",
+          "hex": "aeafac"
+        },
+        {
+          "name": "Natürlich",
+          "hex": "f9f4e2"
+        }
+      ]
+    },
+    {
+      "name": "{color_name}",
+      "material": "ABS",
+      "density": 1.05,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 250,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 250,
+      "bed_temp": 100,
+      "colors": [
+        {
+          "name": "Schwarz",
+          "hex": "050503"
+        },
+        {
+          "name": "Weiß",
+          "hex": "f6fcfc"
+        },
+        {
+          "name": "Grau",
+          "hex": "6b7377"
+        },
+        {
+          "name": "Saftig orange",
+          "hex": "fc5e2e"
+        },
+        {
+          "name": "Rot",
+          "hex": "d6181b"
+        },
+        {
+          "name": "Gelb",
+          "hex": "fdf849"
+        },
+        {
+          "name": "Grün",
+          "hex": "63bf59"
+        },
+        {
+          "name": "Dunkelblau",
+          "hex": "2c62c0"
+        }
+      ]
+    },
+    {
+      "name": "{color_name}",
+      "material": "ABS",
+      "density": 1.05,
+      "weights": [
+        {
+          "weight": 2500,
+          "spool_weight": 700,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 250,
+      "bed_temp": 100,
+      "colors": [
+        {
+          "name": "Schwarz",
+          "hex": "050503"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,476 @@
+{
+  "manufacturer": "Formfutura",
+  "filaments": [
+    {
+      "name": "EasyFil PLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 250.0,
+          "spool_type": "cardboard",
+          "spool_weight": 130.0
+        },
+        {
+          "weight": 750.0,
+          "spool_type": "cardboard",
+          "spool_weight": 160.0
+        },
+        {
+          "weight": 2300.0,
+          "spool_type": "cardboard",
+          "spool_weight": 265.0
+        },
+        {
+          "weight": 2300.0,
+          "spool_type": "plastic",
+          "spool_weight": 600.0
+        },
+        {
+          "weight": 4500.0,
+          "spool_type": "cardboard",
+          "spool_weight": 330.0
+        },
+        {
+          "weight": 4500.0,
+          "spool_type": "plastic",
+          "spool_weight": 815.0
+        },
+        {
+          "weight": 8000.0,
+          "spool_type": "plastic",
+          "spool_weight": 1040.0
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        200,
+        230
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Schwarz",
+          "hex": "0f0f0f"
+        },
+        {
+          "name": "Weiß",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Natürlich",
+          "hex": "e9eacc"
+        },
+        {
+          "name": "Hellgrau",
+          "hex": "e8e8e8"
+        },
+        {
+          "name": "Grau",
+          "hex": "999999"
+        },
+        {
+          "name": "Bronze",
+          "hex": "c49207"
+        },
+        {
+          "name": "Braun",
+          "hex": "a36025"
+        },
+        {
+          "name": "Celeste Green",
+          "hex": "28c973"
+        },
+        {
+          "name": "Dunkelblau",
+          "hex": "1936aa"
+        },
+        {
+          "name": "Dunkelgrün",
+          "hex": "1b6b30"
+        },
+        {
+          "name": "Gold",
+          "hex": "d6c11d"
+        },
+        {
+          "name": "Lavendel",
+          "hex": "b17fea"
+        },
+        {
+          "name": "Hellblau",
+          "hex": "308cc1"
+        },
+        {
+          "name": "Hellgrün",
+          "hex": "81d742"
+        },
+        {
+          "name": "Leuchtend gelb",
+          "hex": "f7ff23"
+        },
+        {
+          "name": "Magenta",
+          "hex": "d32189"
+        },
+        {
+          "name": "Mittelblau",
+          "hex": "5482bf"
+        },
+        {
+          "name": "Orange",
+          "hex": "f28900"
+        },
+        {
+          "name": "Pastellblau",
+          "hex": "15b8d8"
+        },
+        {
+          "name": "Pastellgrün",
+          "hex": "a9f2bb"
+        },
+        {
+          "name": "Pastellrosa",
+          "hex": "ff4f89"
+        },
+        {
+          "name": "Rot",
+          "hex": "dd3333"
+        },
+        {
+          "name": "Saphirgrau",
+          "hex": "769cbf"
+        },
+        {
+          "name": "Silber",
+          "hex": "cccccc"
+        },
+        {
+          "name": "Gelb",
+          "hex": "f9f922"
+        }
+      ]
+    },
+    {
+      "name": "EasyFil ePLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 250.0,
+          "spool_type": "cardboard",
+          "spool_weight": 130.0
+        },
+        {
+          "weight": 1000.0,
+          "spool_type": "cardboard",
+          "spool_weight": 210.0
+        },
+        {
+          "weight": 2300.0,
+          "spool_type": "cardboard",
+          "spool_weight": 265.0
+        },
+        {
+          "weight": 2300.0,
+          "spool_type": "plastic",
+          "spool_weight": 600.0
+        },
+        {
+          "weight": 4500.0,
+          "spool_type": "cardboard",
+          "spool_weight": 330.0
+        },
+        {
+          "weight": 4500.0,
+          "spool_type": "plastic",
+          "spool_weight": 815.0
+        },
+        {
+          "weight": 8000.0,
+          "spool_type": "plastic",
+          "spool_weight": 1040.0
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        200,
+        220
+      ],
+      "bed_temp_range": [
+        50,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Verkehr schwarz",
+          "hex": "0f0f0f"
+        },
+        {
+          "name": "Matt Black",
+          "hex": "000000"
+        },
+        {
+          "name": "Schneewittchen",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Matt White",
+          "hex": "f7f7f7"
+        },
+        {
+          "name": "Matt Vanilla White",
+          "hex": "fff8e8"
+        },
+        {
+          "name": "Signal weiß",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Matt hellgrau",
+          "hex": "e2e2e2"
+        },
+        {
+          "name": "Natürlich",
+          "hex": "e9eacc"
+        },
+        {
+          "name": "Hellgrau",
+          "hex": "e8e8e8"
+        },
+        {
+          "name": "Eisengrau",
+          "hex": "7f7f7f"
+        },
+        {
+          "name": "Eichhörnchengrau",
+          "hex": "6e7c7f"
+        },
+        {
+          "name": "Anthrazitgrau",
+          "hex": "424242"
+        },
+        {
+          "name": "Matt Mauve",
+          "hex": "e7aaff"
+        },
+        {
+          "name": "Matt Aprikose",
+          "hex": "ffa3a3"
+        },
+        {
+          "name": "Matt Polar Blue",
+          "hex": "89c1dd"
+        },
+        {
+          "name": "Matt Wasser blau",
+          "hex": "16cccc"
+        },
+        {
+          "name": "Matt Mint Green",
+          "hex": "80fcd7"
+        },
+        {
+          "name": "Matt weich blau",
+          "hex": "94a3ef"
+        },
+        {
+          "name": "Matt Zitronencreme",
+          "hex": "f2e591"
+        },
+        {
+          "name": "Beige Brown",
+          "hex": "a88e5a"
+        },
+        {
+          "name": "Blue Lilac",
+          "hex": "9b5bef"
+        },
+        {
+          "name": "Graues Aluminium",
+          "hex": "adadad"
+        },
+        {
+          "name": "Heather Violet",
+          "hex": "ff28c2"
+        },
+        {
+          "name": "Khaki Gray",
+          "hex": "997b5d"
+        },
+        {
+          "name": "Hellblau",
+          "hex": "308cc1"
+        },
+        {
+          "name": "Hellgrün",
+          "hex": "81d742"
+        },
+        {
+          "name": "Leichte Elfenbein",
+          "hex": "d8c05f"
+        },
+        {
+          "name": "Leuchtend hellorange",
+          "hex": "f78300"
+        },
+        {
+          "name": "Leuchtend grün",
+          "hex": "86ff4f"
+        },
+        {
+          "name": "Leuchtend gelb",
+          "hex": "f7ff23"
+        },
+        {
+          "name": "Perlenbronze",
+          "hex": "d3be69"
+        },
+        {
+          "name": "Perlengold",
+          "hex": "dda033"
+        },
+        {
+          "name": "Rein orange",
+          "hex": "ff823a"
+        },
+        {
+          "name": "Signal gelb",
+          "hex": "ffd713"
+        },
+        {
+          "name": "Verkehrsgrün",
+          "hex": "2d9155"
+        },
+        {
+          "name": "Verkehr rot",
+          "hex": "e03333"
+        },
+        {
+          "name": "Verkehr gelb",
+          "hex": "ffdd23"
+        },
+        {
+          "name": "Türkisblau",
+          "hex": "1e8fbf"
+        },
+        {
+          "name": "Ultramarinblau",
+          "hex": "001b89"
+        },
+        {
+          "name": "Weißes Aluminium",
+          "hex": "efefef"
+        },
+        {
+          "name": "Gelbgrün",
+          "hex": "a5f221"
+        }
+      ]
+    },
+    {
+      "name": "ReForm - rPET {color_name}",
+      "material": "PETG",
+      "density": 1.23,
+      "weights": [
+        {
+          "weight": 250.0,
+          "spool_type": "cardboard",
+          "spool_weight": 130.0
+        },
+        {
+          "weight": 500.0,
+          "spool_type": "cardboard",
+          "spool_weight": 130.0
+        },
+        {
+          "weight": 750.0,
+          "spool_type": "cardboard",
+          "spool_weight": 150.0
+        },
+        {
+          "weight": 1000.0,
+          "spool_type": "cardboard",
+          "spool_weight": 185.0
+        },
+        {
+          "weight": 2300.0,
+          "spool_type": "cardboard",
+          "spool_weight": 265.0
+        },
+        {
+          "weight": 2300.0,
+          "spool_type": "plastic",
+          "spool_weight": 600.0
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        200,
+        240
+      ],
+      "bed_temp_range": [
+        65,
+        75
+      ],
+      "colors": [
+        {
+          "name": "Weiß",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Gelb",
+          "hex": "ffff00"
+        },
+        {
+          "name": "Orange",
+          "hex": "ffa500"
+        },
+        {
+          "name": "Rot",
+          "hex": "ff0000"
+        },
+        {
+          "name": "Violett",
+          "hex": "8a2be2"
+        },
+        {
+          "name": "Hellblau",
+          "hex": "add8e6"
+        },
+        {
+          "name": "Dunkelblau",
+          "hex": "00008b"
+        },
+        {
+          "name": "Hellgrün",
+          "hex": "90ee90"
+        },
+        {
+          "name": "Silber",
+          "hex": "c0c0c0"
+        },
+        {
+          "name": "Grau",
+          "hex": "808080"
+        },
+        {
+          "name": "Schwarz",
+          "hex": "000000"
+        }
+      ]
+    }
+  ]
+}

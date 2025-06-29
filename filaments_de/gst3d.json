@@ -1,0 +1,384 @@
+{
+  "manufacturer": "GST3D",
+  "filaments": [
+    {
+      "name": "{color_name}",
+      "material": "PLA+",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_weight": 200.0,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 210,
+      "bed_temp": 60,
+      "colors": [
+        {
+          "name": "Weiß",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Schwarz",
+          "hex": "000000"
+        },
+        {
+          "name": "Gelb",
+          "hex": "FFD800"
+        },
+        {
+          "name": "Violett",
+          "hex": "5F468A"
+        },
+        {
+          "name": "Silber/Grau",
+          "hex": "797979"
+        },
+        {
+          "name": "Rosa Panther",
+          "hex": "D294A7"
+        },
+        {
+          "name": "Orange",
+          "hex": "F24D00"
+        },
+        {
+          "name": "Senf",
+          "hex": "8B7929"
+        },
+        {
+          "name": "Metallische Bronze",
+          "hex": "A65B24"
+        },
+        {
+          "name": "Gelb",
+          "hex": "D4CF7E"
+        },
+        {
+          "name": "Hellrosa",
+          "hex": "CFA27A"
+        },
+        {
+          "name": "Hellblau",
+          "hex": "7998C4"
+        },
+        {
+          "name": "Eisblau",
+          "hex": "4A7B99"
+        },
+        {
+          "name": "Gold",
+          "hex": "9F8547"
+        },
+        {
+          "name": "Fuchsie",
+          "hex": "A74355"
+        },
+        {
+          "name": "Fluoresziergelb",
+          "hex": "EAFD6E",
+          "translucent": true
+        },
+        {
+          "name": "Fluoreszierorange",
+          "hex": "D95800",
+          "translucent": true
+        },
+        {
+          "name": "Fluoreszierendes Grün",
+          "hex": "4B9C7B",
+          "translucent": true
+        },
+        {
+          "name": "Firefly (im Dunkeln leuchten)",
+          "hex": "4B9C7B",
+          "glow": true
+        },
+        {
+          "name": "Kristall/klar",
+          "hex": "EEEADD",
+          "translucent": true
+        },
+        {
+          "name": "Braun",
+          "hex": "893A16"
+        },
+        {
+          "name": "Armeegrün",
+          "hex": "2D6F4C"
+        },
+        {
+          "name": "Aquamarin",
+          "hex": "6E947D"
+        },
+        {
+          "name": "APFEL Green",
+          "hex": "74B649"
+        },
+        {
+          "name": "Marmor",
+          "hex": "C2C4C7"
+        },
+        {
+          "name": "Blau",
+          "hex": "2A4498"
+        },
+        {
+          "name": "Rot",
+          "hex": "AA0900"
+        },
+        {
+          "name": "Helles Silber",
+          "hex": "7C7974",
+          "pattern": "sparkle"
+        },
+        {
+          "name": "Leuchtend rot",
+          "hex": "9F2A08",
+          "pattern": "sparkle"
+        },
+        {
+          "name": "Hellgrün",
+          "hex": "3F5D49",
+          "pattern": "sparkle"
+        },
+        {
+          "name": "Helles Gold",
+          "hex": "B09457",
+          "pattern": "sparkle"
+        },
+        {
+          "name": "Hellblau",
+          "hex": "2F3F74",
+          "pattern": "sparkle"
+        },
+        {
+          "name": "Helles Schwarz",
+          "hex": "000000",
+          "pattern": "sparkle"
+        }
+      ]
+    },
+    {
+      "name": "{color_name}",
+      "material": "PETG",
+      "density": 1.26,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_weight": 200,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 240,
+      "bed_temp": 70,
+      "colors": [
+        {
+          "name": "Weiß",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Schwarz",
+          "hex": "000000"
+        },
+        {
+          "name": "Kristall/klar",
+          "hex": "EEEADD",
+          "translucent": true
+        }
+      ]
+    },
+    {
+      "name": "{color_name}",
+      "material": "PETG-CF",
+      "fill": "carbon fiber",
+      "density": 1.3,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_weight": 200,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 240,
+      "bed_temp": 70,
+      "colors": [
+        {
+          "name": "Schwarze Kohlefaser",
+          "hex": "000000"
+        }
+      ]
+    },
+    {
+      "name": "{color_name} 93A",
+      "material": "TPU",
+      "density": 1.21,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_weight": 200,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 230,
+      "bed_temp": 65,
+      "colors": [
+        {
+          "name": "Schwarz",
+          "hex": "000000"
+        },
+        {
+          "name": "Silber",
+          "hex": "808080"
+        },
+        {
+          "name": "APFEL Green",
+          "hex": "74B649"
+        },
+        {
+          "name": "Blau",
+          "hex": "2A4498"
+        },
+        {
+          "name": "Rot",
+          "hex": "FF0000"
+        },
+        {
+          "name": "Weiß",
+          "hex": "FFFFFF"
+        }
+      ]
+    },
+    {
+      "name": "Silk {color_name}",
+      "material": "PLA",
+      "finish": "glossy",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_weight": 200,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 220,
+      "bed_temp": 60,
+      "colors": [
+        {
+          "name": "Blau",
+          "hex": "3264CC"
+        },
+        {
+          "name": "Gold",
+          "hex": "F5B800"
+        },
+        {
+          "name": "Gold Rose",
+          "hex": "C28C69"
+        },
+        {
+          "name": "Grün",
+          "hex": "3E9F84"
+        },
+        {
+          "name": "Sand",
+          "hex": "B7A377"
+        },
+        {
+          "name": "Aluminium",
+          "hex": "999999"
+        },
+        {
+          "name": "Fuchsie",
+          "hex": "F336D9"
+        },
+        {
+          "name": "Graphit",
+          "hex": "707070"
+        },
+        {
+          "name": "Pfirsich",
+          "hex": "D13113"
+        },
+        {
+          "name": "Lila",
+          "hex": "A21AA5"
+        },
+        {
+          "name": "Rot",
+          "hex": "FF0000"
+        }
+      ]
+    },
+    {
+      "name": "{color_name}",
+      "material": "ABS",
+      "density": 1.04,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_weight": 200,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 240,
+      "bed_temp": 90,
+      "colors": [
+        {
+          "name": "Schwarz",
+          "hex": "000000"
+        },
+        {
+          "name": "Weiß",
+          "hex": "FFFFFF"
+        }
+      ]
+    },
+    {
+      "name": "{color_name}",
+      "material": "ASA",
+      "density": 1.05,
+      "weights": [
+        {
+          "weight": 900.0,
+          "spool_weight": 200,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 250,
+      "bed_temp": 80,
+      "colors": [
+        {
+          "name": "Schwarz",
+          "hex": "000000"
+        },
+        {
+          "name": "Weiß",
+          "hex": "FFFFFF"
+        }
+      ]
+    }
+  ]
+}

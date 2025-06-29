@@ -1,0 +1,424 @@
+{
+  "manufacturer": "Sunlu",
+  "filaments": [
+    {
+      "name": "{color_name}",
+      "material": "PLA+",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_weight": 130,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 210,
+      "bed_temp": 60,
+      "colors": [
+        {
+          "name": "Transparent grün",
+          "translucent": true,
+          "hex": "16BA36"
+        },
+        {
+          "name": "Schwarz",
+          "hex": "000000"
+        },
+        {
+          "name": "Weiß",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Himmel Blue",
+          "hex": "69E2FF"
+        },
+        {
+          "name": "Sakura Pink",
+          "hex": "F6C7B3"
+        },
+        {
+          "name": "Rot",
+          "hex": "FF0000"
+        },
+        {
+          "name": "Blau",
+          "hex": "0000FF"
+        },
+        {
+          "name": "Orange",
+          "hex": "F25602"
+        },
+        {
+          "name": "Grün",
+          "hex": "5FC50D"
+        },
+        {
+          "name": "Gelb",
+          "hex": "F6FA00"
+        },
+        {
+          "name": "Lila",
+          "hex": "942192"
+        },
+        {
+          "name": "Grau",
+          "hex": "808080"
+        },
+        {
+          "name": "Minzgrün",
+          "hex": "0CCEB4"
+        },
+        {
+          "name": "Blaugrau",
+          "hex": "3E53D5"
+        },
+        {
+          "name": "Beige",
+          "hex": "FFE8DB"
+        },
+        {
+          "name": "Kirschrot",
+          "hex": "E63034"
+        },
+        {
+          "name": "Schokolade",
+          "hex": "563835"
+        },
+        {
+          "name": "Cyan",
+          "hex": "39D0F1"
+        },
+        {
+          "name": "Kaffee",
+          "hex": "715E3E"
+        },
+        {
+          "name": "Fuchsie",
+          "hex": "B63ED4"
+        },
+        {
+          "name": "Gold",
+          "hex": "EFA537"
+        },
+        {
+          "name": "Grasgrün",
+          "hex": "328169"
+        },
+        {
+          "name": "Zitronengelb",
+          "hex": "E6E55F"
+        },
+        {
+          "name": "Leichtes Gold",
+          "hex": "FADD47"
+        },
+        {
+          "name": "Rosa",
+          "hex": "FFABD3"
+        },
+        {
+          "name": "Silber",
+          "hex": "9299A9"
+        },
+        {
+          "name": "Sonniger Orange",
+          "hex": "FC743A"
+        }
+      ]
+    },
+    {
+      "name": "{color_name}",
+      "material": "ABS",
+      "density": 1.04,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 130
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 250,
+      "bed_temp": 105,
+      "colors": [
+        {
+          "name": "Schwarz",
+          "hex": "3A3C3B"
+        },
+        {
+          "name": "Weiß",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Rot",
+          "hex": "FF0000"
+        },
+        {
+          "name": "Blau",
+          "hex": "0000FF"
+        },
+        {
+          "name": "Grau",
+          "hex": "808080"
+        },
+        {
+          "name": "Grün",
+          "hex": "5FC50D"
+        }
+      ]
+    },
+    {
+      "name": "Silk {color_name}",
+      "material": "TPU",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_weight": 130,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 220,
+      "bed_temp": 0,
+      "finish": "glossy",
+      "colors": [
+        {
+          "name": "Creme weiß",
+          "hex": "F7F1D1"
+        },
+        {
+          "name": "Schwarz",
+          "hex": "000000"
+        },
+        {
+          "name": "Hellblau",
+          "hex": "92CECC"
+        },
+        {
+          "name": "Dunkelblau",
+          "hex": "1D2353"
+        },
+        {
+          "name": "Burgund",
+          "hex": "3F2028"
+        }
+      ]
+    },
+    {
+      "name": "{color_name}",
+      "material": "PLA",
+      "density": 1.26,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_weight": 130.0,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 210,
+      "bed_temp": 60,
+      "glow": true,
+      "colors": [
+        {
+          "name": "Weiß (glühend grün)",
+          "hex": "000000"
+        },
+        {
+          "name": "Weiß (glühend blau)",
+          "hex": "000000"
+        },
+        {
+          "name": "Gelb (leuchten gelb)",
+          "hex": "FFFF00"
+        },
+        {
+          "name": "Rot (leuchtend orange)",
+          "hex": "FF0000"
+        }
+      ]
+    },
+    {
+      "name": "{color_name}",
+      "material": "PLA",
+      "density": 1.23,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_weight": 162.0,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 210,
+      "bed_temp": 60,
+      "glow": false,
+      "colors": [
+        {
+          "name": "Schwarz",
+          "hex": "2B2B2D"
+        },
+        {
+          "name": "Weiß",
+          "hex": "C7CDD7"
+        },
+        {
+          "name": "Grau",
+          "hex": "636767"
+        },
+        {
+          "name": "Rot",
+          "hex": "AC3638"
+        },
+        {
+          "name": "Sonniger Orange",
+          "hex": "D8631E"
+        }
+      ]
+    },
+    {
+      "name": "{color_name}",
+      "material": "PETG",
+      "density": 1.23,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_weight": 130.0,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 255,
+      "bed_temp": 80,
+      "colors": [
+        {
+          "name": "Schwarz",
+          "hex": "000000"
+        },
+        {
+          "name": "Weiß",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Rot",
+          "hex": "FF0000"
+        },
+        {
+          "name": "Blau",
+          "hex": "0000FF"
+        },
+        {
+          "name": "Orange",
+          "hex": "F25602"
+        },
+        {
+          "name": "Grün",
+          "hex": "5FC50D"
+        },
+        {
+          "name": "Gelb",
+          "hex": "F6FA00"
+        },
+        {
+          "name": "Lila",
+          "hex": "942192"
+        },
+        {
+          "name": "Grau",
+          "hex": "808080"
+        }
+      ]
+    },
+    {
+      "name": "High Speed {color_name} Marble",
+      "material": "PLA",
+      "density": 1.25,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_weight": 130.0,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 210,
+      "bed_temp": 60,
+      "colors": [
+        {
+          "name": "Kastanienbraun",
+          "hex": "E1E0DE"
+        },
+        {
+          "name": "Ziegelrot rot",
+          "hex": "8F4938"
+        },
+        {
+          "name": "Oreo",
+          "hex": "DDDFE3"
+        },
+        {
+          "name": "Schattensturm",
+          "hex": "D8D7D8"
+        },
+        {
+          "name": "Aschen",
+          "hex": "838383"
+        },
+        {
+          "name": "Waldgrün",
+          "hex": "C3D3D0"
+        }
+      ]
+    },
+    {
+      "name": "{color_name} Wood",
+      "material": "WOOD",
+      "density": 1.25,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_weight": 130,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 210,
+      "bed_temp": 60,
+      "colors": [
+        {
+          "name": "Holz",
+          "hex": "cfaf94"
+        },
+        {
+          "name": "Kirsche",
+          "hex": "6c4f4c"
+        },
+        {
+          "name": "Ahorn",
+          "hex": "c7aa8d"
+        },
+        {
+          "name": "Nussbaum",
+          "hex": "564e44"
+        }
+      ]
+    }
+  ]
+}

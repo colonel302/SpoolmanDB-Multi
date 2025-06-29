@@ -1,0 +1,192 @@
+{
+  "manufacturer": "AURAPOL",
+  "filaments": [
+    {
+      "name": "{color_name}",
+      "material": "PLA",
+      "density": 1.223,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_weight": 250.0,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        210,
+        240
+      ],
+      "bed_temp_range": [
+        40,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Schwarz",
+          "hex": "000000"
+        },
+        {
+          "name": "Metallic Ziegel",
+          "hex": "ff4010"
+        },
+        {
+          "name": "Natürlich",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Grau",
+          "hex": "7f7f7f"
+        },
+        {
+          "name": "L-Ego rot",
+          "hex": "ff0000"
+        },
+        {
+          "name": "Weiß",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Gelbgrün",
+          "hex": "80ff00"
+        },
+        {
+          "name": "Himbeere teilweise transparent",
+          "hex": "ff2060"
+        },
+        {
+          "name": "Blattgrün",
+          "hex": "00a000"
+        },
+        {
+          "name": "L-Ego Gelb",
+          "hex": "ffff00"
+        },
+        {
+          "name": "L-Ego Green",
+          "hex": "00ff00"
+        },
+        {
+          "name": "L-Ego Blue",
+          "hex": "0000ff"
+        }
+      ]
+    },
+    {
+      "name": "{color_name}",
+      "material": "PETG",
+      "density": 1.259,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_weight": 250.0,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        245,
+        255
+      ],
+      "bed_temp_range": [
+        85,
+        95
+      ],
+      "colors": [
+        {
+          "name": "Graphit schwarz",
+          "hex": "101010"
+        },
+        {
+          "name": "Weiß",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Natürlicher transparent",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Signalgrau",
+          "hex": "7f7f7f"
+        },
+        {
+          "name": "Verkehr rot",
+          "hex": "ff0000"
+        },
+        {
+          "name": "Schwefelgelb",
+          "hex": "ffff00"
+        },
+        {
+          "name": "Grüne Minze",
+          "hex": "00ff00"
+        },
+        {
+          "name": "Signal blau",
+          "hex": "0000ff"
+        }
+      ]
+    },
+    {
+      "name": "{color_name}",
+      "material": "ASA",
+      "density": 1.039,
+      "weights": [
+        {
+          "weight": 850.0,
+          "spool_weight": 250.0,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        255,
+        265
+      ],
+      "bed_temp_range": [
+        105,
+        115
+      ],
+      "colors": [
+        {
+          "name": "Graphit schwarz",
+          "hex": "101010"
+        },
+        {
+          "name": "Signal weiß",
+          "hex": "ffffff"
+        },
+        {
+          "name": "Natürlich",
+          "hex": "f0f0cf"
+        },
+        {
+          "name": "Hellgrau",
+          "hex": "7f7f7f"
+        },
+        {
+          "name": "Signal orange",
+          "hex": "ff7000"
+        },
+        {
+          "name": "Himmel Blue",
+          "hex": "4040ff"
+        },
+        {
+          "name": "Grünes Gras",
+          "hex": "00bf00"
+        },
+        {
+          "name": "Schiefergrau",
+          "hex": "606060"
+        }
+      ]
+    }
+  ]
+}
