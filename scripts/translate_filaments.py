@@ -26,6 +26,7 @@ def get_file_hash(file_path):
 
 def auto_translate(name):
     """Automatische Übersetzung von Englisch nach Deutsch"""
+    print(f"Starte Übersetzung für: {name}")
     try:
         # Eigennamen nicht übersetzen
         if any(term in name for term in ["Bambu", "Arctic", "Candy", "Titan"]):
@@ -62,6 +63,7 @@ def translate_name(name, dictionary):
     
     # Wenn Eintrag fehlt oder identisch ist, automatische Übersetzung
     translated = auto_translate(name)
+    print(f"Übersetze: {name} -> {translated}")
     dictionary[name] = translated  # Aktualisiere das Wörterbuch
     return translated
 
