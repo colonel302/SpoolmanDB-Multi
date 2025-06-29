@@ -39,6 +39,9 @@ jobs:
           git commit -m "Add/Update compiled filament JSONs" || echo "No changes to commit"
           git push || echo "Nothing to push"
 
+      - name: Copy filaments.json to filaments_en.json
+        run: python scripts/copy_filaments_en.py
+
       - name: Deploy German Site
         uses: peaceiris/actions-gh-pages@v4
         with:
