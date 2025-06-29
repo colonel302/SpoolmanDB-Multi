@@ -39,3 +39,8 @@ Alle Materialien findest du in der Datei `materials.json`.
  * **density** – Die Dichte des Materials in g/cm³.
  * **extruder_temp** – Allgemeine Extrudertemperatur für dieses Material.
  * **bed_temp** – Allgemeine Betttemperatur für dieses Material.
+---
+**Hinweis:**  
+Diese README ist eine Übersetzung der [englischen Originalversion](https://github.com/donkie/SpoolmanDB/blob/main/README.md) von [donkie](https://github.com/donkie).  
+Vielen Dank an den Originalautor!
+---
