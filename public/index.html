@@ -8,71 +8,43 @@
     <title>SpoolmanDB-de</title>
     <link rel="stylesheet" href="styles.css">
     <script>
-        // Sprachkonfiguration
-        const languageConfig = {
-            de: {
-                title: "SpoolmanDB-de",
-                headline: "Ein Repository mit den neuesten Filament- und Materialdaten für den 3D-Druck.",
-                description: "Dieses Projekt ist Open-Source, Sie können gerne einen Pull-Request erstellen",
-                materials: "MATERIALIEN",
-                filaments: "FILAMENTE",
-                footer: "SpoolmanDB-de - 2025"
-            },
-            en: {
-                title: "SpoolmanDB-en",
-                headline: "A repository with the latest filament and material data for 3D printing.",
-                description: "This project is open-source, feel free to create a pull request",
-                materials: "MATERIALS",
-                filaments: "FILAMENTS",
-                footer: "SpoolmanDB-en - 2025"
-            }
-        };
+  // Sprache aus URL-Parameter oder Browser ermitteln
+  const urlParams = new URLSearchParams(window.location.search);
+  let lang = urlParams.get('lang') || navigator.language.split('-')[0].toLowerCase() || 'en';
 
-        // Sprache initialisieren und setzen
-        function initLanguage() {
-            const savedLang = localStorage.getItem('lang') || 'de';
-            setLanguage(savedLang);
+  // Für Englisch (oder unbekannte Sprache): Standarddateien laden
+  let filamentFile = 'filaments.json';
+  let materialsFile = 'materials.json'; // materials.json bleibt immer gleich
 
-            // Event-Listener für Sprachumschaltung
-            document.getElementById('lang-switcher').addEventListener('change', (e) => {
-                setLanguage(e.target.value);
-            });
-        }
+  // Für andere Sprachen: Sprachdateien laden, falls vorhanden
+  if (lang !== 'en') {
+      filamentFile = `filaments_${lang}.json`;
+      // materialsFile bleibt immer 'materials.json'
+  }
 
-        // Sprache setzen und Seite aktualisieren
-        function setLanguage(lang) {
-            localStorage.setItem('lang', lang);
-            const config = languageConfig[lang];
+  // Lade Filamentdaten
+  fetch(filamentFile)
+      .then(response => response.json())
+      .then(data => {
+          // Hier deine Verarbeitung
+          console.log("Geladene Filamentdaten:", data);
+      })
+      .catch(err => {
+          console.error(`Fehler beim Laden von ${filamentFile}:`, err);
+      });
 
-            // Texte aktualisieren
-            document.title = config.title;
-            document.querySelector('h2').textContent = config.headline;
-            document.querySelector('p').innerHTML = `${config.description} <a href="https://github.com/colonel302/SpoolmanDB-de">auf Github</a>`;
-            document.querySelector('[data-translate="materials"]').textContent = config.materials;
-            document.querySelector('[data-translate="filaments"]').textContent = config.filaments;
-            document.querySelector('footer p').textContent = config.footer;
+  // Lade Materialdaten (immer materials.json)
+  fetch(materialsFile)
+      .then(response => response.json())
+      .then(data => {
+          // Hier deine Verarbeitung
+          console.log("Geladene Materialdaten:", data);
+      })
+      .catch(err => {
+          console.error(`Fehler beim Laden von ${materialsFile}:`, err);
+      });
+</script>
 
-            // Links aktualisieren (Dateien liegen direkt in /public)
-            document.getElementById('materials-link').href = `materials.json`;
-            document.getElementById('filaments-link').href = `filaments_${lang}.json`;
-
-            // Beispiel: Lade die Filamentdaten dynamisch (optional)
-            // fetchFilamentData(lang);
-        }
-
-        // Beispiel-Funktion zum dynamischen Laden der Filamentdaten (optional)
-        function fetchFilamentData(lang) {
-            fetch(`filaments_${lang}.json`)
-                .then(response => response.json())
-                .then(data => {
-                    // Hier kannst du die Daten weiterverarbeiten oder anzeigen
-                    console.log("Geladene Filamentdaten:", data);
-                })
-                .catch(err => {
-                    console.error("Fehler beim Laden der Filamentdaten:", err);
-                });
-        }
-    </script>
 </head>
 
 <body onload="initLanguage()">
