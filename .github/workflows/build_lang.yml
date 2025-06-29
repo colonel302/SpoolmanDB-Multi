@@ -1,0 +1,57 @@
+name: Build Multi-Language Version
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'filaments_*/*.json'  # Unterstützt jetzt alle Sprachen
+
+jobs:
+  build-multi:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Wichtig für Commit-Operationen
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install check-jsonschema
+
+      - name: Validate Filaments
+        run: |
+          for dir in filaments_*/; do
+            for file in "$dir"*.json; do
+              check-jsonschema --schemafile filaments.schema.json "$file"
+            done
+          done
+
+      - name: Compile Database
+        run: python scripts/compile_lang.py
+
+      - name: Move files to public
+        run: |
+          mkdir -p public
+          mv filaments*.json public/
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git fetch origin
+          git checkout -b workflow-updates
+          git add public/filaments*.json
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update compiled JSONs"
+          git push origin workflow-updates:main || echo "Nothing to push"
+
+      - name: Deploy Site
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public

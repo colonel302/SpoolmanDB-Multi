@@ -1,44 +1,46 @@
 <!--
-Dies ist eine Übersetzung der Original-README von [donkie](https://github.com/donkie/SpoolmanDB).
+Dies ist eine Übersetzung und Erweiterung der Original-README von [donkie](https://github.com/donkie/SpoolmanDB).
 Vielen Dank an den Originalautor für die Bereitstellung dieses Projekts!
-Übersetzt und erweitert von Perplexity AI für die deutschsprachige Community.
 -->
 
-# SpoolmanDB
+# SpoolmanDB-Multilanguage
 
-Ein zentraler Ort zur Speicherung von Informationen über 3D-Druck-Filamente und deren Hersteller.
+Ein zentraler Ort zur Speicherung von Informationen über 3D-Druck-Filamente und deren Hersteller – jetzt mit Mehrsprachigkeit!
 
-Die Datenbank wird über GitHub Pages bereitgestellt und ist hier einsehbar: [https://donkie.github.io/SpoolmanDB/](https://donkie.github.io/SpoolmanDB/)
+Die Datenbank wird über GitHub Pages bereitgestellt und ist hier einsehbar:  
+[https://colonels302.github.io/SpoolmanDB-Multi/](https://colonel302.github.io/SpoolmanDB-Multi/)
 
 Du kannst zu dieser Datenbank beitragen, indem du Dateien hinzufügst/bearbeitest und Pull Requests in diesem Repository einreichst.
 
 ---
 
-## **Erweiterungen in diesem Fork (SpoolmanDB-de)**
+## **Erweiterungen in diesem Fork (SpoolmanDB-Multi)**
 
 **Sprachunterstützung und Übersetzungsautomatisierung:**
 
-- **Deutsche Übersetzungen:**  
-  Alle Filament- und Materialnamen werden automatisiert ins Deutsche übersetzt. Die deutschen Dateien befinden sich im Ordner `filaments_de/` (Quellen) und werden als `filaments_de.json` im Verzeichnis `/public` für die Webseite bereitgestellt.
+- **Mehrsprachige Filamentdaten:**  
+  Alle Filament- und Materialnamen werden automatisiert in verschiedene Sprachen übersetzt. Die Sprachdateien befinden sich jeweils in `filaments_<lang>/` (Quellen) und werden als `filaments_<lang>.json` im Verzeichnis `/public` für die Webseite bereitgestellt.  
+  Für Englisch bleibt die Datei `filaments.json` (ohne Sprachsuffix) die Standarddatei.
 
 - **Automatisierter Übersetzungsworkflow:**  
-  Ein eigener GitHub Actions Workflow (`translate.yaml`) überwacht Änderungen an den Originaldateien in `filaments/` und erstellt/aktualisiert die deutschen Übersetzungen in `filaments_de/`.  
-  Das Wörterbuch für Übersetzungen (`translation_dict.json`) wird im Ordner `filaments_de/` gepflegt und kann manuell ergänzt werden.
+  Ein GitHub Actions Workflow (`translate.yml`) überwacht Änderungen an den Originaldateien in `filaments/` und erstellt/aktualisiert die Übersetzungen in den jeweiligen Sprachordnern (z.B. `filaments_de/`, `filaments_fr/` usw.).  
+  Das Wörterbuch für Übersetzungen (`translation_dict_<lang>.json`) wird pro Sprache gepflegt und kann manuell ergänzt werden.
 
-- **Kompilierung der deutschen Daten:**  
-  Das Skript `scripts/compile_de.py` sammelt alle deutschen Filamentdateien aus `filaments_de/` und erstellt daraus eine zentrale Datei `public/filaments_de.json` für die Webseite.
+- **Kompilierung der Sprachdaten:**  
+  Das Skript `scripts/compile_lang.py` sammelt alle Filamentdateien aus den Sprachordnern und erstellt daraus zentrale Dateien wie `public/filaments_de.json`, `public/filaments_fr.json` usw.  
+  Die englische Datei wird als `filaments.json` bereitgestellt.
 
 - **Sprachumschaltung auf der Webseite:**  
-  Die Webseite unterstützt eine Sprachumschaltung (Deutsch/Englisch) und lädt dynamisch die passenden JSON-Dateien (`filaments_de.json` bzw. `filaments_en.json`) aus dem `/public`-Verzeichnis.
+  Die Webseite unterstützt eine Sprachumschaltung (z.B. Deutsch/Englisch/Französisch) und lädt dynamisch die passenden JSON-Dateien (`filaments_de.json`, `filaments_fr.json` usw.) aus dem `/public`-Verzeichnis. Für Englisch wird immer `filaments.json` geladen.
 
 - **Upstream-Kompatibilität:**  
-  Die Originaldateien in `filaments/` bleiben unverändert. Änderungen am Original-Repository können problemlos übernommen werden, da alle deutschen Anpassungen und Workflows getrennt verwaltet werden.
+  Die Originaldateien in `filaments/` bleiben unverändert. Änderungen am Original-Repository können problemlos übernommen werden, da alle sprachspezifischen Anpassungen und Workflows getrennt verwaltet werden.
 
 ---
 
 ## Filamente
 
-Die Quelldateien befinden sich im Ordner `filaments`. Beim Deployment der Datenbank werden diese zu einer einzigen JSON-Datei namens `filaments.json` zusammengefasst/kompiliert.
+Die Quelldateien befinden sich im Ordner `filaments`. Beim Deployment der Datenbank werden diese zu einer einzigen JSON-Datei namens `filaments.json` (für Englisch) bzw. `filaments_<lang>.json` (für andere Sprachen) zusammengefasst/kompiliert.
 
 Um die notwendige Duplizierung in den Quelldateien zu begrenzen, wird jede Kombination aus Gewicht, Farbe und Durchmesser in der kompilierten JSON dargestellt. Wenn du beispielsweise zwei Durchmesser, zwei Gewichte und zwei Farben angibst, erhältst du acht Kombinationen in der JSON. Es gibt derzeit keine Möglichkeit, bestimmte Kombinationen auszuschließen; entweder akzeptierst du, dass die Datenbank ungültige Einträge enthält, oder du teilst das Filament-Objekt in mehrere auf.
 
