@@ -35,12 +35,12 @@
           "hex": "5E6872"
         },
         {
-          "name": "Transluzent",
+          "name": "Durchscheinend",
           "hex": "00FFFFFF",
           "translucent": true
         },
         {
-          "name": "Transluzent rot",
+          "name": "Durchscheinend rot",
           "hex": "3CD8100C",
           "translucent": true
         },
@@ -53,11 +53,11 @@
           "hex": "C8A970"
         },
         {
-          "name": "(Light) Hell grau",
+          "name": "(Hell) Hölle grau",
           "hex": "F7F3F0"
         },
         {
-          "name": "(Light) Hell grün",
+          "name": "(Hell) Hölle grün",
           "hex": "B4D68D"
         },
         {
@@ -230,7 +230,7 @@
           "hex": "F7ED78"
         },
         {
-          "name": "Transluzent",
+          "name": "Durchscheinend",
           "hex": "FFFFFF",
           "translucent": true
         }

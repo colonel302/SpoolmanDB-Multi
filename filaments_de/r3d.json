@@ -70,7 +70,7 @@
           "hex": "0F52BA"
         },
         {
-          "name": "(Light) Hell blau",
+          "name": "(Hell) Hölle blau",
           "hex": "ADD8E6"
         },
         {
@@ -110,7 +110,7 @@
           "hex": "FAD6A5"
         },
         {
-          "name": "Kaffee braun",
+          "name": "Kaffeebraun",
           "hex": "6F4E37"
         },
         {
@@ -181,7 +181,7 @@
           "translucent": true
         },
         {
-          "name": "(Light) Hell blau",
+          "name": "(Hell) Hölle blau",
           "hex": "ADD8E6",
           "translucent": true
         }
