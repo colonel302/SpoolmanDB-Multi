@@ -1,17 +1,43 @@
 <!--
 Dies ist eine Übersetzung der Original-README von [donkie](https://github.com/donkie/SpoolmanDB).
 Vielen Dank an den Originalautor für die Bereitstellung dieses Projekts!
-Übersetzt von Perplexity AI für die deutschsprachige Community.
+Übersetzt und erweitert von Perplexity AI für die deutschsprachige Community.
 -->
 
 # SpoolmanDB
+
 Ein zentraler Ort zur Speicherung von Informationen über 3D-Druck-Filamente und deren Hersteller.
 
 Die Datenbank wird über GitHub Pages bereitgestellt und ist hier einsehbar: [https://donkie.github.io/SpoolmanDB/](https://donkie.github.io/SpoolmanDB/)
 
 Du kannst zu dieser Datenbank beitragen, indem du Dateien hinzufügst/bearbeitest und Pull Requests in diesem Repository einreichst.
 
+---
+
+## **Erweiterungen in diesem Fork (SpoolmanDB-de)**
+
+**Sprachunterstützung und Übersetzungsautomatisierung:**
+
+- **Deutsche Übersetzungen:**  
+  Alle Filament- und Materialnamen werden automatisiert ins Deutsche übersetzt. Die deutschen Dateien befinden sich im Ordner `filaments_de/` (Quellen) und werden als `filaments_de.json` im Verzeichnis `/public` für die Webseite bereitgestellt.
+
+- **Automatisierter Übersetzungsworkflow:**  
+  Ein eigener GitHub Actions Workflow (`translate.yaml`) überwacht Änderungen an den Originaldateien in `filaments/` und erstellt/aktualisiert die deutschen Übersetzungen in `filaments_de/`.  
+  Das Wörterbuch für Übersetzungen (`translation_dict.json`) wird im Ordner `filaments_de/` gepflegt und kann manuell ergänzt werden.
+
+- **Kompilierung der deutschen Daten:**  
+  Das Skript `scripts/compile_de.py` sammelt alle deutschen Filamentdateien aus `filaments_de/` und erstellt daraus eine zentrale Datei `public/filaments_de.json` für die Webseite.
+
+- **Sprachumschaltung auf der Webseite:**  
+  Die Webseite unterstützt eine Sprachumschaltung (Deutsch/Englisch) und lädt dynamisch die passenden JSON-Dateien (`filaments_de.json` bzw. `filaments_en.json`) aus dem `/public`-Verzeichnis.
+
+- **Upstream-Kompatibilität:**  
+  Die Originaldateien in `filaments/` bleiben unverändert. Änderungen am Original-Repository können problemlos übernommen werden, da alle deutschen Anpassungen und Workflows getrennt verwaltet werden.
+
+---
+
 ## Filamente
+
 Die Quelldateien befinden sich im Ordner `filaments`. Beim Deployment der Datenbank werden diese zu einer einzigen JSON-Datei namens `filaments.json` zusammengefasst/kompiliert.
 
 Um die notwendige Duplizierung in den Quelldateien zu begrenzen, wird jede Kombination aus Gewicht, Farbe und Durchmesser in der kompilierten JSON dargestellt. Wenn du beispielsweise zwei Durchmesser, zwei Gewichte und zwei Farben angibst, erhältst du acht Kombinationen in der JSON. Es gibt derzeit keine Möglichkeit, bestimmte Kombinationen auszuschließen; entweder akzeptierst du, dass die Datenbank ungültige Einträge enthält, oder du teilst das Filament-Objekt in mehrere auf.
@@ -32,6 +58,7 @@ Um die notwendige Duplizierung in den Quelldateien zu begrenzen, wird jede Kombi
  * **colors** – Ein Array von Objekten mit den Feldern `name` und `hex`. Name sollte der vom Hersteller verwendete Farbname sein. Hex ist der Hex-Code der Farbe und kann bei transparenten Farben auch einen Alpha-Kanal enthalten. Bei Mehrfarben-Filamenten gib stattdessen `hexes` an und eine Liste von Hex-Codes. Du kannst hier auch die Felder `finish`, `multi_color_direction`, `pattern`, `translucent` und `glow` setzen, falls sich diese Eigenschaften für eine bestimmte Farbe unterscheiden.
 
 ## Materialien
+
 Alle Materialien findest du in der Datei `materials.json`.
 
 #### Felder der Quelldateien
@@ -39,8 +66,13 @@ Alle Materialien findest du in der Datei `materials.json`.
  * **density** – Die Dichte des Materials in g/cm³.
  * **extruder_temp** – Allgemeine Extrudertemperatur für dieses Material.
  * **bed_temp** – Allgemeine Betttemperatur für dieses Material.
+
 ---
+
 **Hinweis:**  
-Diese README ist eine Übersetzung der [englischen Originalversion](https://github.com/donkie/SpoolmanDB/blob/main/README.md) von [donkie](https://github.com/donkie).  
+Diese README ist eine Übersetzung und Erweiterung der [englischen Originalversion](https://github.com/donkie/SpoolmanDB/blob/main/README.md) von [donkie](https://github.com/donkie).  
 Vielen Dank an den Originalautor!
+
 ---
+
+**Änderungen in diesem Fork zuletzt aktualisiert: Juni 2025**
