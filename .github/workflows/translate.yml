@@ -36,7 +36,7 @@ jobs:
           if ls filaments_de/*.json 1> /dev/null 2>&1 || [ -f filaments_de/translation_dict.json ]; then
             git config --global user.name "github-actions[bot]"
             git config --global user.email "github-actions[bot]@users.noreply.github.com"
-            git add filaments_de/*.json filaments_de/translation_dict.json
+            git add filaments_de/*.json dict/translation_dict_*.json
             git commit -m "Automatische Übersetzung der Filamentnamen (de)" || echo "No changes to commit"
             git push || echo "Nothing to push"
           else
