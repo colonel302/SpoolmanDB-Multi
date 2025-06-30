@@ -38,9 +38,7 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add filaments_de/*.json || true
-          git add filaments*.json
-          git commit -m "Add/Update compiled filament JSONs"
+          git add filaments_*/.json || true
           git add dict/translation_dict_*.json || true
           git add last_dict_hash.txt || true
           git commit -m "Automatische Übersetzung der Filamentnamen (de)" || echo "No changes to commit"
