@@ -1,18 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>SpoolmanDB</title>
-  <script>
-    // Automatische Weiterleitung basierend auf Browser-Sprache
-    const userLang = navigator.language.split('-')[0];
-    window.location.href = `/${userLang}/`;
-  </script>
+    <meta charset="UTF-8">
+    <title>SpoolmanDB-Multi</title>
+    <script>
+        // 1. Unterstützte Sprachen definieren
+        const supportedLangs = ['de', 'en']; // Weitere Sprachen hinzufügen
+        
+        // 2. Browser-Sprache ermitteln (nur Basiscode wie 'de', 'en')
+        const userLang = navigator.language.split('-')[0];
+        
+        // 3. Weiterleitung mit korrektem Basis-Pfad
+        const basePath = "/SpoolmanDB-Multi";
+        const targetLang = supportedLangs.includes(userLang) ? userLang : 'en';
+        window.location.href = `${basePath}/${targetLang}/`;
+    </script>
+    <noscript>
+        <!-- 4. Fallback für JS-deaktivierte Browser -->
+        <meta http-equiv="refresh" content="0; url=/SpoolmanDB-Multi/en/">
+    </noscript>
 </head>
 <body>
-  <h1>Willkommen bei SpoolmanDB</h1>
-  <div class="lang-switcher">
-    <a href="/de/">Deutsch</a>
-    <a href="/en/">English</a>
-  </div>
+    <p>Redirecting to your preferred language...<br>
+    <a href="/SpoolmanDB-Multi/en/">Click here if not redirected</a></p>
 </body>
 </html>
