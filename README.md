@@ -23,7 +23,7 @@ Du kannst zu dieser Datenbank beitragen, indem du Dateien hinzufügst/bearbeites
   Für Englisch bleibt die Datei `filaments.json` (ohne Sprachsuffix) die Standarddatei.
 
 - **Automatisierter Übersetzungsworkflow:**  
-  Ein GitHub Actions Workflow (`translate.yml`) überwacht Änderungen an den Originaldateien in `filaments/` und erstellt/aktualisiert die Übersetzungen in den jeweiligen Sprachordnern (z.B. `filaments_de/`, `filaments_fr/` usw.).  
+  Ein GitHub Actions Workflow (`translate.yml`) überwacht Änderungen an den Originaldateien in `filaments_*/` und erstellt/aktualisiert die Übersetzungen in den jeweiligen Sprachordnern (z.B. `filaments_de/`, `filaments_fr/` usw.).  
   Das Wörterbuch für Übersetzungen (`translation_dict_<lang>.json`) wird pro Sprache gepflegt und kann manuell ergänzt werden.
 
 - **Kompilierung und Deployment:**  
@@ -36,29 +36,33 @@ Du kannst zu dieser Datenbank beitragen, indem du Dateien hinzufügst/bearbeites
   Ein Sprachumschalter in jeder Sprachseite ermöglicht den manuellen Wechsel.
 
 - **Zentrales CSS:**  
-  Das zentrale Stylesheet (`public/styles.css`) wird von allen Sprachseiten über einen absoluten Pfad (`/SpoolmanDB-Multi/styles.css`) eingebunden.  
-  Es ist **nicht** nötig, die CSS-Datei in jeden Sprachordner zu kopieren.
+  Das zentrale Stylesheet (`styles.css`) liegt im **Root-Verzeichnis des Repositories** und wird nach jedem Build explizit in das Verzeichnis `public/` kopiert.  
+  Alle Sprachseiten binden das CSS über einen absoluten Pfad ein:  
+  ```
+  <link rel="stylesheet" href="/SpoolmanDB-Multi/styles.css">
+  ```
+  **Hinweis:** Die Datei darf nicht direkt im Quellordner `public/` liegen, da dieser beim Build gelöscht wird. Sie muss immer aus dem Root nach `public/` kopiert werden.
 
 - **Upstream-Kompatibilität:**  
-  Die Originaldateien in `filaments/` bleiben unverändert. Änderungen am Original-Repository können problemlos übernommen werden, da alle sprachspezifischen Anpassungen und Workflows getrennt verwaltet werden.
+  Die Originaldateien in `filaments_*/` bleiben unverändert. Änderungen am Original-Repository können problemlos übernommen werden, da alle sprachspezifischen Anpassungen und Workflows getrennt verwaltet werden.
 
 ---
 
 ## **Datei- und Ordnerstruktur**
 ```
 public/
-├── index.html # Hauptweiterleitung (automatisch generiert)
-├── styles.css # Zentrales CSS für alle Sprachen
-├── materials.json # Zentrale Materialdaten (wird auch in Sprachordner kopiert)
+├── index.html               # Hauptweiterleitung (automatisch generiert)
+├── styles.css               # Zentrales CSS für alle Sprachen (nach Build hierher kopiert)
+├── materials.json           # Zentrale Materialdaten (wird auch in Sprachordner kopiert)
 ├── de/
-│   ├── index.html # Deutsch (automatisch generiert)
+│   ├── index.html           # Deutsch (automatisch generiert)
 │   ├── filaments.json
 │   └── materials.json
 ├── en/
-│   ├── index.html # Englisch (automatisch generiert)
+│   ├── index.html           # Englisch (automatisch generiert)
 │   ├── filaments.json
 │   └── materials.json
-└── ... # Weitere Sprachordner nach gleichem Muster
+└── ...                      # Weitere Sprachordner nach gleichem Muster
 ```
 
 ---
@@ -69,14 +73,17 @@ public/
 - Wird bei Änderungen an den Quelldateien in `filaments_*/` oder an den Übersetzungswörterbüchern automatisch ausgelöst.
 - Übersetzt neue/aktualisierte Filamentnamen und aktualisiert die Sprachdateien.
 
-### **2. Build- und Deploy-Workflow (`.github/workflows/build_lang.yml`):**
-- Wird bei Änderungen an den Filamentdaten oder manuell ausgelöst.
+### **2. Build- und Deploy-Workflow (`.github/workflows/deploy.yml`):**
+- Wird bei jedem Push auf `main` oder manuell ausgelöst.
 - Führt das Kompilierungsskript aus, das:
     - alle Sprachdateien generiert,
     - materials.json verteilt,
     - index.html für jede Sprache und die Hauptweiterleitung erzeugt,
+    - das zentrale CSS aus dem Root nach `/public` kopiert,
     - alles nach `/public` schreibt.
-- Deployt den Inhalt von `/public` automatisiert auf den `gh-pages`-Branch via [peaceiris/actions-gh-pages](https://github.com/peaceiris/actions-gh-pages).
+- Deployt den Inhalt von `/public` automatisiert auf GitHub Pages mit den offiziellen Actions:
+  - [`actions/upload-pages-artifact`](https://github.com/actions/upload-pages-artifact)
+  - [`actions/deploy-pages`](https://github.com/actions/deploy-pages)
 
 ---
 
@@ -111,7 +118,7 @@ Alle Materialien findest du in der Datei `materials.json`, die in jedem Sprachor
 - **Python 3.11+** (für Skripte und Automatisierung)
 - **GitHub Actions** (für Übersetzungs- und Build-Workflows)
 - **deep-translator, pyyaml** (für Übersetzung und Datenhandling)
-- **peaceiris/actions-gh-pages** (für Deployment)
+- **actions/upload-pages-artifact & actions/deploy-pages** (für Deployment, Stand 2025)
 - **check-jsonschema** (für Validierung der Filamentdaten)
 
 ---
