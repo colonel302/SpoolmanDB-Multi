@@ -5,9 +5,14 @@ on:
   push:
     paths:
       - 'filaments_*/*.json'
+  workflow_run:
+    workflows: ["Build"]       # Name des originalen Workflows (build.yml)
+    types:
+      - completed
 
 jobs:
   build-multi:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
