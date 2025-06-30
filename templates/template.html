@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{{description}}">
     <title>SpoolmanDB</title>
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/SpoolmanDB-Multi/styles.css">
 </head>
 
 <body>
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 const info = document.createElement('div');
                 info.style.fontSize = '0.9em';
                 info.style.marginTop = '0.5em';
-                info.textContent = `Es sind ${data.length} Materialien gelistet.`;
+                info.textContent = `{{materials_count_text}}`.replace('{count}', data.length);
                 footer.appendChild(info);
             }
             // Hier kannst du weitere Verarbeitung einbauen
