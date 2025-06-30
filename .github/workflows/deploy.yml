@@ -15,8 +15,6 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -56,24 +54,18 @@ jobs:
             mv filaments_original filaments
           fi
 
-      # NEU: Sprachspezifische index.html generieren
       - name: Generate language-specific index.html
         run: |
-          cd public
-          for LANG_DIR in *; do
+          for LANG_DIR in public/*; do
             if [ -d "$LANG_DIR" ]; then
-              # index.html aus Template mit Sprachcode anpassen
-              sed "s/{{LANG}}/$LANG_DIR/g" ../index_template.html > "$LANG_DIR/index.html"
-              
-              # Optional: Sprachspezifisches CSS verlinken
-              echo "<link rel='stylesheet' href='/styles.css'>" >> "$LANG_DIR/index.html"
+              LANG=$(basename "$LANG_DIR")
+              # Ersetze {{LANG}} im Template durch den Sprachcode
+              sed "s/{{LANG}}/$LANG/g" templates/template.html > "$LANG_DIR/index.html"
             fi
           done
-          cd ..
 
       - name: Copy global assets
         run: |
-          cp index_template.html public/
           cp styles.css public/
 
       - name: Verify artifact content
