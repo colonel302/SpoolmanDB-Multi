@@ -252,13 +252,34 @@ def generate_html_files():
         (lang_dir / "index.html").write_text(html_content, encoding="utf-8")
         print(f"✅ {lang}/index.html generiert")
         
-def copy_materials_to_languages():
-    src = Path("public/materials.json")
-    for lang_dir in Path("public").iterdir():
-        if lang_dir.is_dir():
-            dest = lang_dir / "materials.json"
-            shutil.copy2(src, dest)
-            print(f"✅ materials.json nach {dest} kopiert")
+
+def generate_main_redirect():
+    """Erzeugt die Haupt-index.html mit Sprachweiterleitung"""
+    html_content = """
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>SpoolmanDB-Multi</title>
+        <script>
+            const supportedLangs = ['de', 'en'];
+            const basePath = "/SpoolmanDB-Multi";
+            const userLang = navigator.language.split('-')[0];
+            const targetLang = supportedLangs.includes(userLang) ? userLang : 'en';
+            window.location.href = `${basePath}/${targetLang}/`;
+        </script>
+        <noscript>
+            <meta http-equiv="refresh" content="0; url=/SpoolmanDB-Multi/en/">
+        </noscript>
+    </head>
+    <body>
+        <p>Redirecting to your preferred language...<br>
+        <a href="/SpoolmanDB-Multi/en/">Click here if not redirected</a></p>
+    </body>
+    </html>
+    """
+    (Path("public") / "index.html").write_text(html_content, encoding="utf-8")
+    print("✅ Haupt-index.html mit Sprachweiterleitung generiert")
 
 def main():
     # Automatische Spracherkennung
@@ -297,7 +318,7 @@ def main():
     
     generate_html_files()
     
-    copy_materials_to_languages()
+    generate_main_redirect()
 
 if __name__ == "__main__":
     main()
