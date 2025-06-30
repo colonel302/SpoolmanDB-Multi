@@ -1,0 +1,222 @@
+{
+    "type": "object",
+    "required": [
+        "manufacturer",
+        "filaments"
+    ],
+    "properties": {
+        "manufacturer": {
+            "type": "string"
+        },
+        "filaments": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+                "type": "object",
+                "required": [
+                    "name",
+                    "density",
+                    "material",
+                    "weights",
+                    "diameters",
+                    "colors"
+                ],
+                "properties": {
+                    "name": {
+                        "$comment": "Name of the filament, must contain {color_name}",
+                        "type": "string",
+                        "pattern": "\\{"
+                    },
+                    "material": {
+                        "$comment": "Valid materials must be uppercase letters and numbers, optionally separated by + or -. Optionally ends with -CF or -GF followed by a number. Examples: ABS, ABS-CF, PC+ABS, PC+ABS-CF10.",
+                        "type": "string",
+                        "pattern": "^[A-Z0-9]+(\\+[A-Z0-9]+)*(-(CF\\d{0,2}|GF\\d{0,2}|\\d{2}[AD]))?\\+?$"
+                    },
+                    "density": {
+                        "type": "number",
+                        "exclusiveMinimum": 0
+                    },
+                    "weights": {
+                        "type": "array",
+                        "minItems": 1,
+                        "uniqueItems": true,
+                        "items": {
+                            "type": "object",
+                            "required": [
+                                "weight"
+                            ],
+                            "properties": {
+                                "weight": {
+                                    "type": "number",
+                                    "minimum": 0
+                                },
+                                "spool_weight": {
+                                    "type": "number",
+                                    "minimum": 0
+                                },
+                                "spool_type": {
+                                    "$comment": "Material of the spool itself.",
+                                    "enum": [
+                                        null,
+                                        "plastic",
+                                        "cardboard",
+                                        "metal"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "diameters": {
+                        "type": "array",
+                        "minItems": 1,
+                        "uniqueItems": true,
+                        "items": {
+                            "type": "number",
+                            "exclusiveMinimum": 0
+                        }
+                    },
+                    "extruder_temp": {
+                        "type": "integer"
+                    },
+                    "extruder_temp_range": {
+                        "$comment": "Temperature range for the extruder in degrees Celsius.",
+                        "type": "array",
+                        "minItems": 2,
+                        "maxItems": 2,
+                        "items": {
+                            "type": "integer"
+                        }
+                    },
+                    "bed_temp": {
+                        "type": "integer"
+                    },
+                    "bed_temp_range": {
+                        "$comment": "Temperature range for the bed in degrees Celsius.",
+                        "type": "array",
+                        "minItems": 2,
+                        "maxItems": 2,
+                        "items": {
+                            "type": "integer"
+                        }
+                    },
+                    "fill": {
+                        "$comment": "Type of fill material.",
+                        "enum": [
+                            null,
+                            "glass fiber",
+                            "carbon fiber",
+                            "wood"
+                        ]
+                    },
+                    "finish": {
+                        "$comment": "Surface finish. Don't set if it's not explicitly stated by the manufacturer.",
+                        "enum": [
+                            null,
+                            "matte",
+                            "glossy"
+                        ]
+                    },
+                    "multi_color_direction": {
+                        "$comment": "Coaxial = the color changes depending on print direction, longitudinal = the color changes along the duration of the print.",
+                        "enum": [
+                            null,
+                            "coaxial",
+                            "longitudinal"
+                        ]
+                    },
+                    "pattern": {
+                        "$comment": "Surface details",
+                        "enum": [
+                            null,
+                            "marble",
+                            "sparkle"
+                        ]
+                    },
+                    "translucent": {
+                        "$comment": "True if the filament is at least partly see-through",
+                        "type": "boolean"
+                    },
+                    "glow": {
+                        "$comment": "True if the filament has a glow-in-the-dark effect",
+                        "type": "boolean"
+                    },
+                    "colors": {
+                        "type": "array",
+                        "minItems": 1,
+                        "uniqueItems": true,
+                        "items": {
+                            "type": "object",
+                            "oneOf": [
+                                {
+                                    "required": [
+                                        "name",
+                                        "hex"
+                                    ]
+                                },
+                                {
+                                    "required": [
+                                        "name",
+                                        "hexes"
+                                    ]
+                                }
+                            ],
+                            "properties": {
+                                "name": {
+                                    "type": "string"
+                                },
+                                "hex": {
+                                    "$comment": "For a single-color filament.",
+                                    "type": "string",
+                                    "pattern": "^[0-9a-fA-F]{6}([0-9a-fA-F]{2})?$"
+                                },
+                                "hexes": {
+                                    "$comment": "For a multi-color filament.",
+                                    "type": "array",
+                                    "minItems": 2,
+                                    "uniqueItems": true,
+                                    "items": {
+                                        "type": "string",
+                                        "pattern": "^[0-9a-fA-F]{6}([0-9a-fA-F]{2})?$"
+                                    }
+                                },
+                                "finish": {
+                                    "$comment": "Surface finish of this color. Don't set if it's not explicitly stated by the manufacturer.",
+                                    "enum": [
+                                        null,
+                                        "matte",
+                                        "glossy"
+                                    ]
+                                },
+                                "multi_color_direction": {
+                                    "$comment": "Coaxial = the color changes depending on print direction, longitudinal = the color changes along the duration of the print.",
+                                    "enum": [
+                                        null,
+                                        "coaxial",
+                                        "longitudinal"
+                                    ]
+                                },
+                                "pattern": {
+                                    "$comment": "Surface details of this color",
+                                    "enum": [
+                                        null,
+                                        "marble",
+                                        "sparkle"
+                                    ]
+                                },
+                                "translucent": {
+                                    "$comment": "True if this color is at least partly see-through",
+                                    "type": "boolean"
+                                },
+                                "glow": {
+                                    "$comment": "True if this color has a glow-in-the-dark effect",
+                                    "type": "boolean"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
