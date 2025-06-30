@@ -1,5 +1,5 @@
 # scripts/translate_html.py
-import datetime, os
+import datetime, os, shutil
 from pathlib import Path
 
 TRANSLATIONS = {
