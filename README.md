@@ -45,7 +45,7 @@ Du kannst zu dieser Datenbank beitragen, indem du Dateien hinzufügst/bearbeites
 ---
 
 ## **Datei- und Ordnerstruktur**
-
+```
 public/
 ├── index.html # Hauptweiterleitung (automatisch generiert)
 ├── styles.css # Zentrales CSS für alle Sprachen
@@ -59,7 +59,7 @@ public/
 │ ├── filaments.json
 │ └── materials.json
 └── ... # Weitere Sprachordner nach gleichem Muster
-
+```
 
 ---
 
