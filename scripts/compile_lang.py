@@ -5,6 +5,7 @@ from typing import Iterator, TypedDict, NotRequired
 import os
 import sys
 import shutil
+import datetime
 
 class SpoolType(StrEnum):
     PLASTIC = "plastic"
@@ -60,6 +61,27 @@ SPOOL_TYPE_MAP = {
     SpoolType.PLASTIC: "p",
     SpoolType.CARDBOARD: "c",
     SpoolType.METAL: "m",
+}
+
+TRANSLATIONS = {
+    "de": {
+        "description": "Finden Sie die neuesten Filament- und Materialdaten für den 3D-Druck.",
+        "headline": "Ein Repository der neuesten Filament- und Materialdaten für den 3D-Druck.",
+        "description_full": "Dieses Projekt ist Open-Source. Fühlen Sie sich frei, einen Pull Request zu erstellen",
+        "data_files_header": "Datendateien",
+        "materials_link": "MATERIALIEN",
+        "filaments_link": "FILAMENTE",
+        "materials_count_text": "Es sind {count} Materialien gelistet."
+    },
+    "en": {
+        "description": "Find the latest filament and materials data for 3D printing.",
+        "headline": "A repository of the latest filament and materials data for 3D printing.",
+        "description_full": "This project is open-source, feel free to create a pull request",
+        "data_files_header": "Data files",
+        "materials_link": "MATERIALS",
+        "filaments_link": "FILAMENTS",
+        "materials_count_text": "{count} materials listed."
+    }
 }
 
 def generate_id(
@@ -201,6 +223,35 @@ def copy_materials_files():
             shutil.copy(materials_src, dest_path)
             print(f"📋 Kopierte materials.json nach: {dest_path}")
 
+def generate_html_files():
+    template_path = Path("templates/template.html")
+    template = template_path.read_text(encoding="utf-8")
+    current_year = datetime.datetime.now().year
+    
+    for lang in TRANSLATIONS:
+        lang_dir = Path("public") / lang
+        lang_dir.mkdir(parents=True, exist_ok=True)
+        
+        # Ersetze Platzhalter
+        html_content = template
+        for key, value in TRANSLATIONS[lang].items():
+            html_content = html_content.replace(f"{{{{{key}}}}}", value)
+        
+        html_content = html_content.replace("{{lang}}", lang)
+        html_content = html_content.replace("{{current_year}}", str(current_year))
+        
+        # Schreibe index.html
+        (lang_dir / "index.html").write_text(html_content, encoding="utf-8")
+        print(f"✅ {lang}/index.html generiert")
+        
+def copy_materials_to_languages():
+    src = Path("public/materials.json")
+    for lang_dir in Path("public").iterdir():
+        if lang_dir.is_dir():
+            dest = lang_dir / "materials.json"
+            shutil.copy2(src, dest)
+            print(f"✅ materials.json nach {dest} kopiert")
+
 def main():
     # Automatische Spracherkennung
     languages = set()
@@ -235,6 +286,10 @@ def main():
     copy_materials_files()
     
     print("\n🎉 Alle Sprachen erfolgreich kompiliert!")
+    
+    generate_html_files()
+    
+    copy_materials_to_languages()
 
 if __name__ == "__main__":
     main()

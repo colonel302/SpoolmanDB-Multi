@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{description}}">
+    <title>SpoolmanDB</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <picture>
+                <img alt="Spoolman Logo"
+                    src="https://github.com/Donkie/Spoolman/assets/2332094/4e6e80ac-c7be-4ad2-9a33-dedc1b5ba30e"
+                    class="logo">
+            </picture>
+        </div>
+    </header>
+
+    <main>
+        <h2>{{headline}}</h2>
+        <p>{{description_full}} <a href="https://github.com/colonel302/SpoolmanDB-Multi">on Github</a>.</p>
+        <h2>{{data_files_header}}</h2>
+        <div class="data-files">
+            <div class="column">
+                <ul>
+                    <li><a href="materials.json">{{materials_link}}</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <ul>
+                    <li><a href="filaments.json">{{filaments_link}}</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>SpoolmanDB-Multi - {{current_year}}</p>
+    </footer>
+	<script>
+document.addEventListener('DOMContentLoaded', function() {
+    fetch('materials.json')
+        .then(response => {
+            if (!response.ok) throw new Error('materials.json nicht gefunden!');
+            return response.json();
+        })
+        .then(data => {
+            // Beispiel: Zeige die Anzahl der Materialien im Footer an
+            const footer = document.querySelector('footer');
+            if (footer && Array.isArray(data)) {
+                const info = document.createElement('div');
+                info.style.fontSize = '0.9em';
+                info.style.marginTop = '0.5em';
+                info.textContent = `Es sind ${data.length} Materialien gelistet.`;
+                footer.appendChild(info);
+            }
+            // Hier kannst du weitere Verarbeitung einbauen
+            // z.B. dynamische Listen, Tabellen, etc.
+        })
+        .catch(error => {
+            console.error('Fehler beim Laden von materials.json:', error);
+        });
+});
+</script>
+</body>
+
+</html>
