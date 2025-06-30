@@ -35,11 +35,6 @@ jobs:
       - name: Compile Database
         run: python scripts/compile_lang.py
 
-      - name: Move files to public
-        run: |
-          mkdir -p public
-          mv filaments*.json public/
-
       - name: Commit and Push
         run: |
           git config --global user.name "github-actions[bot]"
