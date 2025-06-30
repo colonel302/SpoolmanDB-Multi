@@ -28,6 +28,16 @@ jobs:
       - name: Build site
         run: python scripts/compile_lang.py
 
+      # NEU: Explizites Einbinden der CSS-Datei
+      - name: Ensure CSS is included
+        run: |
+          cp styles.css public/styles.css
+          echo "✅ CSS-Datei wurde in public/ kopiert"
+
+      # NEU: Verzeichnisstruktur prüfen
+      - name: Verify artifact content
+        run: ls -R public
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
