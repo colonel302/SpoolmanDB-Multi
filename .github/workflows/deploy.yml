@@ -16,7 +16,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Sichert vollen Commit-History für korrekte Dateiverwaltung
+          fetch-depth: 0
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -26,48 +26,60 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Prepare build environment
+        run: |
+          rm -rf public
+          mkdir public
+
       - name: Build multilingual JSON
         run: |
-          # Dynamische Erkennung aller Sprachordner
           LANG_DIRS=$(find . -maxdepth 1 -type d -name 'filaments_*' -printf '%f\n')
           
-          # Originalen Filaments-Ordner sichern
           if [ -d "filaments" ]; then
             cp -r filaments filaments_original
           fi
           
           for LANG_DIR in $LANG_DIRS; do
-            # Sprachcode extrahieren (z.B. "en" aus "filaments_en")
             LANG=${LANG_DIR#filaments_}
             
-            # Temporären Quellordner erstellen
             rm -rf filaments
             cp -r "$LANG_DIR" filaments
             
-            # Kompilierung durchführen
             python3 scripts/compile_filaments.py
             
-            # Ausgabe im Sprachordner speichern
             mkdir -p "public/$LANG"
             mv filaments.json "public/$LANG/filaments.json"
           done
           
-          # Originalzustand wiederherstellen
           rm -rf filaments
           if [ -d "filaments_original" ]; then
             mv filaments_original filaments
           fi
 
-      - name: Include global assets
+      # NEU: Sprachspezifische index.html generieren
+      - name: Generate language-specific index.html
         run: |
-          cp styles.css public/styles.css
-          # Füge hier andere globale Assets hinzu
+          cd public
+          for LANG_DIR in *; do
+            if [ -d "$LANG_DIR" ]; then
+              # index.html aus Template mit Sprachcode anpassen
+              sed "s/{{LANG}}/$LANG_DIR/g" ../index_template.html > "$LANG_DIR/index.html"
+              
+              # Optional: Sprachspezifisches CSS verlinken
+              echo "<link rel='stylesheet' href='/styles.css'>" >> "$LANG_DIR/index.html"
+            fi
+          done
+          cd ..
 
-      - name: Verify artifact structure
+      - name: Copy global assets
         run: |
-          echo "Generierte Struktur:"
+          cp index_template.html public/
+          cp styles.css public/
+
+      - name: Verify artifact content
+        run: |
+          echo "Struktur des public-Ordners:"
           find public -type f -print
-          echo "\nSprachordner: $LANG_DIRS"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
