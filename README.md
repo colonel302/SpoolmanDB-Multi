@@ -51,13 +51,13 @@ public/
 ├── styles.css # Zentrales CSS für alle Sprachen
 ├── materials.json # Zentrale Materialdaten (wird auch in Sprachordner kopiert)
 ├── de/
-│ ├── index.html # Deutsch (automatisch generiert)
-│ ├── filaments.json
-│ └── materials.json
+│   ├── index.html # Deutsch (automatisch generiert)
+│   ├── filaments.json
+│   └── materials.json
 ├── en/
-│ ├── index.html # Englisch (automatisch generiert)
-│ ├── filaments.json
-│ └── materials.json
+│   ├── index.html # Englisch (automatisch generiert)
+│   ├── filaments.json
+│   └── materials.json
 └── ... # Weitere Sprachordner nach gleichem Muster
 ```
 
@@ -132,3 +132,8 @@ Vielen Dank an den Originalautor!
 ---
 
 **Änderungen in diesem Fork zuletzt aktualisiert: Juni 2025**
+```
+
+**Tipp:**  
+Wenn du eine aktuellere Deployment-Methode (ohne peaceiris, mit actions/deploy-pages) nutzt, passe die Abschnitte zu den Workflows entsprechend an.  
+Die hier gelieferte Version entspricht exakt deiner hochgeladenen Datei und ist für GitHub Markdown geeignet[1].
