@@ -15,8 +15,6 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -24,55 +22,21 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
-
-      - name: Prepare build environment
         run: |
-          # Lösche vorhandenen public-Ordner und erstelle neu
-          rm -rf public
-          mkdir public
+          pip install -r requirements.txt
 
-      - name: Build multilingual JSON
+      - name: Build site
+        run: python scripts/compile_lang.py
+
+      # NEU: Explizites Einbinden der CSS-Datei
+      - name: Ensure CSS is included
         run: |
-          # Dynamische Erkennung aller Sprachordner
-          LANG_DIRS=$(find . -maxdepth 1 -type d -name 'filaments_*' -printf '%f\n')
-          
-          # Originalen Filaments-Ordner sichern
-          if [ -d "filaments" ]; then
-            cp -r filaments filaments_original
-          fi
-          
-          for LANG_DIR in $LANG_DIRS; do
-            LANG=${LANG_DIR#filaments_}
-            
-            # Temporären Quellordner erstellen
-            rm -rf filaments
-            cp -r "$LANG_DIR" filaments
-            
-            # Kompilierung durchführen
-            python3 scripts/compile_filaments.py
-            
-            # Ausgabe in public kopieren
-            mkdir -p "public/$LANG"
-            mv filaments.json "public/$LANG/filaments.json"
-          done
-          
-          # Originalzustand wiederherstellen
-          rm -rf filaments
-          if [ -d "filaments_original" ]; then
-            mv filaments_original filaments
-          fi
+          cp styles.css public/styles.css
+          echo "✅ CSS-Datei wurde in public/ kopiert"
 
-      - name: Copy static assets
-        run: |
-          # Kopiere notwendige Dateien in public/
-          cp index.html public/
-          cp styles.css public/
-
+      # NEU: Verzeichnisstruktur prüfen
       - name: Verify artifact content
-        run: |
-          echo "Struktur des public-Ordners:"
-          ls -R public
+        run: ls -R public
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
