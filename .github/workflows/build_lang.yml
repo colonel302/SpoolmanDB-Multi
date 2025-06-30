@@ -41,10 +41,17 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git fetch origin
           git checkout -b workflow-updates
-          git add public/filaments*.json
           git diff --quiet && git diff --staged --quiet || git commit -m "Update compiled JSONs"
           git push origin workflow-updates:main || echo "Nothing to push"
 
+      - name: Generate Language HTMLs
+        run: |
+        # Erzeugt index.html für jede Sprache
+          for lang in $(ls public/ | grep -E '^[a-z]{2}$'); do
+            cp public/template.html public/$lang/index.html
+            sed -i "s/{{lang}}/$lang/g" public/$lang/index.html
+          done
+      
       - name: Deploy Site
         uses: peaceiris/actions-gh-pages@v4
         with:
