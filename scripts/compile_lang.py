@@ -210,19 +210,27 @@ def compile_for_language(lang: str):
     print(f"✅ Sprache {lang} erfolgreich verarbeitet!")
 
 def copy_materials_files():
-    """Kopiert materials.json in jedes Sprachverzeichnis"""
+    """Kopiert materials.json in public/ und in jedes Sprachverzeichnis"""
     materials_src = Path("materials.json")
+    
+    # 1. Prüfe, ob Quelldatei existiert
     if not materials_src.exists():
         print("⚠️  materials.json nicht gefunden. Überspringe Kopiervorgang.")
         return
     
-    # Finde alle Sprachverzeichnisse in public/
+    # 2. Kopiere materials.json ins public-Root
+    dst_public = Path("public/materials.json")
+    dst_public.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(materials_src, dst_public)
+    print(f"✅ materials.json nach {dst_public} kopiert")
+    
+    # 3. Kopiere in alle Sprachverzeichnisse
     for lang_dir in Path("public").iterdir():
         if lang_dir.is_dir():
             dest_path = lang_dir / "materials.json"
-            shutil.copy(materials_src, dest_path)
+            shutil.copy2(materials_src, dest_path)  # WICHTIG: Kopiere direkt aus materials_src
             print(f"📋 Kopierte materials.json nach: {dest_path}")
-
+            
 def generate_html_files():
     template_path = Path("templates/template.html")
     template = template_path.read_text(encoding="utf-8")
