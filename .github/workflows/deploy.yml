@@ -65,6 +65,8 @@ jobs:
           done
 
       - name: Generate HTML files
+        env:
+          GITHUB_REPOSITORY: ${{ github.repository }}  # Setzt den Repository-Namen
         run: python3 scripts/translate_html.py
 
       - name: Copy global assets

@@ -48,9 +48,7 @@ def generate_root_index():
     public_dir = Path("public")
     supported_langs = [d.name for d in public_dir.iterdir() if d.is_dir()]
     default_lang = 'en'
-    
-    # Dynamischer Repository-Name aus GitHub Actions Umgebung
-    repo_name = os.environ.get('GITHUB_REPOSITORY', '').split('/')[-1]  # Extrahiert "SpoolmanDB-Multi" aus "user/SpoolmanDB-Multi"
+    repo_name = os.environ.get('GITHUB_REPOSITORY', '').split('/')[-1]
     
     root_index = public_dir / "index.html"
     root_index.write_text(f'''<!DOCTYPE html>
@@ -59,16 +57,19 @@ def generate_root_index():
     <meta charset="UTF-8">
     <title>Filament Redirect</title>
     <script>
-        // Dynamische Weiterleitung mit Repository-Namen
-        const userLang = navigator.language.split('-')[0];  // Korrekte Extraktion des Sprachcodes
+        // Dynamische Weiterleitung MIT Repository-Namen im Pfad
+        const userLang = navigator.language.split('-')[0];
         const supportedLangs = {supported_langs};
         const defaultLang = '{default_lang}';
         const repoName = '{repo_name}';
         
+        // Korrekter Pfad mit Repository-Name
+        const basePath = repoName ? `/${{repoName}}` : '';
+        
         if (supportedLangs.includes(userLang)) {{
-            window.location.href = `/${{repoName}}/${{userLang}}/index.html`;
+            window.location.href = `${{basePath}}/${{userLang}}/index.html`;
         }} else {{
-            window.location.href = `/${{repoName}}/${{defaultLang}}/index.html`;
+            window.location.href = `${{basePath}}/${{defaultLang}}/index.html`;
         }}
     </script>
 </head>
@@ -76,7 +77,7 @@ def generate_root_index():
     <p>Redirecting to your language...</p>
 </body>
 </html>''', encoding='utf-8')
-    print(f"✅ Root index.html generiert mit Sprachen: {supported_langs} und Repo: {repo_name}")
+    print(f"✅ Root index.html generiert für Repository: {repo_name}")
 
 if __name__ == "__main__":
     generate_html_files()
