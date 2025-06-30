@@ -44,5 +44,36 @@ def generate_html_files():
         (lang_dir / "index.html").write_text(html_content, encoding="utf-8")
         print(f"✅ {lang}/index.html generiert")
 
+def generate_root_index():
+    public_dir = Path("public")
+    supported_langs = [d.name for d in public_dir.iterdir() if d.is_dir()]
+    default_lang = 'en'  # Fallback-Sprache
+
+    root_index = public_dir / "index.html"
+    root_index.write_text(f'''<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Filament Redirect</title>
+    <script>
+        // Dynamische Weiterleitung basierend auf Browser-Sprache
+        const userLang = navigator.language.split('-')[0];
+        const supportedLangs = {supported_langs};
+        const defaultLang = '{default_lang}';
+        
+        if (supportedLangs.includes(userLang)) {{
+            window.location.href = `/${{userLang}}/index.html`;
+        }} else {{
+            window.location.href = `/${{defaultLang}}/index.html`;
+        }}
+    </script>
+</head>
+<body>
+    <p>Redirecting to your language...</p>
+</body>
+</html>''', encoding='utf-8')
+    print(f"✅ Root index.html generiert mit Sprachen: {supported_langs}")
+
 if __name__ == "__main__":
     generate_html_files()
+    generate_root_index()
