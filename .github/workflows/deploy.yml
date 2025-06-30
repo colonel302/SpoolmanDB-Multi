@@ -64,6 +64,9 @@ jobs:
             fi
           done
 
+      - name: Generate HTML files
+        run: python3 scripts/translate_html.py
+
       - name: Copy global assets
         run: |
           cp styles.css public/
@@ -72,7 +75,7 @@ jobs:
         run: |
           echo "Struktur des public-Ordners:"
           find public -type f -print
-
+      
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
