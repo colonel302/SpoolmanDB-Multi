@@ -15,6 +15,8 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Sichert vollen Commit-History für korrekte Dateiverwaltung
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -22,21 +24,50 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build multilingual JSON
         run: |
-          pip install -r requirements.txt
+          # Dynamische Erkennung aller Sprachordner
+          LANG_DIRS=$(find . -maxdepth 1 -type d -name 'filaments_*' -printf '%f\n')
+          
+          # Originalen Filaments-Ordner sichern
+          if [ -d "filaments" ]; then
+            cp -r filaments filaments_original
+          fi
+          
+          for LANG_DIR in $LANG_DIRS; do
+            # Sprachcode extrahieren (z.B. "en" aus "filaments_en")
+            LANG=${LANG_DIR#filaments_}
+            
+            # Temporären Quellordner erstellen
+            rm -rf filaments
+            cp -r "$LANG_DIR" filaments
+            
+            # Kompilierung durchführen
+            python3 scripts/compile_filaments.py
+            
+            # Ausgabe im Sprachordner speichern
+            mkdir -p "public/$LANG"
+            mv filaments.json "public/$LANG/filaments.json"
+          done
+          
+          # Originalzustand wiederherstellen
+          rm -rf filaments
+          if [ -d "filaments_original" ]; then
+            mv filaments_original filaments
+          fi
 
-      - name: Build site
-        run: python scripts/compile_lang.py
-
-      # NEU: Explizites Einbinden der CSS-Datei
-      - name: Ensure CSS is included
+      - name: Include global assets
         run: |
           cp styles.css public/styles.css
-          echo "✅ CSS-Datei wurde in public/ kopiert"
+          # Füge hier andere globale Assets hinzu
 
-      # NEU: Verzeichnisstruktur prüfen
-      - name: Verify artifact content
-        run: ls -R public
+      - name: Verify artifact structure
+        run: |
+          echo "Generierte Struktur:"
+          find public -type f -print
+          echo "\nSprachordner: $LANG_DIRS"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
