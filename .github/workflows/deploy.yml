@@ -16,7 +16,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Sichert vollen Commit-History für korrekte Dateiverwaltung
+          fetch-depth: 0
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -25,6 +25,12 @@ jobs:
 
       - name: Install dependencies
         run: pip install -r requirements.txt
+
+      - name: Prepare build environment
+        run: |
+          # Lösche vorhandenen public-Ordner und erstelle neu
+          rm -rf public
+          mkdir public
 
       - name: Build multilingual JSON
         run: |
@@ -37,7 +43,6 @@ jobs:
           fi
           
           for LANG_DIR in $LANG_DIRS; do
-            # Sprachcode extrahieren (z.B. "en" aus "filaments_en")
             LANG=${LANG_DIR#filaments_}
             
             # Temporären Quellordner erstellen
@@ -47,7 +52,7 @@ jobs:
             # Kompilierung durchführen
             python3 scripts/compile_filaments.py
             
-            # Ausgabe im Sprachordner speichern
+            # Ausgabe in public kopieren
             mkdir -p "public/$LANG"
             mv filaments.json "public/$LANG/filaments.json"
           done
@@ -58,16 +63,16 @@ jobs:
             mv filaments_original filaments
           fi
 
-      - name: Include global assets
+      - name: Copy static assets
         run: |
-          cp styles.css public/styles.css
-          # Füge hier andere globale Assets hinzu
+          # Kopiere notwendige Dateien in public/
+          cp index.html public/
+          cp styles.css public/
 
-      - name: Verify artifact structure
+      - name: Verify artifact content
         run: |
-          echo "Generierte Struktur:"
-          find public -type f -print
-          echo "\nSprachordner: $LANG_DIRS"
+          echo "Struktur des public-Ordners:"
+          ls -R public
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
