@@ -1721,6 +1721,10 @@
                     "name": "Lava Gray",
                     "hex": "4d5054"
                 },
+				{
+                    "name": "Dark Gray",
+                    "hex": "83878e"
+                },
                 {
                     "name": "Iris Purple",
                     "hex": "69398E"
