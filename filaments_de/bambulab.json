@@ -1705,6 +1705,10 @@
         {
           "weight": 1000,
           "spool_weight": 250
+        },
+		{
+          "weight": 500,
+          "spool_weight": 250
         }
       ],
       "diameters": [
