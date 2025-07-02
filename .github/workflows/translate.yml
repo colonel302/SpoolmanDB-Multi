@@ -41,6 +41,7 @@ jobs:
           git add filaments_*/.json || true
           git add dict/translation_dict_*.json || true
           git add last_dict_hash.txt || true
+          git add -A
           git commit -m "Automatische Übersetzung der Filamentnamen (de)" || echo "No changes to commit"
           git push || echo "Nothing to push"
     
