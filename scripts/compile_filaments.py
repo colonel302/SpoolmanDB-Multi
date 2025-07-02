@@ -87,7 +87,6 @@ def generate_id(
     diameter_s = f"{diameter:.2f}".replace(".", "")
     spooltype_s = SPOOL_TYPE_MAP[spool_type]
     return f"{manufacturer.lower()}_{material.lower().replace('-', '')}_{name.lower()}_{weight_s}_{diameter_s}_{spooltype_s}".replace(" ", "")
-    )
 
 
 def expand_filament_data(manufacturer: str, data: Filament) -> Iterator[dict]:
