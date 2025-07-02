@@ -1,0 +1,2011 @@
+{
+  "manufacturer": "Polymaker",
+  "filaments": [
+    {
+      "name": "Fiberon™ PA12-CF10 {color_name}",
+      "material": "PA",
+      "density": 1.06,
+      "weights": [
+        {
+          "weight": 500.0,
+          "spool_weight": 190.0,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        260,
+        300
+      ],
+      "bed_temp_range": [
+        25,
+        50
+      ],
+      "colors": [
+        {
+          "name": "Schwarz",
+          "hex": "000000"
+        }
+      ]
+    },
+    {
+      "name": "Fiberon™ PA6-CF20 {color_name}",
+      "material": "PA",
+      "density": 1.17,
+      "weights": [
+        {
+          "weight": 500.0,
+          "spool_weight": 190.0,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 2000.0,
+          "spool_weight": 370.0,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        280,
+        300
+      ],
+      "bed_temp_range": [
+        25,
+        50
+      ],
+      "colors": [
+        {
+          "name": "Schwarz",
+          "hex": "000000"
+        }
+      ]
+    },
+    {
+      "name": "Fiberon™ PA6-GF25 {color_name}",
+      "material": "PA",
+      "density": 1.2,
+      "weights": [
+        {
+          "weight": 500.0,
+          "spool_weight": 190.0,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 2000.0,
+          "spool_weight": 370.0,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        280,
+        300
+      ],
+      "bed_temp_range": [
+        25,
+        50
+      ],
+      "colors": [
+        {
+          "name": "Grau",
+          "hex": "9b9b9b"
+        }
+      ]
+    },
+    {
+      "name": "PolyCast™ {color_name}",
+      "material": "PVB",
+      "density": 1.1,
+      "weights": [
+        {
+          "weight": 750.0,
+          "spool_weight": 125.0,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 3000.0,
+          "spool_weight": 425.0,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        25,
+        70
+      ],
+      "colors": [
+        {
+          "name": "Natürlich",
+          "hex": "E8E6D0"
+        }
+      ]
+    },
+    {
+      "name": "PolyDissolve™ S1 (PVA) {color_name}",
+      "material": "PVA",
+      "density": 1.13,
+      "weights": [
+        {
+          "weight": 750.0,
+          "spool_weight": 125.0,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        215,
+        225
+      ],
+      "bed_temp_range": [
+        25,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Natürlich",
+          "hex": "E8E6D0"
+        }
+      ]
+    },
+    {
+      "name": "PolyFlex™ TPU90 {color_name}",
+      "material": "TPU",
+      "density": 1.12,
+      "weights": [
+        {
+          "weight": 750.0,
+          "spool_weight": 125.0,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        210,
+        230
+      ],
+      "bed_temp_range": [
+        25,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Schwarz",
+          "hex": "101820"
+        },
+        {
+          "name": "Weiß",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Grau",
+          "hex": "453536"
+        },
+        {
+          "name": "Polymaker Blaugrün",
+          "hex": "2DCCD3"
+        },
+        {
+          "name": "Klar",
+          "hex": "F4FAFC"
+        }
+      ]
+    },
+    {
+      "name": "PolyFlex™ TPU95 {color_name}",
+      "material": "TPU",
+      "density": 1.22,
+      "weights": [
+        {
+          "weight": 750.0,
+          "spool_weight": 125.0,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        210,
+        230
+      ],
+      "bed_temp_range": [
+        25,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Schwarz",
+          "hex": "101820"
+        },
+        {
+          "name": "Weiß",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Blau",
+          "hex": "0076CF"
+        },
+        {
+          "name": "Rot",
+          "hex": "D6001C"
+        },
+        {
+          "name": "Gelb",
+          "hex": "FEDD00"
+        },
+        {
+          "name": "Orange",
+          "hex": "FF9E1B"
+        }
+      ]
+    },
+    {
+      "name": "PolyFlex™ TPU95-HF {color_name}",
+      "material": "TPU",
+      "density": 1.16,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_weight": 140.0,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        200,
+        220
+      ],
+      "bed_temp_range": [
+        25,
+        50
+      ],
+      "colors": [
+        {
+          "name": "Schwarz",
+          "hex": "101820"
+        },
+        {
+          "name": "Weiß",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Klar",
+          "hex": "F4FAFC"
+        }
+      ]
+    },
+    {
+      "name": "PolyLite™ ABS {color_name}",
+      "material": "ABS",
+      "density": 1.12,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_weight": 140.0,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 3000.0,
+          "spool_weight": 425.0,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 5000.0,
+          "spool_weight": 819.0,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        245,
+        265
+      ],
+      "bed_temp_range": [
+        90,
+        100
+      ],
+      "colors": [
+        {
+          "name": "Galaxie Dunkelgrau",
+          "hex": "474648"
+        },
+        {
+          "name": "Grün",
+          "hex": "479161"
+        },
+        {
+          "name": "Limette",
+          "hex": "C4D100"
+        },
+        {
+          "name": "Dunkelviolett",
+          "hex": "292036"
+        },
+        {
+          "name": "Natürlich",
+          "hex": "E2E0C9"
+        },
+        {
+          "name": "Schwarz",
+          "hex": "16161A"
+        },
+        {
+          "name": "Galaxie Schwarz",
+          "hex": "474648"
+        },
+        {
+          "name": "Dunkelgrau",
+          "hex": "474648"
+        },
+        {
+          "name": "Grau",
+          "hex": "8C8D93"
+        },
+        {
+          "name": "Weiß",
+          "hex": "F0EBE8"
+        },
+        {
+          "name": "Neon Magenta",
+          "hex": "F6162E"
+        },
+        {
+          "name": "Pink",
+          "hex": "FFA7C4"
+        },
+        {
+          "name": "Rot",
+          "hex": "F3442B"
+        },
+        {
+          "name": "Galaxie Orange",
+          "hex": "F57517"
+        },
+        {
+          "name": "Neon Orange",
+          "hex": "FE602B"
+        },
+        {
+          "name": "Orange",
+          "hex": "F57517"
+        },
+        {
+          "name": "Gold",
+          "hex": "BD6200"
+        },
+        {
+          "name": "Neon Gelb",
+          "hex": "FFC001"
+        },
+        {
+          "name": "Gelb",
+          "hex": "EDA900"
+        },
+        {
+          "name": "Metallic Grün",
+          "hex": "3D441E"
+        },
+        {
+          "name": "Neon Grün",
+          "hex": "77F0A2"
+        },
+        {
+          "name": "Blau",
+          "hex": "003276"
+        },
+        {
+          "name": "(Light) Hellblau",
+          "hex": "8EDBEB"
+        },
+        {
+          "name": "Metallic Blau",
+          "hex": "043371"
+        },
+        {
+          "name": "Galaxie Lila",
+          "hex": "6545A5"
+        },
+        {
+          "name": "Galaxie Teal",
+          "hex": "2DCCD3"
+        },
+        {
+          "name": "Blaugrün",
+          "hex": "01ACBA"
+        },
+        {
+          "name": "Lila",
+          "hex": "6545A5"
+        }
+      ]
+    },
+    {
+      "name": "PolyLite™ ASA {color_name}",
+      "material": "ASA",
+      "density": 1.13,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_weight": 140.0,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 3000.0,
+          "spool_weight": 425.0,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 5000.0,
+          "spool_weight": 819.0,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        240,
+        260
+      ],
+      "bed_temp_range": [
+        75,
+        95
+      ],
+      "colors": [
+        {
+          "name": "Jet Black",
+          "hex": "0A0A0A"
+        },
+        {
+          "name": "Schwarz",
+          "hex": "101820"
+        },
+        {
+          "name": "Weiß",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Grau",
+          "hex": "888B8D"
+        },
+        {
+          "name": "Blau",
+          "hex": "002677"
+        },
+        {
+          "name": "Rot",
+          "hex": "AF231C"
+        },
+        {
+          "name": "Grün",
+          "hex": "00A95C"
+        },
+        {
+          "name": "Orange",
+          "hex": "FF6A13"
+        },
+        {
+          "name": "Gelb",
+          "hex": "FFE800"
+        },
+        {
+          "name": "Lila",
+          "hex": "7758B3"
+        },
+        {
+          "name": "Polymaker Blaugrün",
+          "hex": "00B4BC"
+        },
+        {
+          "name": "Natürlich",
+          "hex": "F1E6B2"
+        },
+        {
+          "name": "Armeegrün",
+          "hex": "68724D"
+        },
+        {
+          "name": "Armee Braun",
+          "hex": "775C50"
+        },
+        {
+          "name": "Dunkelgrau",
+          "hex": "6C6D71"
+        },
+        {
+          "name": "Pop Blau",
+          "hex": "2A9BEE"
+        },
+        {
+          "name": "Pop Pink",
+          "hex": "EA4E8E"
+        },
+        {
+          "name": "Popgrün",
+          "hex": "3CEE2A"
+        },
+        {
+          "name": "Dunkelviolett",
+          "hex": "292036"
+        },
+        {
+          "name": "Dunkelgrün Grau",
+          "hex": "4C5F46"
+        },
+        {
+          "name": "Olivenbraun",
+          "hex": "A79565"
+        }
+      ]
+    },
+    {
+      "name": "PolyLite CosPLA {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_weight": 140.0,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 5000.0,
+          "spool_weight": 819.0,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        25,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Version A",
+          "hex": "B1B1B1"
+        }
+      ]
+    },
+    {
+      "name": "PolyLite CosPLA {color_name}",
+      "material": "PLA",
+      "density": 1.22,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_weight": 140.0,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 5000.0,
+          "spool_weight": 819.0,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        25,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Version B",
+          "hex": "B1B1B1"
+        }
+      ]
+    },
+    {
+      "name": "PolyLite™ LW-PLA {color_name}",
+      "material": "PLA",
+      "density": 0.8,
+      "weights": [
+        {
+          "weight": 800.0,
+          "spool_weight": 200.0,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        210
+      ],
+      "bed_temp_range": [
+        25,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Schwarz",
+          "hex": "4C4E56"
+        },
+        {
+          "name": "Weiß",
+          "hex": "E1DCCD"
+        },
+        {
+          "name": "Grau",
+          "hex": "A2AAAD"
+        },
+        {
+          "name": "Holz",
+          "hex": "D2A273"
+        },
+        {
+          "name": "(Bright) Hellorange",
+          "hex": "FA8423"
+        },
+        {
+          "name": "(Bright) Hellgelb",
+          "hex": "FAD61B"
+        },
+        {
+          "name": "(Bright) Hellgrün",
+          "hex": "D0ED03"
+        },
+        {
+          "name": "(Bright) Hellrot",
+          "hex": "E81313"
+        }
+      ]
+    },
+    {
+      "name": "PolyLite™ PC {color_name}",
+      "material": "PC",
+      "density": 1.19,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_weight": 140.0,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 3000.0,
+          "spool_weight": 425.0,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        250,
+        270
+      ],
+      "bed_temp_range": [
+        90,
+        105
+      ],
+      "colors": [
+        {
+          "name": "Klar",
+          "hex": "F4FAFC"
+        }
+      ]
+    },
+    {
+      "name": "PolyLite™ PETG {color_name}",
+      "material": "PETG",
+      "density": 1.25,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_weight": 140.0,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 3000.0,
+          "spool_weight": 425.0,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 5000.0,
+          "spool_weight": 819.0,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        230,
+        240
+      ],
+      "bed_temp_range": [
+        70,
+        80
+      ],
+      "colors": [
+        {
+          "name": "Schwarz",
+          "hex": "101820"
+        },
+        {
+          "name": "Weiß",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Grau",
+          "hex": "91999F"
+        },
+        {
+          "name": "Blau",
+          "hex": "004B87"
+        },
+        {
+          "name": "Rot",
+          "hex": "DE4343"
+        },
+        {
+          "name": "Grün",
+          "hex": "37AD68"
+        },
+        {
+          "name": "Gelb",
+          "hex": "FFC845"
+        },
+        {
+          "name": "Polymaker Blaugrün",
+          "hex": "2DCCD3"
+        },
+        {
+          "name": "Orange",
+          "hex": "FF671F"
+        },
+        {
+          "name": "Lila",
+          "hex": "6E3FA3"
+        },
+        {
+          "name": "Dunkelblau",
+          "hex": "13294B"
+        },
+        {
+          "name": "Dunkelgrün",
+          "hex": "3D441E"
+        },
+        {
+          "name": "Silber",
+          "hex": "75787B"
+        },
+        {
+          "name": "Gold",
+          "hex": "CC8A00"
+        },
+        {
+          "name": "Magenta",
+          "hex": "C6007E"
+        },
+        {
+          "name": "Pink",
+          "hex": "F59BBB"
+        },
+        {
+          "name": "Limette",
+          "hex": "C4D600"
+        },
+        {
+          "name": "Elektrisches Blau",
+          "hex": "0076CF"
+        },
+        {
+          "name": "Dunkelgrau",
+          "hex": "6C6D71"
+        },
+        {
+          "name": "Dunkelviolett",
+          "hex": "292036"
+        },
+        {
+          "name": "Klar",
+          "hex": "F4FAFC"
+        }
+      ]
+    },
+    {
+      "name": "Panchroma™ Regular {color_name}",
+      "material": "PLA",
+      "density": 1.19,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_weight": 140.0,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 3000.0,
+          "spool_weight": 425.0,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 5000.0,
+          "spool_weight": 819.0,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        25,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Schwarz",
+          "hex": "080A0D"
+        },
+        {
+          "name": "Weiß",
+          "hex": "E2DEDB"
+        },
+        {
+          "name": "Stahlgrau",
+          "hex": "616469"
+        },
+        {
+          "name": "Grau",
+          "hex": "8C9099"
+        },
+        {
+          "name": "Lila",
+          "hex": "6C47B2"
+        },
+        {
+          "name": "Rot",
+          "hex": "E72F1D"
+        },
+        {
+          "name": "Braun",
+          "hex": "55331A"
+        },
+        {
+          "name": "Orange",
+          "hex": "F67405"
+        },
+        {
+          "name": "Gelb",
+          "hex": "F3B400"
+        },
+        {
+          "name": "Grün",
+          "hex": "06924D"
+        },
+        {
+          "name": "Polymaker Blaugrün",
+          "hex": "4CC0C7"
+        },
+        {
+          "name": "Blau",
+          "hex": "003776"
+        },
+        {
+          "name": "Kalt Weiß",
+          "hex": "EAECF5"
+        },
+        {
+          "name": "Magenta",
+          "hex": "F2306E"
+        },
+        {
+          "name": "Pink",
+          "hex": "EE9BB5"
+        },
+        {
+          "name": "Weinrot",
+          "hex": "E0191E"
+        },
+        {
+          "name": "Creme",
+          "hex": "E5C8A2"
+        },
+        {
+          "name": "Beige",
+          "hex": "C6AD74"
+        },
+        {
+          "name": "Zitronengelb",
+          "hex": "F1D335"
+        },
+        {
+          "name": "Natürlich",
+          "hex": "E8E6D0"
+        },
+        {
+          "name": "Olivengrün",
+          "hex": "857C00"
+        },
+        {
+          "name": "Limettengrün",
+          "hex": "DEDE00"
+        },
+        {
+          "name": "Dschungelgrün",
+          "hex": "446B20"
+        },
+        {
+          "name": "Aqua Blau",
+          "hex": "39B9DB"
+        },
+        {
+          "name": "Steinblau",
+          "hex": "40719A"
+        },
+        {
+          "name": "Azurblau",
+          "hex": "0066D9"
+        },
+        {
+          "name": "Dunkelblau",
+          "hex": "041B3D"
+        },
+        {
+          "name": "Olivenbraun",
+          "hex": "A79565"
+        },
+        {
+          "name": "Dunkelgrau Grün",
+          "hex": "4C5F46"
+        }
+      ]
+    },
+    {
+      "name": "Panchroma™ Dual {color_name}",
+      "material": "PLA",
+      "density": 1.37,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_weight": 140.0,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        25,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Chamäleon (Teal-Gelb)",
+          "hexes": [
+            "5AABB1",
+            "F0BE02"
+          ],
+          "finish": "matte",
+          "multi_color_direction": "coaxial"
+        }
+      ]
+    },
+    {
+      "name": "PolyLite™ PLA Pro {color_name}",
+      "material": "PLA",
+      "density": 1.22,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_weight": 140.0,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 3000.0,
+          "spool_weight": 425.0,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 5000.0,
+          "spool_weight": 819.0,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        30,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Schwarz",
+          "hex": "0C0E0C"
+        },
+        {
+          "name": "Weiß",
+          "hex": "E6E1DE"
+        },
+        {
+          "name": "Kalt Weiß",
+          "hex": "EAECF5"
+        },
+        {
+          "name": "Orange",
+          "hex": "EC6A01"
+        },
+        {
+          "name": "Armee Beige",
+          "hex": "AA6F3E"
+        },
+        {
+          "name": "Gelb",
+          "hex": "F7B300"
+        },
+        {
+          "name": "(Light) Hellgelb",
+          "hex": "F3D561"
+        },
+        {
+          "name": "Armeegrün",
+          "hex": "665A28"
+        },
+        {
+          "name": "(Light) Hellgrün",
+          "hex": "BBD39B"
+        },
+        {
+          "name": "Grün",
+          "hex": "178D4A"
+        },
+        {
+          "name": "Polymaker Blaugrün",
+          "hex": "2FA5AE"
+        },
+        {
+          "name": "Blaugrün",
+          "hex": "00272F"
+        },
+        {
+          "name": "(Light) Hellblau",
+          "hex": "72AECB"
+        },
+        {
+          "name": "Blau",
+          "hex": "00307E"
+        },
+        {
+          "name": "Grau",
+          "hex": "73767D"
+        },
+        {
+          "name": "Lila",
+          "hex": "6843B1"
+        },
+        {
+          "name": "Dunkelviolett",
+          "hex": "292036"
+        },
+        {
+          "name": "Magenta",
+          "hex": "E42363"
+        },
+        {
+          "name": "Pink",
+          "hex": "ED92B0"
+        },
+        {
+          "name": "(Light) Hellrot",
+          "hex": "CC4C4B"
+        },
+        {
+          "name": "Rot",
+          "hex": "E62216"
+        },
+        {
+          "name": "Braun",
+          "hex": "4F2E1E"
+        },
+        {
+          "name": "Dark2 Grau",
+          "hex": "6C6D71"
+        }
+      ]
+    },
+    {
+      "name": "PolyLite™ PLA {color_name}",
+      "material": "PLA",
+      "density": 1.17,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_weight": 140.0,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 1000.0,
+          "spool_weight": 250.0,
+          "spool_type": "plastic"
+        },
+        {
+          "weight": 3000.0,
+          "spool_weight": 425.0,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 5000.0,
+          "spool_weight": 819.0,
+          "spool_type": "plastic"
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        25,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Schwarz",
+          "hex": "08090D"
+        },
+        {
+          "name": "Stahlgrau",
+          "hex": "616469"
+        },
+        {
+          "name": "Grau",
+          "hex": "8C9099"
+        },
+        {
+          "name": "Lila",
+          "hex": "6C47B2"
+        },
+        {
+          "name": "Magenta",
+          "hex": "F2306E"
+        },
+        {
+          "name": "Pink",
+          "hex": "F2306E"
+        },
+        {
+          "name": "Weinrot",
+          "hex": "E0191E"
+        },
+        {
+          "name": "Rot",
+          "hex": "E72F1D"
+        },
+        {
+          "name": "Braun",
+          "hex": "55331A"
+        },
+        {
+          "name": "Weiß",
+          "hex": "E2DEDB"
+        },
+        {
+          "name": "Orange",
+          "hex": "F67405"
+        },
+        {
+          "name": "Creme",
+          "hex": "E5C8A2"
+        },
+        {
+          "name": "Beige",
+          "hex": "C6AD74"
+        },
+        {
+          "name": "Gelb",
+          "hex": "F3B400"
+        },
+        {
+          "name": "Zitronengelb",
+          "hex": "F1D335"
+        },
+        {
+          "name": "Natürlich",
+          "hex": "E8E6D0"
+        },
+        {
+          "name": "Olivengrün",
+          "hex": "857C00"
+        },
+        {
+          "name": "Limettengrün",
+          "hex": "DEDE00"
+        },
+        {
+          "name": "Dschungelgrün",
+          "hex": "446B20"
+        },
+        {
+          "name": "Grün",
+          "hex": "06924D"
+        },
+        {
+          "name": "Polymaker Blaugrün",
+          "hex": "4CC0C7"
+        },
+        {
+          "name": "Aqua Blau",
+          "hex": "39B9DB"
+        },
+        {
+          "name": "Steinblau",
+          "hex": "40719A"
+        },
+        {
+          "name": "Azurblau",
+          "hex": "0066D9"
+        },
+        {
+          "name": "Blau",
+          "hex": "003776"
+        },
+        {
+          "name": "Dunkelblau",
+          "hex": "041B3D"
+        }
+      ]
+    },
+    {
+      "name": "Polymaker PC-ABS {color_name}",
+      "material": "PC",
+      "density": 1.1,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_weight": 140.0,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        250,
+        270
+      ],
+      "bed_temp_range": [
+        90,
+        105
+      ],
+      "colors": [
+        {
+          "name": "Schwarz",
+          "hex": "101820"
+        },
+        {
+          "name": "Weiß",
+          "hex": "FFFFFF"
+        }
+      ]
+    },
+    {
+      "name": "Polymaker PC-PBT {color_name}",
+      "material": "PC",
+      "density": 1.2,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_weight": 140.0,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        260,
+        280
+      ],
+      "bed_temp_range": [
+        100,
+        115
+      ],
+      "colors": [
+        {
+          "name": "Schwarz",
+          "hex": "101820"
+        },
+        {
+          "name": "Natürlich",
+          "hex": "E8E6D0"
+        }
+      ]
+    },
+    {
+      "name": "PolyMax™ PC {color_name}",
+      "material": "PC",
+      "density": 1.19,
+      "weights": [
+        {
+          "weight": 750.0,
+          "spool_weight": 125.0,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 3000.0,
+          "spool_weight": 425.0,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        250,
+        270
+      ],
+      "bed_temp_range": [
+        90,
+        105
+      ],
+      "colors": [
+        {
+          "name": "Schwarz",
+          "hex": "101820"
+        },
+        {
+          "name": "Weiß",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Grau",
+          "hex": "A2AAAD"
+        },
+        {
+          "name": "Blau",
+          "hex": "0076CF"
+        },
+        {
+          "name": "Rot",
+          "hex": "D6001C"
+        }
+      ]
+    },
+    {
+      "name": "PolyMax™ PC-FR {color_name}",
+      "material": "PC",
+      "density": 1.2,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_weight": 140.0,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        250,
+        270
+      ],
+      "bed_temp_range": [
+        90,
+        105
+      ],
+      "colors": [
+        {
+          "name": "Schwarz",
+          "hex": "101820"
+        },
+        {
+          "name": "Weiß",
+          "hex": "FFFFFF"
+        }
+      ]
+    },
+    {
+      "name": "PolyMax™ PETG {color_name}",
+      "material": "PETG",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 750.0,
+          "spool_weight": 125.0,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        230,
+        240
+      ],
+      "bed_temp_range": [
+        70,
+        80
+      ],
+      "colors": [
+        {
+          "name": "Schwarz",
+          "hex": "101820"
+        },
+        {
+          "name": "Weiß",
+          "hex": "FFFFFF"
+        }
+      ]
+    },
+    {
+      "name": "PolyMax™ PLA {color_name}",
+      "material": "PLA",
+      "density": 1.21,
+      "weights": [
+        {
+          "weight": 750.0,
+          "spool_weight": 125.0,
+          "spool_type": "cardboard"
+        },
+        {
+          "weight": 3000.0,
+          "spool_weight": 425.0,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        190,
+        230
+      ],
+      "bed_temp_range": [
+        25,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Schwarz",
+          "hex": "101820"
+        },
+        {
+          "name": "Weiß",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Grau",
+          "hex": "91999F"
+        },
+        {
+          "name": "Blau",
+          "hex": "006EB6"
+        },
+        {
+          "name": "Rot",
+          "hex": "DE4343"
+        },
+        {
+          "name": "Grün",
+          "hex": "00A95C"
+        },
+        {
+          "name": "Gelb",
+          "hex": "FFE800"
+        },
+        {
+          "name": "Orange",
+          "hex": "FF9940"
+        },
+        {
+          "name": "Polymaker Blaugrün",
+          "hex": "00B4BC"
+        },
+        {
+          "name": "Lila",
+          "hex": "7758B3"
+        },
+        {
+          "name": "FDE",
+          "hex": "8E7B63"
+        },
+        {
+          "name": "Pink",
+          "hex": "FD4BAB"
+        }
+      ]
+    },
+    {
+      "name": "PolyMide™ CoPA {color_name}",
+      "material": "PA",
+      "density": 1.12,
+      "weights": [
+        {
+          "weight": 750.0,
+          "spool_weight": 125.0,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        250,
+        270
+      ],
+      "bed_temp_range": [
+        25,
+        50
+      ],
+      "colors": [
+        {
+          "name": "Schwarz",
+          "hex": "101820"
+        }
+      ]
+    },
+    {
+      "name": "PolySmooth™ {color_name}",
+      "material": "PVB",
+      "density": 1.1,
+      "weights": [
+        {
+          "weight": 750.0,
+          "spool_weight": 125.0,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        25,
+        70
+      ],
+      "colors": [
+        {
+          "name": "Schwarz",
+          "hex": "101820"
+        },
+        {
+          "name": "Weiß",
+          "hex": "FFFFFF"
+        },
+        {
+          "name": "Schiefergrau",
+          "hex": "7A99AC"
+        },
+        {
+          "name": "Blau",
+          "hex": "0076CF"
+        },
+        {
+          "name": "Korallenrot",
+          "hex": "E10600"
+        },
+        {
+          "name": "Grün",
+          "hex": "37AD68"
+        },
+        {
+          "name": "Gelb",
+          "hex": "FFC72C"
+        },
+        {
+          "name": "Orange",
+          "hex": "FF671F"
+        },
+        {
+          "name": "Polymaker Blaugrün",
+          "hex": "3CCBDA"
+        },
+        {
+          "name": "Pink",
+          "hex": "FFB1BB"
+        },
+        {
+          "name": "Beige",
+          "hex": "E9DF97"
+        },
+        {
+          "name": "Klar",
+          "hex": "F4FAFC"
+        }
+      ]
+    },
+    {
+      "name": "PolySonic™ PLA {color_name}",
+      "material": "PLA",
+      "density": 1.23,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_weight": 140.0,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        210,
+        230
+      ],
+      "bed_temp_range": [
+        25,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Schwarz",
+          "hex": "080A0D"
+        },
+        {
+          "name": "Weiß",
+          "hex": "E2DEDB"
+        },
+        {
+          "name": "Grau",
+          "hex": "8C9099"
+        },
+        {
+          "name": "Rot",
+          "hex": "E72F1D"
+        },
+        {
+          "name": "Blau",
+          "hex": "003776"
+        },
+        {
+          "name": "Gelb",
+          "hex": "F4c032"
+        },
+        {
+          "name": "Grün",
+          "hex": "2d9e59"
+        },
+        {
+          "name": "Orange",
+          "hex": "F97429"
+        },
+        {
+          "name": "Polymaker Blaugrün",
+          "hex": "50dae4"
+        },
+        {
+          "name": "Lila",
+          "hex": "6c5bb1"
+        }
+      ]
+    },
+    {
+      "name": "PolySonic™ PLA Pro {color_name}",
+      "material": "PLA",
+      "density": 1.23,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_weight": 140.0,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        210,
+        230
+      ],
+      "bed_temp_range": [
+        25,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Schwarz",
+          "hex": "080A0D"
+        },
+        {
+          "name": "Weiß",
+          "hex": "E2DEDB"
+        },
+        {
+          "name": "Rot",
+          "hex": "E20010"
+        },
+        {
+          "name": "Blau",
+          "hex": "003287"
+        },
+        {
+          "name": "Grau",
+          "hex": "959fa1"
+        },
+        {
+          "name": "Gelb",
+          "hex": "F4c032"
+        },
+        {
+          "name": "Orange",
+          "hex": "F97429"
+        },
+        {
+          "name": "Lila",
+          "hex": "6c5bb1"
+        },
+        {
+          "name": "Polymaker Blaugrün",
+          "hex": "50dae4"
+        },
+        {
+          "name": "Grün",
+          "hex": "2d9e59"
+        }
+      ]
+    },
+    {
+      "name": "PolyWood™ {color_name}",
+      "material": "PLA",
+      "density": 0.8,
+      "weights": [
+        {
+          "weight": 600.0,
+          "spool_weight": 125.0,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp_range": [
+        190,
+        210
+      ],
+      "bed_temp_range": [
+        25,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Holz",
+          "hex": "D2A273"
+        }
+      ]
+    },
+    {
+      "name": "Panchroma™ Matte (Formerly PolyTerra™) {color_name}",
+      "material": "PLA",
+      "density": 1.24,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 140
+        },
+        {
+          "weight": 3000,
+          "spool_weight": 425
+        }
+      ],
+      "diameters": [
+        1.75,
+        2.85
+      ],
+      "extruder_temp": 210,
+      "bed_temp": 50,
+      "colors": [
+        {
+          "name": "Arctic Teal",
+          "hex": "5aabb1"
+        },
+        {
+          "name": "Armee Beige",
+          "hex": "cca897"
+        },
+        {
+          "name": "Armee Blau",
+          "hex": "062b4d"
+        },
+        {
+          "name": "Armee Braun",
+          "hex": "724e3d"
+        },
+        {
+          "name": "Armee Dunkelgrün",
+          "hex": "515234"
+        },
+        {
+          "name": "Armee (Light) Hellgrün",
+          "hex": "a78403"
+        },
+        {
+          "name": "Armee Lila",
+          "hex": "292036"
+        },
+        {
+          "name": "Armee Rot",
+          "hex": "ac1a17"
+        },
+        {
+          "name": "Asch Grau",
+          "hex": "575e75"
+        },
+        {
+          "name": "Holzkohle Schwarz",
+          "hex": "1c1c1c"
+        },
+        {
+          "name": "Baumwoll Weiß",
+          "hex": "e6dddb"
+        },
+        {
+          "name": "Erde Braun",
+          "hex": "7c594a"
+        },
+        {
+          "name": "Elektrisches Indigo",
+          "hex": "764c99"
+        },
+        {
+          "name": "Waldgrün",
+          "hex": "519f61"
+        },
+        {
+          "name": "Fossil Grau",
+          "hex": "6f727e"
+        },
+        {
+          "name": "Lavendel Lila",
+          "hex": "8a68b5"
+        },
+        {
+          "name": "Lava Rot",
+          "hex": "de1619"
+        },
+        {
+          "name": "Limettengrün",
+          "hex": "d0e740"
+        },
+        {
+          "name": "Lotus Pink",
+          "hex": "f98289"
+        },
+        {
+          "name": "Gedämpft Blau",
+          "hex": "4e6a84"
+        },
+        {
+          "name": "Gedämpft Grün",
+          "hex": "656d60"
+        },
+        {
+          "name": "Gedämpftes Lila",
+          "hex": "7c5577"
+        },
+        {
+          "name": "Gedämpft Rot",
+          "hex": "db3e14"
+        },
+        {
+          "name": "Gedämpft Weiß",
+          "hex": "afa198"
+        },
+        {
+          "name": "Pastellbanane",
+          "hex": "f5cf6f"
+        },
+        {
+          "name": "Pastel Candy",
+          "hex": "dabcc8"
+        },
+        {
+          "name": "Pastelleis",
+          "hex": "95c5d3"
+        },
+        {
+          "name": "Pastellminze",
+          "hex": "bec9a5"
+        },
+        {
+          "name": "Pastellpfirsich",
+          "hex": "f2b67a"
+        },
+        {
+          "name": "Pastell Erdnuss",
+          "hex": "c29572"
+        },
+        {
+          "name": "Pastellperiwinkle",
+          "hex": "bfb2e6"
+        },
+        {
+          "name": "Pastellwassermelone",
+          "hex": "e93a3f"
+        },
+        {
+          "name": "Sakura Pink",
+          "hex": "e0a8bb"
+        },
+        {
+          "name": "Saphirblau",
+          "hex": "005aa2"
+        },
+        {
+          "name": "Savannah Gelb",
+          "hex": "f0be02"
+        },
+        {
+          "name": "Himmel Blue",
+          "hex": "87ceeb"
+        },
+        {
+          "name": "Sonnenaufgang Orange",
+          "hex": "f78e0e"
+        },
+        {
+          "name": "Holzbraun",
+          "hex": "ad7441"
+        }
+      ]
+    }
+  ]
+}
