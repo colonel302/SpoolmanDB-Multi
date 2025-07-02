@@ -138,4 +138,14 @@ Vielen Dank an den Originalautor!
 
 ---
 
+---
+
+## Hinweis zur Code-Generierung und Anpassung
+
+> Teile dieses Codes wurden mit Unterstützung von **Perplexity AI** (KI-gestützter Assistent) generiert.  
+> Ich, Björn, habe den generierten Code **getestet** und **teilweise an die spezifischen Anforderungen dieses Projekts angepasst**.  
+> Bitte beachte, dass trotz sorgfältiger Überprüfung Fehler nicht vollständig ausgeschlossen werden können.  
+> Für Rückfragen oder Hinweise zu Verbesserungen stehe ich gerne zur Verfügung!
+
+---
 **Änderungen in diesem Fork zuletzt aktualisiert: Juni 2025**
