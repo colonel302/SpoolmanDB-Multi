@@ -20,11 +20,11 @@
       "bed_temp": 60,
       "colors": [
         {
-          "name": "Arctic Weiß",
+          "name": "Arktisches Weiß",
           "hex": "F4F4F4"
         },
         {
-          "name": "Jet Black",
+          "name": "Jet Schwarz",
           "hex": "282828"
         },
         {
@@ -767,7 +767,7 @@
           "hex": "705335"
         },
         {
-          "name": "CMYK Lithowhite",
+          "name": "CMYK Lithoweiß",
           "hex": "F4F4F4"
         },
         {
@@ -775,7 +775,7 @@
           "hex": "CF3476"
         },
         {
-          "name": "CMYK Lithoyellow",
+          "name": "CMYK Lithogelb",
           "hex": "FFFF00"
         },
         {

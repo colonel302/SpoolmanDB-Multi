@@ -135,7 +135,7 @@
       "bed_temp": 60,
       "colors": [
         {
-          "name": "Rock White",
+          "name": "Stein-Weiß",
           "hex": "FFFFFF",
           "pattern": "marble"
         },
@@ -321,7 +321,7 @@
           "hex": "BECBA8"
         },
         {
-          "name": "Schwarz-weiß",
+          "name": "Schwarz-Weiß",
           "multi_color_direction": "longitudinal",
           "hexes": [
             "000000",
@@ -341,7 +341,7 @@
           "hex": "AFDEB9"
         },
         {
-          "name": "Orange-rot",
+          "name": "Orange-Rot",
           "multi_color_direction": "longitudinal",
           "hexes": [
             "FCAB59",
@@ -361,7 +361,7 @@
           "hex": "C7FFE3"
         },
         {
-          "name": "Blau-rot",
+          "name": "Blau-Rot",
           "multi_color_direction": "longitudinal",
           "hexes": [
             "0074BD",
@@ -381,7 +381,7 @@
           "hex": "99FFFA"
         },
         {
-          "name": "(Light) Hellblau-gelb",
+          "name": "(Light) Hellblau-Gelb",
           "multi_color_direction": "longitudinal",
           "hexes": [
             "B8FFFF",

@@ -36,7 +36,7 @@
           "hex": "9b9aa2"
         },
         {
-          "name": "Himmel Blue",
+          "name": "Himmel-Blau",
           "hex": "7cd1f6"
         },
         {
@@ -136,11 +136,11 @@
           "hex": "dedf93"
         },
         {
-          "name": "Jade Green",
+          "name": "Jade Grün",
           "hex": "02c5a7"
         },
         {
-          "name": "Holly Green",
+          "name": "Heiliges Grün",
           "hex": "014d41"
         },
         {
@@ -196,11 +196,11 @@
           "hex": "dab4b1"
         },
         {
-          "name": "RGB Blue",
+          "name": "RGB Blau",
           "hex": "303ed2"
         },
         {
-          "name": "RGB Green",
+          "name": "RGB Grün",
           "hex": "0cb234"
         }
       ]
@@ -601,7 +601,7 @@
           "hex": "90ba66"
         },
         {
-          "name": "Morandi Green",
+          "name": "Morandi Grün",
           "hex": "0d353d"
         },
         {
@@ -696,7 +696,7 @@
           "hex": "ab5b26"
         },
         {
-          "name": "Silberblau",
+          "name": "Silber Blau",
           "hex": "0e2f8e"
         },
         {
@@ -723,19 +723,19 @@
       "bed_temp": 60,
       "colors": [
         {
-          "name": "Strahlend Cored Luminous Orange",
+          "name": "Kernfarbig Strahlend Orange",
           "hex": "ff977f"
         },
         {
-          "name": "Strahlend Cored Luminous Purpur",
+          "name": "Kernfarbig Strahlend Purpur",
           "hex": "997abd"
         },
         {
-          "name": "Strahlend Cored Luminous Blue",
+          "name": "Kernfarbig Strahlend Blau",
           "hex": "2c95cc"
         },
         {
-          "name": "Strahlend Cored Luminous Green",
+          "name": "Kernfarbig Strahlend Grün",
           "hex": "3c4242"
         },
         {
