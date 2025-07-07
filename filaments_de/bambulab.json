@@ -687,8 +687,8 @@
       "diameters": [
         1.75
       ],
-      "extruder_temp": 220,
-      "bed_temp": 40,
+      "extruder_temp": 230,
+      "bed_temp": 35,
       "multi_color_direction": "coaxial",
       "finish": "glossy",
       "colors": [
