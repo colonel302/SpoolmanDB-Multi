@@ -146,6 +146,18 @@ def process_files():
     
     return all_files_updated or dict_updated
 
+def copy_json_files_to_en():
+    source_dir = 'filaments'
+    target_dir = 'filaments_en'
+    os.makedirs(target_dir, exist_ok=True)
+    for filename in os.listdir(source_dir):
+        if filename.endswith('.json'):
+            source_path = os.path.join(source_dir, filename)
+            target_path = os.path.join(target_dir, filename)
+            shutil.copy2(source_path, target_path)
+            print(f"Kopiert: {source_path} -> {target_path}")
+
 if __name__ == "__main__":
+    copy_json_files_to_en()
     updated = process_files()
     print(f"Übersetzungen durchgeführt: {updated}")
