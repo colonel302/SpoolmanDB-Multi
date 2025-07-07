@@ -714,6 +714,29 @@
           ]
         },
         {
+          "name": "Aurora lila",
+          "hexes": [
+            "7F3696",
+            "006EC9"
+          ]
+        },
+        {
+          "name": "Südstrand",
+          "hexes": [
+            "F772A4",
+            "00918B"
+          ]
+        },
+        {
+          "name": "Morgendämmerung",
+          "hexes": [
+            "EC984C",
+            "6CD4BC",
+            "A66EB9",
+            "D87694"
+          ]
+        },
+        {
           "name": "Vergoldete Rose (Rosa Gold)",
           "hexes": [
             "FF9425",
