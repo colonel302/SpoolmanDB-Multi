@@ -624,49 +624,49 @@
       "multi_color_direction": "longitudinal",
       "colors": [
         {
-          "name": "Arctic Whisper",
+          "name": "Arktisches Flüstern",
           "hexes": [
             "9CDBD9",
             "FFFFFF"
           ]
         },
         {
-          "name": "Solarbrise",
+          "name": "Sonnenbrise",
           "hexes": [
             "E94B3C",
             "FFFFFF"
           ]
         },
         {
-          "name": "Ozean Zur Wiese",
+          "name": "Meer und Wiese",
           "hexes": [
             "307FE2",
             "54FF9B"
           ]
         },
         {
-          "name": "Cotton Candy Cloud",
+          "name": "Zuckerwatten-Wolke",
           "hexes": [
             "E7C1D5",
             "8EC9E9"
           ]
         },
         {
-          "name": "Blaubeerbubblegum",
+          "name": "Blaubeere-Bubblegum",
           "hexes": [
             "6FCAEF",
             "8573DD"
           ]
         },
         {
-          "name": "Minz -Limette",
+          "name": "Minze-Limette",
           "hexes": [
             "B6FF43",
             "4EC939"
           ]
         },
         {
-          "name": "Rosa Zitrusfrüchte",
+          "name": "Zitrus-Pink",
           "hexes": [
             "F78F77",
             "E4505A"
