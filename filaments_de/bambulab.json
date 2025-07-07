@@ -275,11 +275,11 @@
           "hex": "950051"
         },
         {
-          "name": "Himmel Blue",
+          "name": "Himmel Blau",
           "hex": "56B7E6"
         },
         {
-          "name": "APFEL Green",
+          "name": "APFEL Grün",
           "hex": "C2E189"
         },
         {
@@ -389,11 +389,11 @@
           "hex": "8671CB"
         },
         {
-          "name": "Candy Red",
+          "name": "Candy Rot",
           "hex": "D02727"
         },
         {
-          "name": "Candy Green",
+          "name": "Candy Grün",
           "hex": "018814"
         },
         {
@@ -707,7 +707,7 @@
           ]
         },
         {
-          "name": "Neon City (Blue-Magenta)",
+          "name": "Neon City (Blau-Magenta)",
           "hexes": [
             "0047BB",
             "BB22A3"
@@ -744,7 +744,7 @@
           ]
         },
         {
-          "name": "Blue Hawaii (Blaugrün)",
+          "name": "Blau Hawaii (Blaugrün)",
           "hexes": [
             "60A4E8",
             "4CE4A0"
@@ -1761,7 +1761,7 @@
           "hex": "6e88bc"
         },
         {
-          "name": "Matcha Green",
+          "name": "Matcha Grün",
           "hex": "5c9748"
         },
         {
