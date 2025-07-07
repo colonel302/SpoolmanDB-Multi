@@ -713,6 +713,29 @@
                         "BB22A3"
                     ]
                 },
+				{
+                    "name": "Aurora Purple",
+                    "hexes": [
+                        "7F3696",
+                        "006EC9"
+                    ]
+                },
+				{
+                    "name": "South Beach",
+                    "hexes": [
+                        "F772A4",
+                        "00918B"
+                    ]
+                },
+				{
+                    "name": "Dawn Radiance",
+                    "hexes": [
+                        "EC984C",
+                        "6CD4BC",
+						"A66EB9",
+						"D87694"
+                    ]
+                },
                 {
                     "name": "Gilded Rose (Pink-Gold)",
                     "hexes": [
