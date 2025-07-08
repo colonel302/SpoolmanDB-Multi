@@ -79,27 +79,27 @@
           "hex": "A74355"
         },
         {
-          "name": "Fluoreszier Gelb",
+          "name": "Fluoreszierend Gelb",
           "hex": "EAFD6E",
           "translucent": true
         },
         {
-          "name": "Fluoreszier Orange",
+          "name": "Fluoreszierend Orange",
           "hex": "D95800",
           "translucent": true
         },
         {
-          "name": "Fluoreszierendes Grün",
+          "name": "Fluoreszierend Grün",
           "hex": "4B9C7B",
           "translucent": true
         },
         {
-          "name": "Firefly (Leuchten Im Dunkeln)",
+          "name": "Glühwürmchen (Leuchten Im Dunkeln)",
           "hex": "4B9C7B",
           "glow": true
         },
         {
-          "name": "Kristall/klar",
+          "name": "Kristall/Klar",
           "hex": "EEEADD",
           "translucent": true
         },
@@ -189,7 +189,7 @@
           "hex": "000000"
         },
         {
-          "name": "Kristall/klar",
+          "name": "Kristall/Klar",
           "hex": "EEEADD",
           "translucent": true
         }

@@ -1778,17 +1778,13 @@
                 {
                     "weight": 1000,
                     "spool_weight": 250
-                },
-                {
-                    "weight": 500,
-                    "spool_weight": 250
                 }
             ],
             "diameters": [
                 1.75
             ],
-            "extruder_temp": 240,
-            "bed_temp": 45,
+            "extruder_temp": 220,
+            "bed_temp": 35,
             "colors": [
                 {
                     "name": "Teal",

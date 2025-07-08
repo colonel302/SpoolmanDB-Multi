@@ -24,7 +24,7 @@
           "hex": "F4F4F4"
         },
         {
-          "name": "Jet Schwarz",
+          "name": "Jet-Schwarz",
           "hex": "282828"
         },
         {
@@ -36,11 +36,11 @@
           "hex": "828282"
         },
         {
-          "name": "Reptiliengrün",
+          "name": "Reptilien-Grün",
           "hex": "1C542D"
         },
         {
-          "name": "Giftgrün",
+          "name": "Gift-Grün",
           "hex": "C0DF16"
         },
         {
@@ -60,7 +60,7 @@
           "hex": "763C28"
         },
         {
-          "name": "Inca Gold",
+          "name": "Inka Gold",
           "hex": "F5D033"
         }
       ]
@@ -177,7 +177,7 @@
           "hex": "828282"
         },
         {
-          "name": "Dunkles Silber",
+          "name": "Dunkel-Silber",
           "hex": "D0D0D0"
         },
         {
@@ -707,7 +707,7 @@
       "bed_temp": 60,
       "colors": [
         {
-          "name": "Dunkles Holz",
+          "name": "Dunkel-Holz",
           "hex": "59351F"
         },
         {
@@ -1063,7 +1063,7 @@
           "hex": "F80000"
         },
         {
-          "name": "Transparente Orange",
+          "name": "Transparent Orange",
           "hex": "D84B20",
           "translucent": true
         },

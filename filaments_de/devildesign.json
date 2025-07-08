@@ -214,7 +214,7 @@
           "hex": "817b73"
         },
         {
-          "name": "Leuchtend Dunkelblau",
+          "name": "Leuchten in der Nacht Blau",
           "hex": "3079be"
         }
       ]
@@ -300,7 +300,7 @@
           "hex": "21697c"
         },
         {
-          "name": "Ultrablau",
+          "name": "Ultra Blau",
           "hex": "595a93"
         },
         {
@@ -486,11 +486,11 @@
           "hex": "f1f0ea"
         },
         {
-          "name": "Hellorange",
+          "name": "(Light) Hellorange",
           "hex": "eb9c52"
         },
         {
-          "name": "Hellpink",
+          "name": "(Light) Hellpink",
           "hex": "d8a0a6"
         },
         {
@@ -502,7 +502,7 @@
           "hex": "6093ac"
         },
         {
-          "name": "Hellgrün",
+          "name": "(Light) Hellgrün",
           "hex": "b9ceac"
         },
         {
@@ -514,7 +514,7 @@
           "hex": "7f868a"
         },
         {
-          "name": "Hellgold",
+          "name": "(Light) Hellgold",
           "hex": "e2a300"
         },
         {

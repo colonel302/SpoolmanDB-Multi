@@ -962,7 +962,7 @@
           "hex": "8E8E8E"
         },
         {
-          "name": "Transluzent (Hell) Höllblau",
+          "name": "Transluzent (Light) Hellblau",
           "hex": "61B0FF"
         },
         {
@@ -1778,24 +1778,20 @@
         {
           "weight": 1000,
           "spool_weight": 250
-        },
-        {
-          "weight": 500,
-          "spool_weight": 250
         }
       ],
       "diameters": [
         1.75
       ],
-      "extruder_temp": 240,
-      "bed_temp": 45,
+      "extruder_temp": 220,
+      "bed_temp": 35,
       "colors": [
         {
           "name": "Blaugrün",
           "hex": "009FA1"
         },
         {
-          "name": "(Hell) Hölle Jade",
+          "name": "(Light) Helle Jade",
           "hex": "96D8AF"
         },
         {

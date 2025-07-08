@@ -161,7 +161,7 @@
           ]
         },
         {
-          "name": "Rock Regenbogen",
+          "name": "Stein Regenbogen",
           "multi_color_direction": "longitudinal",
           "hexes": [
             "FF0000",
@@ -261,7 +261,7 @@
       "bed_temp": 60,
       "colors": [
         {
-          "name": "Kohlefaserschwarz",
+          "name": "Carbonfaserschwarz",
           "hex": "000000"
         },
         {
@@ -662,17 +662,17 @@
           "glow": true
         },
         {
-          "name": "Diamant Lila",
+          "name": "Diamant-Lila",
           "hex": "a04ed0",
           "pattern": "sparkle"
         },
         {
-          "name": "Diamantgrau",
+          "name": "Diamant-Grau",
           "hex": "8c8c8c",
           "pattern": "sparkle"
         },
         {
-          "name": "Diamantorange",
+          "name": "Diamant-Orange",
           "hex": "ff8133",
           "pattern": "sparkle"
         }
