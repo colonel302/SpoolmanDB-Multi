@@ -570,7 +570,7 @@
           "hex": "e2f641"
         },
         {
-          "name": "Transluzent Rot",
+          "name": "Transparent Rot",
           "hex": "FF0000",
           "translucent": true
         },
@@ -587,7 +587,7 @@
           "hex": "a3afa9"
         },
         {
-          "name": "Transluzent Blau",
+          "name": "Transparent Blau",
           "hex": "0000FF",
           "translucent": true
         }

@@ -958,35 +958,35 @@
       "translucent": true,
       "colors": [
         {
-          "name": "Transluzent Grau",
+          "name": "Transparent Grau",
           "hex": "8E8E8E"
         },
         {
-          "name": "Transluzent (Light) Hellblau",
+          "name": "Transparent (Light) Hellblau",
           "hex": "61B0FF"
         },
         {
-          "name": "Transluzente Olive",
+          "name": "Transparent Olive",
           "hex": "748C45"
         },
         {
-          "name": "Transluzent Braun",
+          "name": "Transparent Braun",
           "hex": "C9A381"
         },
         {
-          "name": "Transluzent Türkis",
+          "name": "Transparent Türkis",
           "hex": "77EDD7"
         },
         {
-          "name": "Transluzente Orange",
+          "name": "Transparent Orange",
           "hex": "FF911A"
         },
         {
-          "name": "Transluzent Lila",
+          "name": "Transparent Lila",
           "hex": "D6ABFF"
         },
         {
-          "name": "Transluzent Rosa",
+          "name": "Transparent Rosa",
           "hex": "F9C1BD"
         },
         {
@@ -1788,7 +1788,7 @@
       "translucent": true,
       "colors": [
         {
-          "name": "Transluzent Türkis",
+          "name": "Transparent Türkis",
           "hex": "009FA1"
         },
         {
@@ -1796,15 +1796,15 @@
           "hex": "96D8AF"
         },
         {
-          "name": "Transluzent Blau",
+          "name": "Transparent Blau",
           "hex": "0047BB"
         },
         {
-          "name": "Durchscheinend mild gelb",
+          "name": "Transparent Zartgelb",
           "hex": "F5DBAB"
         },
         {
-          "name": "Transluzent Lila",
+          "name": "Transparent Lila",
           "hex": "8344B0"
         },
         {
@@ -1812,19 +1812,19 @@
           "hex": "F5B6CD"
         },
         {
-          "name": "Transluzente Orange",
+          "name": "Transparent Orange",
           "hex": "F74E02"
         },
         {
-          "name": "Durchscheinendes Eisblau",
+          "name": "Transparent Eisblau",
           "hex": "B8CDE9"
         },
         {
-          "name": "Transluzent Rot",
+          "name": "Transparent Rot",
           "hex": "B50011"
         },
         {
-          "name": "Durchscheinender Lavendel",
+          "name": "Transparent Lavendel",
           "hex": "B8ACD6"
         }
       ]
