@@ -1785,6 +1785,7 @@
       ],
       "extruder_temp": 220,
       "bed_temp": 35,
+	  "translucent": true,
       "colors": [
         {
           "name": "Türkis",
