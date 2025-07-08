@@ -1772,7 +1772,7 @@
     },
     {
       "name": "{color_name}",
-      "material": "PLA-Translucent",
+      "material": "PLA",
       "density": 1.22,
       "weights": [
         {
@@ -1785,46 +1785,46 @@
       ],
       "extruder_temp": 220,
       "bed_temp": 35,
-	  "translucent": true,
+      "translucent": true,
       "colors": [
         {
-          "name": "Türkis",
+          "name": "Transluzent Türkis",
           "hex": "009FA1"
         },
         {
-          "name": "(Light) Helle Jade",
+          "name": "Transparent (Light) Helle Jade",
           "hex": "96D8AF"
         },
         {
-          "name": "Blau",
+          "name": "Transluzent Blau",
           "hex": "0047BB"
         },
         {
-          "name": "Zartgelb",
+          "name": "Durchscheinend mild gelb",
           "hex": "F5DBAB"
         },
         {
-          "name": "Lila",
+          "name": "Transluzent Lila",
           "hex": "8344B0"
         },
         {
-          "name": "Kirschrosa",
+          "name": "Transparent Kirschrosa",
           "hex": "F5B6CD"
         },
         {
-          "name": "Orange",
+          "name": "Transluzente Orange",
           "hex": "F74E02"
         },
         {
-          "name": "Eisblau",
+          "name": "Durchscheinendes Eisblau",
           "hex": "B8CDE9"
         },
         {
-          "name": "Rot",
+          "name": "Transluzent Rot",
           "hex": "B50011"
         },
         {
-          "name": "Lavendel",
+          "name": "Durchscheinender Lavendel",
           "hex": "B8ACD6"
         }
       ]
