@@ -140,7 +140,7 @@
       ]
     },
     {
-      "name": "Transparent {color_name}",
+      "name": "Translucent {color_name}",
       "material": "PLA",
       "density": 1.22,
       "weights": [
