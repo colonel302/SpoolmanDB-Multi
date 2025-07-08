@@ -200,7 +200,7 @@
           "hex": "453536"
         },
         {
-          "name": "Polymaker Blaugrün",
+          "name": "Polymaker Türkis",
           "hex": "2DCCD3"
         },
         {
@@ -432,11 +432,11 @@
           "hex": "6545A5"
         },
         {
-          "name": "Galaxie Teal",
+          "name": "Galaxie Türkis",
           "hex": "2DCCD3"
         },
         {
-          "name": "Blaugrün",
+          "name": "Türkis",
           "hex": "01ACBA"
         },
         {
@@ -480,7 +480,7 @@
       ],
       "colors": [
         {
-          "name": "Jet Schwarz",
+          "name": "Jet-Schwarz",
           "hex": "0A0A0A"
         },
         {
@@ -520,7 +520,7 @@
           "hex": "7758B3"
         },
         {
-          "name": "Polymaker Blaugrün",
+          "name": "Polymaker Türkis",
           "hex": "00B4BC"
         },
         {
@@ -788,7 +788,7 @@
           "hex": "FFC845"
         },
         {
-          "name": "Polymaker Blaugrün",
+          "name": "Polymaker Türkis",
           "hex": "2DCCD3"
         },
         {
@@ -919,7 +919,7 @@
           "hex": "06924D"
         },
         {
-          "name": "Polymaker Blaugrün",
+          "name": "Polymaker Türkis",
           "hex": "4CC0C7"
         },
         {
@@ -1020,7 +1020,7 @@
       ],
       "colors": [
         {
-          "name": "Chamäleon (Teal-Gelb)",
+          "name": "Chamäleon (Türkis-Gelb)",
           "hexes": [
             "5AABB1",
             "F0BE02"
@@ -1105,7 +1105,7 @@
           "hex": "178D4A"
         },
         {
-          "name": "Polymaker Blaugrün",
+          "name": "Polymaker Türkis",
           "hex": "2FA5AE"
         },
         {
@@ -1278,7 +1278,7 @@
           "hex": "06924D"
         },
         {
-          "name": "Polymaker Blaugrün",
+          "name": "Polymaker Türkis",
           "hex": "4CC0C7"
         },
         {
@@ -1551,7 +1551,7 @@
           "hex": "FF9940"
         },
         {
-          "name": "Polymaker Blaugrün",
+          "name": "Polymaker Türkis",
           "hex": "00B4BC"
         },
         {
@@ -1655,7 +1655,7 @@
           "hex": "FF671F"
         },
         {
-          "name": "Polymaker Blaugrün",
+          "name": "Polymaker Türkis",
           "hex": "3CCBDA"
         },
         {
@@ -1728,7 +1728,7 @@
           "hex": "F97429"
         },
         {
-          "name": "Polymaker Blaugrün",
+          "name": "Polymaker Türkis",
           "hex": "50dae4"
         },
         {
@@ -1793,7 +1793,7 @@
           "hex": "6c5bb1"
         },
         {
-          "name": "Polymaker Blaugrün",
+          "name": "Polymaker Türkis",
           "hex": "50dae4"
         },
         {
@@ -1854,7 +1854,7 @@
       "bed_temp": 50,
       "colors": [
         {
-          "name": "Arctic Teal",
+          "name": "Arktisches Türkis",
           "hex": "5aabb1"
         },
         {

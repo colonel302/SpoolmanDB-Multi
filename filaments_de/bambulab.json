@@ -974,7 +974,7 @@
           "hex": "C9A381"
         },
         {
-          "name": "Transluzent Blaugrün",
+          "name": "Transluzent Türkis",
           "hex": "77EDD7"
         },
         {
@@ -1787,7 +1787,7 @@
       "bed_temp": 35,
       "colors": [
         {
-          "name": "Blaugrün",
+          "name": "Türkis",
           "hex": "009FA1"
         },
         {
