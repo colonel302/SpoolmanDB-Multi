@@ -1772,7 +1772,7 @@
         },
 		{
             "name": "{color_name}",
-            "material": "PLA-Translucent",
+            "material": "PLA",
             "density": 1.22,
             "weights": [
                 {
@@ -1785,45 +1785,46 @@
             ],
             "extruder_temp": 220,
             "bed_temp": 35,
+			"translucent": true,
             "colors": [
                 {
-                    "name": "Teal",
+                    "name": "Translucent Teal",
                     "hex": "009FA1"
                 },
                 {
-                    "name": "Light Jade",
+                    "name": "Translucent Light Jade",
                     "hex": "96D8AF"
                 },
                 {
-                    "name": "Blue",
+                    "name": "Translucent Blue",
                     "hex": "0047BB"
                 },
                 {
-                    "name": "Mellow Yellow",
+                    "name": "Translucent Mellow Yellow",
                     "hex": "F5DBAB"
                 },
                 {
-                    "name": "Purple",
+                    "name": "Translucent Purple",
                     "hex": "8344B0"
                 },
                 {
-                    "name": "Cherry Pink",
+                    "name": "Translucent Cherry Pink",
                     "hex": "F5B6CD"
                 },
                 {
-                    "name": "Orange",
+                    "name": "Translucent Orange",
                     "hex": "F74E02"
                 },
                 {
-                    "name": "Ice Blue",
+                    "name": "Translucent Ice Blue",
                     "hex": "B8CDE9"
                 },
                 {
-                    "name": "Red",
+                    "name": "Translucent Red",
                     "hex": "B50011"
                 },
                 {
-                    "name": "Lavender",
+                    "name": "Translucent Lavender",
                     "hex": "B8ACD6"
                 }
             ]
