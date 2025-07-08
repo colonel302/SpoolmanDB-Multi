@@ -140,6 +140,65 @@
       ]
     },
     {
+      "name": "Translucent {color_name}",
+      "material": "PLA",
+      "density": 1.22,
+      "weights": [
+        {
+          "weight": 1000,
+          "spool_weight": 250
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp": 220,
+      "bed_temp": 35,
+      "translucent": true,
+      "colors": [
+        {
+          "name": "Türkis",
+          "hex": "009FA1"
+        },
+        {
+          "name": "(Light) Helle Jade",
+          "hex": "96D8AF"
+        },
+        {
+          "name": "Blau",
+          "hex": "0047BB"
+        },
+        {
+          "name": "Zartgelb",
+          "hex": "F5DBAB"
+        },
+        {
+          "name": "Lila",
+          "hex": "8344B0"
+        },
+        {
+          "name": "Kirschrosa",
+          "hex": "F5B6CD"
+        },
+        {
+          "name": "Orange",
+          "hex": "F74E02"
+        },
+        {
+          "name": "Eisblau",
+          "hex": "B8CDE9"
+        },
+        {
+          "name": "Rot",
+          "hex": "B50011"
+        },
+        {
+          "name": "Lavendel",
+          "hex": "B8ACD6"
+        }
+      ]
+    },
+    {
       "name": "{color_name}",
       "material": "PLA+WOOD",
       "density": 1.21,
@@ -1767,65 +1826,6 @@
         {
           "name": "Burgunderrot",
           "hex": "951e23"
-        }
-      ]
-    },
-    {
-      "name": "{color_name}",
-      "material": "PLA",
-      "density": 1.22,
-      "weights": [
-        {
-          "weight": 1000,
-          "spool_weight": 250
-        }
-      ],
-      "diameters": [
-        1.75
-      ],
-      "extruder_temp": 220,
-      "bed_temp": 35,
-      "translucent": true,
-      "colors": [
-        {
-          "name": "Transparent Türkis",
-          "hex": "009FA1"
-        },
-        {
-          "name": "Transparent (Light) Helle Jade",
-          "hex": "96D8AF"
-        },
-        {
-          "name": "Transparent Blau",
-          "hex": "0047BB"
-        },
-        {
-          "name": "Transparent Zartgelb",
-          "hex": "F5DBAB"
-        },
-        {
-          "name": "Transparent Lila",
-          "hex": "8344B0"
-        },
-        {
-          "name": "Transparent Kirschrosa",
-          "hex": "F5B6CD"
-        },
-        {
-          "name": "Transparent Orange",
-          "hex": "F74E02"
-        },
-        {
-          "name": "Transparent Eisblau",
-          "hex": "B8CDE9"
-        },
-        {
-          "name": "Transparent Rot",
-          "hex": "B50011"
-        },
-        {
-          "name": "Transparent Lavendel",
-          "hex": "B8ACD6"
         }
       ]
     },
