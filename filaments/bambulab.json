@@ -861,6 +861,10 @@
             "density": 1.17,
             "weights": [
                 {
+                    "weight": 250,
+                    "spool_weight": 250
+                },
+				{
                     "weight": 500,
                     "spool_weight": 250
                 }
