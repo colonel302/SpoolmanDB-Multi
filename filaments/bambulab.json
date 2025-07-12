@@ -857,7 +857,7 @@
         },
         {
             "name": "Support for {color_name}",
-            "material": "PA-S",
+            "material": "PA",
             "density": 1.17,
             "weights": [
                 {
