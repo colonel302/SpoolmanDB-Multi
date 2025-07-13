@@ -1304,6 +1304,35 @@
       ]
     },
     {
+      "name": "PolyLite™ PLA-CF {color_name}",
+      "material": "PLA-CF",
+      "density": 1.29,
+      "weights": [
+        {
+          "weight": 1000.0,
+          "spool_weight": 140.0,
+          "spool_type": "cardboard"
+        }
+      ],
+      "diameters": [
+        1.75
+      ],
+      "extruder_temp_range": [
+        190,
+        220
+      ],
+      "bed_temp_range": [
+        30,
+        60
+      ],
+      "colors": [
+        {
+          "name": "Schwarz",
+          "hex": "000000"
+        }
+      ]
+    },
+    {
       "name": "Polymaker PC-ABS {color_name}",
       "material": "PC",
       "density": 1.1,
