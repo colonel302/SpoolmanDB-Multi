@@ -36,7 +36,7 @@
           "hex": "69E2FF"
         },
         {
-          "name": "Sakura Pink",
+          "name": "Sakura-Pink",
           "hex": "F6C7B3"
         },
         {
@@ -230,19 +230,19 @@
       "glow": true,
       "colors": [
         {
-          "name": "Weiß (Leuchtendes Grün)",
+          "name": "Weiß (Leuchtend-Grün)",
           "hex": "000000"
         },
         {
-          "name": "Weiß (Leuchtendes Blau)",
+          "name": "Weiß (Leuchtend-Blau)",
           "hex": "000000"
         },
         {
-          "name": "Gelb (Leuchtendes Gelb)",
+          "name": "Gelb (Leuchtend-Gelb)",
           "hex": "FFFF00"
         },
         {
-          "name": "Rot (Leuchtendes Orange)",
+          "name": "Rot (Leuchtend-Orange)",
           "hex": "FF0000"
         }
       ]
@@ -364,7 +364,7 @@
           "hex": "E1E0DE"
         },
         {
-          "name": "Ziegelrot Rot",
+          "name": "Ziegelrot",
           "hex": "8F4938"
         },
         {

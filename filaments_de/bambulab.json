@@ -18,7 +18,7 @@
       "bed_temp": 60,
       "colors": [
         {
-          "name": "Jade Weiß",
+          "name": "Jade-Weiß",
           "hex": "FFFFFF"
         },
         {
@@ -46,11 +46,11 @@
           "hex": "9D432C"
         },
         {
-          "name": "Kakao Brown",
+          "name": "Kakaobraun",
           "hex": "6F5034"
         },
         {
-          "name": "Maroon Rot",
+          "name": "Kastanienrot",
           "hex": "9D2235"
         },
         {
@@ -74,11 +74,11 @@
           "hex": "FF6A13"
         },
         {
-          "name": "Kürbisorange",
+          "name": "Kürbis-Orange",
           "hex": "FF9016"
         },
         {
-          "name": "Sonnenblumengelb",
+          "name": "Sonnenblumen-Gelb",
           "hex": "FEC600"
         },
         {
@@ -90,11 +90,11 @@
           "hex": "BECF00"
         },
         {
-          "name": "Bambu Grün",
+          "name": "Bambusgrün",
           "hex": "00AE42"
         },
         {
-          "name": "Mistelgrün",
+          "name": "Mistelzweig-Grün",
           "hex": "3F8E43"
         },
         {
@@ -118,7 +118,7 @@
           "hex": "5E43B7"
         },
         {
-          "name": "Indigo Lila",
+          "name": "Indigo-Violett",
           "hex": "482960"
         },
         {
@@ -223,11 +223,11 @@
           "hex": "4C241C"
         },
         {
-          "name": "Tonbraun",
+          "name": "Lehmbraun",
           "hex": "995F11"
         },
         {
-          "name": "Klassik Birke",
+          "name": "Klassische Birke",
           "hex": "918669"
         },
         {
@@ -262,11 +262,11 @@
           "hex": "FFFFFF"
         },
         {
-          "name": "Latte Brown",
+          "name": "Milchkaffee-Braun",
           "hex": "D3B7A7"
         },
         {
-          "name": "Wüstentan",
+          "name": "Wüstenbraun",
           "hex": "E8DBB7"
         },
         {
@@ -274,15 +274,15 @@
           "hex": "9B9EA0"
         },
         {
-          "name": "Lilac Lila",
+          "name": "Flieder-Violett",
           "hex": "AE96D4"
         },
         {
-          "name": "Sakura Pink",
+          "name": "Sakura-Pink",
           "hex": "E8AFCF"
         },
         {
-          "name": "Mandarin Orange",
+          "name": "Mandarine-Orange",
           "hex": "F99963"
         },
         {
@@ -290,7 +290,7 @@
           "hex": "F7D959"
         },
         {
-          "name": "Scharlachrote Rot",
+          "name": "Scharlachrot",
           "hex": "DE4343"
         },
         {
@@ -322,7 +322,7 @@
           "hex": "042F56"
         },
         {
-          "name": "Holzkohle",
+          "name": "Kohle",
           "hex": "000000"
         },
         {
@@ -338,11 +338,11 @@
           "hex": "56B7E6"
         },
         {
-          "name": "Apfel-Grün",
+          "name": "Apfelgrün",
           "hex": "C2E189"
         },
         {
-          "name": "Dunkle Schokolade",
+          "name": "Dunkel-Schokoladenbraun",
           "hex": "4D3324"
         },
         {
@@ -354,7 +354,7 @@
           "hex": "B15533"
         },
         {
-          "name": "Nardo Grau",
+          "name": "Nardo-Grau",
           "hex": "757575"
         }
       ]
@@ -436,7 +436,7 @@
           "hex": "C8C8C8"
         },
         {
-          "name": "Titan Grau",
+          "name": "Titangrau",
           "hex": "5F6367"
         },
         {
@@ -456,7 +456,7 @@
           "hex": "018814"
         },
         {
-          "name": "Roségold",
+          "name": "Gold-Rosa",
           "hex": "BA9594"
         },
         {
@@ -594,7 +594,7 @@
           "hex": "3F5443"
         },
         {
-          "name": "Onyx Schwarz",
+          "name": "Onyx schwarz",
           "hex": "2D2B28"
         }
       ]
@@ -621,7 +621,7 @@
           "hex": "F7F3F0"
         },
         {
-          "name": "Roter Granit",
+          "name": "Granitrot",
           "hex": "AD4E38"
         }
       ]
@@ -752,14 +752,14 @@
       "finish": "glossy",
       "colors": [
         {
-          "name": "Samtfinsternis (Schwarz-Rot)",
+          "name": "Dunkler Samt (Schwarz-Rot)",
           "hexes": [
             "000000",
             "A34342"
           ]
         },
         {
-          "name": "Mitternachtsbrand (Blau-Rot)",
+          "name": "Mitternachtsglanz (Blau-Rot)",
           "hexes": [
             "0047BB",
             "7D1B49"
@@ -796,7 +796,7 @@
           ]
         },
         {
-          "name": "Vergoldete Rose (Rosa Gold)",
+          "name": "Goldenes Rosa (Rosa Gold)",
           "hexes": [
             "FF9425",
             "FCA2BF"
@@ -1198,7 +1198,7 @@
           "hex": "7AE1BF"
         },
         {
-          "name": "Bambu Grün",
+          "name": "Bambusgrün",
           "hex": "00AE42"
         },
         {
@@ -1714,7 +1714,7 @@
           "hex": "000000"
         },
         {
-          "name": "Titan Grau",
+          "name": "Titangrau",
           "hex": "565656"
         },
         {
@@ -1722,15 +1722,15 @@
           "hex": "16b08e"
         },
         {
-          "name": "Blau",
+          "name": "Indigo-Blau",
           "hex": "324585"
         },
         {
-          "name": "Violett Lila",
+          "name": "Lila-Violett",
           "hex": "583061"
         },
         {
-          "name": "Ziegelrot Rot",
+          "name": "Ziegelrot",
           "hex": "9f332a"
         }
       ]
@@ -1808,11 +1808,11 @@
           "hex": "000000"
         },
         {
-          "name": "Lava Grau",
+          "name": "Lava-Grau",
           "hex": "4d5054"
         },
         {
-          "name": "Iris Lila",
+          "name": "Iris-Violett",
           "hex": "69398E"
         },
         {
@@ -1820,11 +1820,11 @@
           "hex": "2842AD"
         },
         {
-          "name": "Jeans Blau",
+          "name": "Jeansblau",
           "hex": "6e88bc"
         },
         {
-          "name": "Matcha Grün",
+          "name": "Matcha-Grün",
           "hex": "5c9748"
         },
         {
