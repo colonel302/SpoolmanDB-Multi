@@ -482,7 +482,7 @@
       ]
     },
     {
-      "name": "{color_name}",
+      "name": "{color_name} Metallic",
       "material": "PLA",
       "density": 1.25,
       "weights": [
@@ -499,23 +499,23 @@
       "finish": "glossy",
       "colors": [
         {
-          "name": "Iridium Goldmetall",
+          "name": "Iridium Gold",
           "hex": "B39B84"
         },
         {
-          "name": "Metallisches Kupferbraun",
+          "name": "Kupferbraun",
           "hex": "AA6443"
         },
         {
-          "name": "Metallisches Oxidgrün",
+          "name": "Oxidgrün",
           "hex": "1D7C6A"
         },
         {
-          "name": "Metallisches Kobaltblau",
+          "name": "Kobaltblau",
           "hex": "39699E"
         },
         {
-          "name": "Eisen-Metallgrau",
+          "name": "Eisengrau",
           "hex": "43403D"
         }
       ]
@@ -557,7 +557,7 @@
       ]
     },
     {
-      "name": "Glitzerndes {color_name}",
+      "name": "{color_name} Sparkle",
       "material": "PLA",
       "density": 1.26,
       "weights": [
